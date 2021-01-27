@@ -10,15 +10,26 @@
    &__app {
       z-index: 55;
       display: flex;
-      flex: 0 1 1064px;
+      flex: 0 1 80%;
       justify-content: space-between;
       align-items: center;
       margin: 0px 0px 0px 21px;
+      @media (max-width:685px){
+         justify-content: flex-end;
+         flex: 0 1 70%;
+         margin: 0;
+      }
+      @media (max-width:400px){
+         flex: 0 1 auto;
+      }
       &--box {
          flex: 0 0 auto;
          margin-right: 10px;
          &-text {
             flex: 0 1 auto;
+            @media (max-width:685px){
+               display: none;
+            }
          }
       }
      
@@ -66,6 +77,9 @@
             @media (max-width:767px){
                display: inline-block;
                margin-right: 5px;
+            }
+            @media (max-width:400px){
+               display: none;
             }
          }
       }
@@ -214,7 +228,7 @@
          overflow: auto;
          transition: all 0.3s ease 0s;
          background-color: #18b5a4;
-         padding: 70px 10px 20px 10px;
+         padding: 100px 10px 20px 10px;
       }
 
       &__menu {

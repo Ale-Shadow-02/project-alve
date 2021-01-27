@@ -122,8 +122,8 @@ span {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 1064px;
-          flex: 0 1 1064px;
+      -ms-flex: 0 1 80%;
+          flex: 0 1 80%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -352,7 +352,7 @@ span {
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     background-color: #18b5a4;
-    padding: 70px 10px 20px 10px;
+    padding: 100px 10px 20px 10px;
   }
 
   .header__menu.active {
@@ -369,5 +369,33 @@ span {
 
   .header__link {
     font-size: 24px;
+  }
+}
+
+@media (max-width: 685px) {
+  .header__app {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 70%;
+            flex: 0 1 70%;
+    margin: 0;
+  }
+
+  .header__app--box-text {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__app {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+
+  .header__app--link-mobile {
+    display: none;
   }
 }
