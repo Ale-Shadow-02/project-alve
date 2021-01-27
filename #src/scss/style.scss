@@ -11,6 +11,10 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
 }
 
 .container {
@@ -22,4 +26,6 @@ body {
 @import "_reset";
 @import "fonts";
 @import "_mobile";
+@import "_authorization";
+@import "_footer";
 

@@ -1,0 +1,35 @@
+.footer {
+  background: #1B242D;
+  padding: 15px 0px;
+}
+.footer-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width:400px){
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+		&__text {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: #BDBDBD;
+      @media (max-width:400px){
+        width: 100%;
+        margin-bottom: 10px;
+      }
+		}
+}
+.footer-list {
+  display: flex;
+  @media (max-width:400px){
+    width: 100%;
+  }
+		&__item {
+      margin-left: 15px;
+      @media (max-width:400px){
+        margin: 0 15px 0 0;
+      }
+		}
+}

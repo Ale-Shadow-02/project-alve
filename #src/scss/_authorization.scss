@@ -1,0 +1,126 @@
+.authorization {
+  padding: 157px 0px 35px 0px;
+  @media (max-width:680px){
+    padding-top: 100px;
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:680px){
+      flex-direction: column;
+    }
+  }
+  &__form {
+    flex: 0 1 70%;
+    display: flex;
+    justify-content: center;
+    @media (max-width:680px){
+      width: 100%;
+    }
+  }
+}
+.aside {
+  background: #016B45;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: 40px 0px 0px 0px;
+  flex: 0 1 322px;
+  margin-right: 5px;
+  @media (max-width:680px){
+    margin-bottom: 40px;
+  }
+}
+.navbar {
+  &__logo {
+    width: 124px;
+    display: block;
+    border-radius: 50%;
+    margin: 0px auto 26px auto;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+  }
+  &__list {
+    margin: 15px 0px 0px 0px;
+  }
+  &__list--item {
+    border-top: 1px solid #005234;
+  }
+  &__list--link {
+    display: block;
+    height: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 20px 0px 20px 28px;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      background: #005234;
+      transition: all 0.3s ease 0s;
+    }
+  }
+}
+
+.form {
+  background: #016B45;
+  border-radius: 6px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 40px;
+  @media (max-width:680px){
+    width: 100%;
+    padding: 28px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 300px;
+    margin-bottom: 35px;
+    @media (max-width:680px){
+      width: 100%;  
+    }
+  }
+  &__input--label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.75);
+  }
+  &__input {
+    margin-bottom: 40px;
+    background: #FFFFFF;
+    border: 1px solid #B7BFC3;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 15px 0px 15px 15px;
+  }
+  &__role--label {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 20px;
+    &-radio {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 18px;
+      color: #FFFFFF;
+      margin-right: 40px;
+      display: inline-block;
+      @media (max-width:400px){
+        margin-right: 7px;
+      }
+    }
+  }
+}
