@@ -28,8 +28,14 @@
   }
 		&__item {
       margin-left: 15px;
+      border-radius: 50%;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        background: #5a6268;
+        transition: all 0.3s ease 0s;
+      }
       @media (max-width:400px){
         margin: 0 15px 0 0;
       }
-		}
+    }
 }
