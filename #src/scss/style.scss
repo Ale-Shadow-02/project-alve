@@ -21,6 +21,9 @@ body {
 	max-width: 1290px;
 	margin: 0px auto;
 	padding: 0px 10px;
+	@media (max-width:1180px){
+		max-width: 768px;
+	}
 }
 
 @import "_reset";

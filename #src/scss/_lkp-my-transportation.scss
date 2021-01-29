@@ -1,8 +1,16 @@
 .my-transportation {
   padding: 157px 0px 35px 0px;
+  @media (max-width:1180px){
+    padding: 80px 0px 35px 0px;
+  }
   &__body {
     display: flex;
+    justify-content: space-between;
     align-items: flex-start;
+    @media (max-width:1180px){
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 .aside {
@@ -10,7 +18,13 @@
   border-radius: 6px;
   padding: 40px 0px 0px 0px;
   flex: 0 0 322px;
-  margin-right: 123px;
+  margin-right: 10px;
+  @media (max-width:1180px){
+    border-radius: 0;
+    margin-bottom: 40px;
+    width: 100%;
+    margin-right: 0;
+  }
 }
 .navbar {
   &__logo {
@@ -29,6 +43,9 @@
   }
   &__list {
     margin: 15px 0px 0px 0px;
+    @media (max-width:1180px){
+      text-align: center;
+    }
   }
   &__list--item {
     border-top: 1px solid #005234;
@@ -43,6 +60,9 @@
     color: #FFFFFF;
     padding: 20px 0px 20px 28px;
     transition: all 0.3s ease 0s;
+    @media (max-width:1180px){
+      padding: 20px 0px;
+    }
     &:hover {
       background: #005234;
       transition: all 0.3s ease 0s;
@@ -79,6 +99,9 @@
         position: absolute;
         top: 24px;
         left: 15px;  
+        @media (max-width:1180px){
+          left: 42%;
+        }
       }
     }
     &--link {
@@ -99,7 +122,6 @@
 }
 
 .bid-hauling {
-  width: 100%;
   display: flex;
   flex-direction: column;
   &__title {
@@ -231,8 +253,11 @@
 }
 .requests {
 }
+
+
+
 .data {
-  display: flex;
+  display: none;
   align-items: flex-start;
   flex-direction: column;
   padding: 16px 13px;
@@ -258,6 +283,11 @@
     align-items: start;
   }
 }
+
+.active-data {
+  display: flex;
+}
+
 .data-city {
   display: flex;
   align-items: start;
@@ -688,7 +718,13 @@
       &-office {
         border-left: 1px solid #ffffff;
         & > img {
-          width: 20px;
+          width: 21px;
+        }
+      }
+      &-check {
+        border-left: 0;
+        & > img {
+          width: 21px;
         }
       }
     }
@@ -710,6 +746,7 @@
   }
 }
 .bid-additional {
+  padding-right: 15px;
   &__title {
     display: block;
     font-weight: 500;
@@ -775,6 +812,9 @@
     font-size: 14px;
     line-height: 16px;
     text-align: center;
+    @media (max-width:1180px){
+      width: 100px;
+    }
   }
   &__arrow2 {
     display: block;

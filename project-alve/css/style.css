@@ -403,6 +403,9 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -415,7 +418,7 @@ span {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 322px;
           flex: 0 0 322px;
-  margin-right: 123px;
+  margin-right: 10px;
 }
 
 .navbar__logo {
@@ -515,7 +518,6 @@ span {
 }
 
 .bid-hauling {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -666,9 +668,7 @@ span {
 }
 
 .data {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -713,6 +713,12 @@ span {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+}
+
+.active-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .data-city {
@@ -1196,7 +1202,15 @@ span {
 }
 
 .bid-document__link--img-office > img {
-  width: 20px;
+  width: 21px;
+}
+
+.bid-document__link--img-check {
+  border-left: 0;
+}
+
+.bid-document__link--img-check > img {
+  width: 21px;
 }
 
 .bid-document__item--link {
@@ -1217,6 +1231,10 @@ span {
   font-size: 12px;
   line-height: 14px;
   color: #000000;
+}
+
+.bid-additional {
+  padding-right: 15px;
 }
 
 .bid-additional__title {
@@ -1414,6 +1432,49 @@ span {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 1180px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .my-transportation {
+    padding: 80px 0px 35px 0px;
+  }
+
+  .my-transportation__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .aside {
+    border-radius: 0;
+    margin-bottom: 40px;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .navbar__list {
+    text-align: center;
+  }
+
+  .navbar__list--link {
+    padding: 20px 0px;
+  }
+
+  .navbar__submenu--item-img {
+    left: 42%;
+  }
+
+  .requests-stage__sity {
+    width: 100px;
+  }
 }
 
 @media (max-width: 767px) {
