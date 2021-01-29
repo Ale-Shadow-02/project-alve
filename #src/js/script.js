@@ -25,3 +25,5 @@ $(document).ready(function () {
     $("body").toggleClass("lock");
   });
 });
+
+@@include("app.js", {});

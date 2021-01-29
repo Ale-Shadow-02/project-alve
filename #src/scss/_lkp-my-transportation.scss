@@ -47,7 +47,55 @@
       background: #005234;
       transition: all 0.3s ease 0s;
     }
+    &-dropdown {
+      &::after {
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align: 2px;
+        content: "";
+        border-top: 0.3em solid;
+        border-right: 0.3em solid transparent;
+        border-bottom: 0;
+        border-left: 0.3em solid transparent;
+      }
+    }
   }
+  &__submenu {
+    &--list {
+      list-style: none;
+      border-top: 1px solid;
+      border-color: #005234;
+      padding: 0px 15px;
+      background: #0B4430;
+      display: none;
+    }
+    &--item {
+      border-top: 1px solid #00301F;
+      position: relative;
+      &:first-child {
+        border-top: none;
+      }
+      &-img {
+        position: absolute;
+        top: 24px;
+        left: 15px;  
+      }
+    }
+    &--link {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: inherit;
+      color: #FFFFFF;
+      &:hover {
+        background: #0B4430;
+      }
+    }
+  }
+}
+
+.active {
+  display: block;
 }
 
 .bid-hauling {

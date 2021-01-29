@@ -1,23 +1,42 @@
-<section class="authorization"> 
+<section class="authorization">
   <div class="container">
     <div class="authorization__body">
       <div class="authorization__form">
-        <form class="form">
+        <div class="form">
           <h1 class="form__title">Добро пожаловать в Личный Кабинет АЛВЕ</h1>
           <label for="login" class="form__input--label">Логин:</label>
           <input placeholder="Введите логин" type="text" name="login" id="login" value="" class="form__input" />
           <label for="password" class="form__input--label">Пароль:</label>
-          <input placeholder="Введите пароль" type="password" name="password" id="password" value="" class="form__input" />
+          <input placeholder="Введите пароль" type="password" name="password" id="password" value=""
+            class="form__input" />
           <div class="form__role">
             <span class="form__role--label">Роль пользователя*</span>
-            <input type="radio" name="radio" class="form__input--radio" />
+            <input type="radio" name="foo" go="https://github.com/Ale-Shadow-02" class="form__input--radio" />
             <span class="form__role--label-radio">Заказчик</span>
-            <input type="radio" name="radio" class="form__input--radio" />
+            <input type="radio" name="foo" go="http://ya.ru" class="form__input--radio" />
             <span class="form__role--label-radio">Перевозчик</span>
           </div>
-          <button class="form__btn">Войти</button>
-        </form>
+          <button onclick="go()" class="form__btn">Войти</button>
+          <!-- <button onclick="window.location.href='http://www.google.com';">Google</button>
+          <a href="#page2" class="ui-btn ui-shadow ui-corner-all">Click this button</a>
+        </div> -->
+        </div>
       </div>
     </div>
-  </div>
 </section>
+
+
+<!-- <input name="foo" type="radio" go="http://google.ru">
+<input name="foo" type="radio" go="http://ya.ru">
+<button onclick="go()" /> -->
+<!-- <script>
+  let arr = document.getElementsByName("foo")
+  console.log(arr)
+  const go = function () {
+    for (var i of arr) {
+      if (arr[i].checked) {
+        location = arr[i].getAttribute("go")
+      }
+    }
+  }
+</script> -->
