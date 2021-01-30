@@ -631,6 +631,8 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -665,6 +667,8 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1526,7 +1530,7 @@ span {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header__app--title {
     font-size: 16px;
     line-height: 19px;
@@ -1649,6 +1653,56 @@ span {
   .header__link {
     font-size: 24px;
   }
+
+  .navbar {
+    text-align: center;
+  }
+
+  .navbar__logo {
+    width: 64px;
+    margin: 0 auto 8px auto;
+  }
+
+  .navbar__title {
+    display: inline-block;
+  }
+
+  .data-city {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .city {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .city-field {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .city-date {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .requests-stage__sity {
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  .requests-stage__date {
+    width: 100%;
+  }
 }
 
 @media (max-width: 685px) {
@@ -1683,6 +1737,56 @@ span {
 
   .form__title {
     width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .aside {
+    margin-bottom: 30px;
+  }
+
+  .bid-hauling__title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .bid-hauling__subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .choice {
+    margin-bottom: 10px;
+  }
+
+  .choice__text {
+    margin-right: 10px;
+  }
+
+  .choice-perform__filter {
+    margin-right: 15px;
+  }
+
+  .stage__text {
+    margin-bottom: 5px;
+  }
+
+  .stage-unloading {
+    margin-top: 5px;
+  }
+
+  .requests-number__ordinal {
+    border-right: none;
+  }
+
+  .requests-stage {
+    display: none;
+  }
+
+  .requests-unfurl {
+    border-left: none;
   }
 }
 

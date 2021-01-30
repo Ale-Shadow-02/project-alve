@@ -68,7 +68,7 @@
          font-size: 18px;
          line-height: 21px;
          color: #FFFFFF;
-         @media (max-width:767px){
+         @media (max-width:768px){
             font-size: 16px;
             line-height: 19px;   
          }
@@ -78,7 +78,7 @@
          font-size: 13px;
          line-height: 15px;
          color: #B6B6B6;
-         @media (max-width:767px){
+         @media (max-width:768px){
             font-size: 12px;
             line-height: 14px;
          }
@@ -98,7 +98,7 @@
             border-color: #6c757d;
             transition: all 0.3s ease 0s;
          }
-         @media (max-width:767px){
+         @media (max-width:768px){
             display: none;
          }
          &-mobile {
@@ -116,7 +116,7 @@
                border-color: #6c757d;
                transition: all 0.3s ease 0s;
             }
-            @media (max-width:767px){
+            @media (max-width:768px){
                display: inline-block;
                margin-right: 5px;
             }
@@ -195,7 +195,7 @@
    }
 }
 
-@media (max-width:767px) {
+@media (max-width:768px) {
    body.lock {
       overflow: hidden;
    }

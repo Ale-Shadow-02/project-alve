@@ -25,13 +25,23 @@
     width: 100%;
     margin-right: 0;
   }
+  @media (max-width:576px){
+    margin-bottom: 30px;
+  }
 }
 .navbar {
+  @media (max-width:768px){
+    text-align: center;
+  }
   &__logo {
     width: 124px;
     display: block;
     border-radius: 50%;
     margin: 0px auto 26px auto;
+    @media (max-width:768px){
+      width: 64px;
+      margin: 0 auto 8px auto;
+    }
   }
   &__title {
     font-weight: 500;
@@ -40,6 +50,9 @@
     text-align: center;
     text-transform: capitalize;
     color: #FFFFFF;
+    @media (max-width:768px){
+      display: inline-block;
+    }
   }
   &__list {
     margin: 15px 0px 0px 0px;
@@ -131,12 +144,22 @@
     line-height: 42px;
     font-weight: normal;
     color: #000000;
+    @media (max-width:576px){
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 35px;
+    }
   }
   &__subtitle {
     font-size: 30px;
     line-height: 35px;
     font-weight: normal;
     margin-bottom: 17px;
+    @media (max-width:576px){
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 }
 .bid-info {
@@ -179,8 +202,14 @@
   line-height: 16px;
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 5px;
+  @media (max-width:576px){
+    margin-bottom: 10px;
+  }
   &__text {
     margin-right: 18px;
+    @media (max-width:576px){
+      margin-right: 10px;
+    }
   }
 }
 .choice-perform {
@@ -190,6 +219,9 @@
     display: flex;
     align-items: center;
     margin-right: 21px;
+    @media (max-width:576px){
+      margin-right: 15px;
+    }
   }
   &__text {
     margin-right: 5px;
@@ -202,6 +234,7 @@
 }
 .stage {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-size: 14px;
   line-height: 16px;
@@ -211,6 +244,9 @@
   width: 100%;
   &__text {
     margin-right: 18px;
+    @media (max-width:576px){
+      margin-bottom: 5px;
+    }
   }
   &__point {
     display: flex;
@@ -226,6 +262,7 @@
 }
 .stage-block {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 .stage-advance {
@@ -247,6 +284,9 @@
   }
 }
 .stage-unloading {
+  @media (max-width:576px){
+    margin-top: 5px;
+  }
   &__image {
   }
   &__text {
@@ -298,6 +338,9 @@
   align-items: start;
   justify-content: space-between;
   width: 100%;
+  @media (max-width:768px){
+    flex-direction: column;
+  }
 }
 .city {
   display: flex;
@@ -305,11 +348,19 @@
   align-items: start;
   border-bottom: 1px solid #E7E7E7;
   margin-right: 26px;
+  @media (max-width:768px){
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 .city-field {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  @media (max-width:768px){
+    width: 100%;
+    justify-content: space-between;
+  }
   &__text {
     width: 230px;
     background: #FFFFFF;
@@ -320,6 +371,7 @@
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+
   }
   &__loading {
   }
@@ -345,6 +397,10 @@
 .city-date {
   display: flex;
   align-items: center;
+  @media (max-width:768px){
+    width: 100%;
+    justify-content: space-between;
+  }
   &__loading {
     position: relative;
   }
@@ -810,6 +866,9 @@
     height: 50px;
     border-right: 1px solid #EBEBEB;
     margin-right: 9px;
+    @media (max-width:576px){
+      border-right: none;
+    }
   }
   &__image {
     margin-right: 13px;
@@ -825,6 +884,9 @@
   justify-content: space-between;
   background: #FCFCFC;
   padding: 6px 0;
+  @media (max-width:576px){
+    display: none;
+  }
   &__course {
     display: flex;
     align-items: center;
@@ -840,7 +902,9 @@
     font-size: 14px;
     line-height: 16px;
     text-align: center;
-    @media (max-width:1180px){
+    @media (max-width:768px){
+      width: 100%;
+      padding: 10px 15px;
     }
   }
   &__arrow2 {
@@ -858,6 +922,9 @@
     line-height: 15px;
     padding: 0 8px;
     height: 36px;
+    @media (max-width:768px){
+      width: 100%;
+    }
   }
   &__loading {
   }
@@ -882,6 +949,9 @@
   width: 50px;
   height: 50px;
   border-left: 1px solid #E8E8E8;
+  @media (max-width:576px){
+    border-left: none;
+  }
   &__arrow {
     transform: rotateX(180deg);;
   }
