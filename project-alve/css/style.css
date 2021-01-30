@@ -525,6 +525,9 @@ span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 842px;
+          flex: 0 1 842px;
 }
 
 .bid-hauling__title {
@@ -691,7 +694,9 @@ span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 510px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
 }
 
 .data__transportation--title {
@@ -1321,7 +1326,7 @@ span {
 }
 
 .requests-stage__sity {
-  width: 163px;
+  width: 165px;
   padding: 10px 0;
   background: #FFFFFF;
   border: 1px solid #E8E8E8;
@@ -1472,8 +1477,52 @@ span {
     left: 42%;
   }
 
-  .requests-stage__sity {
-    width: 100px;
+  .data-common {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+
+  .bid-stage {
+    margin-bottom: 0;
+  }
+
+  .bid-stage__text {
+    margin-bottom: 12px;
+  }
+
+  .bid-stage__action {
+    margin-bottom: 20px;
+  }
+
+  .bid-data__document {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    margin-left: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px 0px 15px 0px;
+  }
+
+  .bid-document {
+    margin-bottom: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
+  }
+
+  .bid-additional {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
   }
 }
 

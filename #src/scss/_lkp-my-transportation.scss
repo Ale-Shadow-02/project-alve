@@ -124,6 +124,7 @@
 .bid-hauling {
   display: flex;
   flex-direction: column;
+  flex: 0 1 842px;
   &__title {
     margin-bottom: 17px;
     font-size: 36px;
@@ -266,7 +267,7 @@
     display: flex;
     align-items: start;
     flex-direction: column;
-    width: 510px;
+    flex: 0 1 auto;
     &--title {
       font-size: 12px;
       line-height: 14px;
@@ -281,6 +282,10 @@
   &-common {
     display: flex;
     align-items: start;
+    @media (max-width:1180px){
+      flex-direction: column;
+      align-items: normal;
+    }
   }
 }
 
@@ -363,8 +368,14 @@
 .bid-stage {
   width: 100%;
   margin-bottom: 33px;
+  @media (max-width:1180px){
+    margin-bottom: 0;
+  }
   &__text {
     margin-bottom: 3px;
+    @media (max-width:1180px){
+      margin-bottom: 12px;
+    }
   }
   &__block {
     display: flex;
@@ -373,6 +384,9 @@
     flex-wrap: wrap;
   }
   &__action {
+    @media (max-width:1180px){
+      margin-bottom: 20px;
+    }
   }
   &__signal {
     display: flex;
@@ -670,10 +684,21 @@
     align-items: start;
     width: 300px;
     margin-left: 26px;
+    @media (max-width:1180px){
+      flex-direction: row;
+      width: 100%;
+      margin-left: 0;
+      justify-content: space-between;
+      padding: 20px 0px 15px 0px;
+    }
   }
 }
 .bid-document {
   margin-bottom: 35px;
+  @media (max-width:1180px){
+    margin-bottom: 0;
+    flex: 0 1 45%;
+  }
   &__title {
     font-weight: 500;
     font-size: 16px;
@@ -747,6 +772,9 @@
 }
 .bid-additional {
   padding-right: 15px;
+  @media (max-width:1180px){
+    flex: 0 1 45%;
+  }
   &__title {
     display: block;
     font-weight: 500;
@@ -804,7 +832,7 @@
     margin-right: 9px;
   }
   &__sity {
-    width: 163px;
+    width: 165px;
     padding: 10px 0;
     background: #FFFFFF;
     border: 1px solid #E8E8E8;
@@ -813,7 +841,6 @@
     line-height: 16px;
     text-align: center;
     @media (max-width:1180px){
-      width: 100px;
     }
   }
   &__arrow2 {
