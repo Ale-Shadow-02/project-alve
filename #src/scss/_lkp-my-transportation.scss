@@ -1036,6 +1036,7 @@
   width: 50px;
   height: 50px;
   border-left: 1px solid #E8E8E8;
+  cursor: pointer;
   @media (max-width:576px){
     border-left: none;
   }
@@ -1290,5 +1291,586 @@
   }
 }
 
+//! Стили блока result =======================================
+
+.result {
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 16px;
+  }
+  &__title--amount {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  &__subtitle {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    padding-top: 12px;
+    padding-bottom: 14px;
+  }
+  &__bg {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid #EAEAEA;
+  }
+  &__top {
+    border-top: 1px solid #EAEAEA;
+  }
+}
+.result-block {
+}
+.result-cargo {
+  display: flex;
+  justify-content: space-between;
+  background: #FCFCFC;
+  border-radius: 6px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+}
+.request {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+  }
+}
+.request-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid #016B45;
+}
+.request-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 135px;
+  border-left: 1px solid #E8E8E8;
+  border-right: 1px solid #E8E8E8;
+  background: #fff;
+  margin-right: 12px;
+  &__text {
+    padding: 14px 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+  }
+}
+.route {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+  }
+}
+.route-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  border-top: 2px solid #016B45;
+}
+.route-city {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+  font-size: 14px;
+  line-height: 16px;
+  margin-right: 12px;
+  &__loading {
+    width: 146px;
+    padding: 8px 0;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 4px;
+    text-align: center;
+  }
+  &__arrow2 {
+  }
+  &__unloading {
+    width: 146px;
+    padding: 8px 0;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 4px;
+    text-align: center;
+  }
+}
+.result-arrow2 {
+  margin: 0 9px;
+}
+.period {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+  }
+}
+.period-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  border-top: 2px solid #016B45;
+}
+.period-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 172px;
+  border-left: 1px solid #E8E8E8;
+  border-right: 1px solid #E8E8E8;
+  font-size: 13px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 12px;
+  &__loading {
+    text-align: center;
+    padding: 8px 0;
+  }
+  &__arrow2 {
+  }
+  &__unloading {
+  }
+}
+.logistic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+  }
+}
+.logistic-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 220px;
+  height: 100%;
+  border-top: 2px solid #016B45;
+  &__text {
+    padding: 15px 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2A2A2A;
+  }
+}
+.car {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+  }
+}
+.car-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  border-top: 2px solid #016B45;
+}
+.car-model {
+  display: flex;
+  align-items: center;
+  width: 105px;
+  height: 36px;
+  border-left: 1px solid #E8E8E8;
+  border-right: 1px solid #E8E8E8;
+  &__text {
+    margin-left: 13px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2A2A2A;
+  }
+}
+.license {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+  }
+}
+.license-plate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 120px;
+  height: 100%;
+  border-top: 2px solid #016B45;
+  &__text {
+    padding: 15px 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2A2A2A;
+    margin-left: 13px;
+  }
+}
+.payoff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+  }
+}
+.payoff-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  border-top: 2px solid #016B45;
+}
+.payoff-result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95px;
+  height: 36px;
+  border-left: 1px solid #E8E8E8;
+  &__point {
+  }
+  &__text {
+    margin-left: 6px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2A2A2A;
+  }
+}
+.expand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  &__title {
+    padding: 12px 0 12px 0;
+  }
+}
+.expand-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  border-top: 2px solid #016B45;
+}
+.expand-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  border-right: 1px solid #EAEAEA;
+  border-left: 1px solid #EAEAEA;
+  background: #fff;
+  padding: 15px 20px;
+  &__arrow {
+  }
+}
+.result-full {
+  &__title {
+  }
+  &__data {
+  }
+}
+.bid {
+  &__requisition {
+  }
+}
+.line1 {
+}
+.city {
+}
+.line1-city {
+  &__text {
+  }
+}
+.city-field {
+  &__text {
+  }
+  &__loading {
+  }
+  &__image {
+  }
+  &__image4 {
+  }
+  &__unloading {
+  }
+}
+.line1-field {
+}
+.arrow2 {
+  &__image {
+  }
+}
+.city-date {
+  &__loading {
+  }
+  &__text {
+  }
+  &__icon {
+  }
+  &__image {
+  }
+  &__unloading {
+  }
+}
+.line1-date {
+  &__text {
+  }
+  &__icon {
+  }
+}
+.trucking {
+}
+.line1-trucking {
+}
+.trucking-car {
+  &__toving {
+  }
+  &__title {
+  }
+  &__name {
+  }
+  &__number {
+  }
+  &__text {
+  }
+  &__region {
+  }
+}
+.data {
+  &__transportation {
+  }
+}
+.trucking-trailer {
+  &__toving {
+  }
+  &__title {
+  }
+  &__name {
+  }
+  &__number {
+  }
+  &__text {
+  }
+  &__region {
+  }
+}
+.truck {
+  &__number {
+  }
+}
+.line2 {
+}
+.customer {
+}
+.contacts {
+}
+.line2-contacts {
+}
+.customer-delegate {
+  &__title {
+  }
+  &__name {
+  }
+}
+.contacts-block {
+  &__title {
+  }
+  &__name {
+  }
+}
+.line {
+  &__text {
+  }
+  &__button {
+  }
+}
+.customer-contact {
+  &__text {
+  }
+}
+.contacts-phone {
+  &__text {
+  }
+  &__tel {
+  }
+  &__border {
+  }
+}
+.button {
+  &__text {
+  }
+  &__tel {
+  }
+  &__border {
+  }
+}
+.logistician {
+}
+.logistician-surname {
+  &__title {
+  }
+  &__name {
+  }
+}
+.logistician-contact {
+  &__text {
+  }
+}
+.driver {
+}
+.driver-surname {
+  &__title {
+  }
+  &__name {
+  }
+}
+.driver-contact {
+  &__text {
+  }
+}
+.line3 {
+  &__none {
+  }
+  &__on {
+  }
+  &__no {
+  }
+}
+.cargo {
+}
+.cargo-parameters {
+}
+.line3-cargo {
+  &__parameters {
+  }
+  &__funds {
+  }
+}
+.cargo-block {
+  &__border {
+  }
+  &__image {
+  }
+  &__type {
+  }
+  &__title {
+  }
+  &__name {
+  }
+}
+.funds {
+}
+.line3-terms {
+}
+.line4 {
+}
+.bid-document {
+  &__title {
+  }
+  &__list {
+  }
+  &__item {
+  }
+  &__image {
+  }
+  &__text {
+  }
+}
+.line4-document {
+}
+.bid-additional {
+  &__title {
+  }
+  &__text {
+  }
+  &__text2 {
+  }
+}
+.line4-additional {
+}
+
+//! ====================================================
+
+.result-total {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #016A44;
+    background: #FAFAFA;
+    border-radius: 6px 6px 0px 0px;
+    padding: 12px 0;
+    &--title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      color: #000000;
+      width: 150px;
+      &-col1 {
+        margin-right: 155px;
+      }
+      &-col2 {
+        margin-right: 195px;
+      }
+      &-col3 {
+        margin-right: 85px;
+      }
+      &-col6 {
+        text-align: left;
+      }
+    }
+    &--setting {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+  &__date {
+    width: 20%;
+    padding: 0px 15px;
+  }
+  &__item {
+    background: #FCFCFC;
+    border: 1px solid #e8e8e8;
+    &--carnum {
+      padding-right: 5px;
+    }
+    &--box {
+      height: 36px;
+      border-right: 1px solid #e8e8e8;
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #2A2A2A;
+      padding: 0px 40px 0 5px;
+      &-car {
+        border-right: none;
+      }
+    }
+    &--name {
+      margin: 0px 3px 0px 0px;
+    }
+  }
+}
 
 
