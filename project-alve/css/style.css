@@ -526,8 +526,8 @@ span {
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 842px;
-          flex: 0 1 842px;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
 }
 
 .bid-hauling__title {
@@ -855,7 +855,7 @@ span {
   background-color: #EDEDED;
   width: 136px;
   height: 2px;
-  margin: 0 34px 0 0;
+  margin: 0 34px 0 10px;
 }
 
 .bid-stage__image {
@@ -1678,6 +1678,19 @@ span {
           box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
 }
 
+.result-full {
+  margin-top: 6px;
+  background: #FCFCFC;
+  border: 1px solid rgba(234, 234, 234, 0.5);
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.result-full__data {
+  padding: 13px;
+}
+
 .request {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2087,6 +2100,107 @@ span {
   border-left: 1px solid #EAEAEA;
   background: #fff;
   padding: 15px 20px;
+}
+
+.line1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 7px 0 7px 0;
+}
+
+.line1-trucking {
+  padding: 0;
+  border-bottom: 0;
+  width: 543px;
+}
+
+.line1-city {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0;
+  width: 638px;
+}
+
+.city-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.city-field__text {
+  width: 264px;
+}
+
+.city-field__image {
+  margin: 0 9px;
+}
+
+.city-field__image4 {
+  display: none;
+}
+
+.city-date__image {
+  margin: 0 9px;
+}
+
+.trucking-car__title {
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.trucking-car__name {
+  font-size: 14px;
+  line-height: 16px;
+  color: #2A2A2A;
+}
+
+.line2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #E7E7E7;
+}
+
+.line2-contacts {
+  width: 47%;
+  padding: 12px 0;
+}
+
+.line3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.line3-cargo__parameters {
+  padding-right: 10px;
+}
+
+.line3-cargo__funds {
+  padding-left: 47px;
+}
+
+.line3-terms {
+  max-width: 100%;
 }
 
 .result-total__header {

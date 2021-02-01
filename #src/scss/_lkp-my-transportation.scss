@@ -137,7 +137,7 @@
 .bid-hauling {
   display: flex;
   flex-direction: column;
-  flex: 0 1 842px;
+  flex: 0 1 auto;
   &__title {
     margin-bottom: 17px;
     font-size: 36px;
@@ -473,7 +473,7 @@
     background-color: #EDEDED;
     width: 136px;
     height: 2px;
-    margin: 0 34px 0 0;
+    margin: 0 34px 0 10px;
     @media (max-width:1180px){
       margin: 25px 0px 0px 0px;
     }
@@ -1336,6 +1336,16 @@
   border-radius: 6px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
 }
+.result-full {
+  margin-top: 6px;
+  background: #FCFCFC;
+  border: 1px solid rgba(234, 234, 234, 0.5);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  &__data {
+    padding: 13px;
+  }
+}
 .request {
   display: flex;
   flex-direction: column;
@@ -1581,32 +1591,43 @@
   &__arrow {
   }
 }
-.result-full {
-  &__title {
-  }
-  &__data {
-  }
-}
 .bid {
   &__requisition {
   }
 }
 .line1 {
+  display: flex;
+  align-items: start;
+  padding: 7px 0 7px 0;
+  &-trucking {
+    padding: 0;
+    border-bottom: 0;
+    width: 543px;
+  }
 }
 .city {
 }
 .line1-city {
+  align-items: center;
+  border-bottom: 0;
+  width: 638px;
   &__text {
   }
 }
 .city-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
   &__text {
+    width: 264px;
   }
   &__loading {
   }
   &__image {
+    margin: 0 9px;
   }
   &__image4 {
+    display: none;
   }
   &__unloading {
   }
@@ -1625,6 +1646,7 @@
   &__icon {
   }
   &__image {
+    margin: 0 9px;
   }
   &__unloading {
   }
@@ -1643,8 +1665,14 @@
   &__toving {
   }
   &__title {
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.5);
   }
   &__name {
+    font-size: 14px;
+    line-height: 16px;
+    color: #2A2A2A;
   }
   &__number {
   }
@@ -1676,12 +1704,19 @@
   }
 }
 .line2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #E7E7E7;
 }
 .customer {
 }
 .contacts {
+  
 }
 .line2-contacts {
+  width: 47%;
+  padding: 12px 0;
 }
 .customer-delegate {
   &__title {
@@ -1746,6 +1781,8 @@
   }
 }
 .line3 {
+  display: flex;
+  align-items: center;
   &__none {
   }
   &__on {
@@ -1759,8 +1796,10 @@
 }
 .line3-cargo {
   &__parameters {
+    padding-right: 10px;
   }
   &__funds {
+    padding-left: 47px;
   }
 }
 .cargo-block {
@@ -1778,6 +1817,7 @@
 .funds {
 }
 .line3-terms {
+  max-width: 100%;
 }
 .line4 {
 }
