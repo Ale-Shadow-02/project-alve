@@ -905,6 +905,16 @@ span {
   text-align: center;
   border: 1px solid rgba(1, 107, 69, 0.5);
   border-radius: 4px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.button:hover {
+  background-color: #e7e7e7;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .button__text {
@@ -1688,7 +1698,7 @@ span {
 }
 
 .result-full__data {
-  padding: 13px;
+  padding: 10px;
 }
 
 .request {
@@ -2126,6 +2136,10 @@ span {
   width: 638px;
 }
 
+.line1-city__text {
+  width: 264px;
+}
+
 .city-field {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2136,16 +2150,8 @@ span {
   margin-bottom: 10px;
 }
 
-.city-field__text {
-  width: 264px;
-}
-
 .city-field__image {
   margin: 0 9px;
-}
-
-.city-field__image4 {
-  display: none;
 }
 
 .city-date__image {
@@ -2479,6 +2485,76 @@ span {
     margin-top: 15px;
   }
 
+  .line1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .line1-trucking {
+    width: 80%;
+    padding: 10px 0 3px 0;
+  }
+
+  .line1-city {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-right: 0;
+    border-bottom: 1px solid #dedede;
+  }
+
+  .line1-city__text {
+    width: 219px;
+  }
+
+  .line1-date {
+    margin-bottom: 10px;
+  }
+
+  .line1-date__text {
+    width: 100%;
+  }
+
+  .line1-date__text--loading {
+    padding-left: 30px;
+  }
+
+  .line2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .line2-contacts {
+    width: 100%;
+  }
+
+  .line3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .line3-cargo__funds {
+    padding-left: 0;
+  }
+
+  .line3-terms {
+    max-width: 62%;
+  }
+
   .result-total__header--title-col4 {
     display: none;
   }
@@ -2711,6 +2787,25 @@ span {
 
   .head-number__logist--block {
     width: 49%;
+  }
+
+  .line1-trucking {
+    width: 100%;
+  }
+
+  .line1-city {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .line1-date__text {
+    width: 33%;
+  }
+
+  .line1-date__text--loading {
+    padding-left: 0;
   }
 
   .result-total__header--title-col1 {

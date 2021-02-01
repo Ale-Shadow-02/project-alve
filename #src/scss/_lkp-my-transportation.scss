@@ -550,6 +550,11 @@
   text-align: center;
   border: 1px solid rgba(1, 107, 69, 0.5);
   border-radius: 4px;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    background-color: #e7e7e7;
+    transition: all 0.3s ease 0s;
+  }
   @media (max-width:576px){
     width: 270px;
   }
@@ -1343,7 +1348,7 @@
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
   &__data {
-    padding: 13px;
+    padding: 10px;
   }
 }
 .request {
@@ -1599,10 +1604,20 @@
   display: flex;
   align-items: start;
   padding: 7px 0 7px 0;
+  @media (max-width:1180px){
+    flex-direction: column;
+  }
   &-trucking {
     padding: 0;
     border-bottom: 0;
     width: 543px;
+    @media (max-width:1180px){
+      width: 80%;
+      padding: 10px 0 3px 0;
+    }
+    @media (max-width:768px){
+      width: 100%;
+    }
   }
 }
 .city {
@@ -1611,23 +1626,32 @@
   align-items: center;
   border-bottom: 0;
   width: 638px;
+  @media (max-width:1180px){
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-right: 0;
+    border-bottom: 1px solid #dedede;
+  }
+  @media (max-width:768px){
+    flex-direction: column;
+  }
   &__text {
+    width: 264px;
+    @media (max-width:1180px){
+      width: 219px;
+    }
   }
 }
 .city-field {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  &__text {
-    width: 264px;
-  }
   &__loading {
   }
   &__image {
     margin: 0 9px;
-  }
-  &__image4 {
-    display: none;
   }
   &__unloading {
   }
@@ -1652,7 +1676,23 @@
   }
 }
 .line1-date {
+  @media (max-width:1180px){
+    margin-bottom: 10px;
+  }
   &__text {
+    @media (max-width:1180px){
+      width: 100%;
+    }
+    @media (max-width:768px){
+      width: 33%;
+    }
+    &--loading {
+      @media (max-width:1180px){
+        padding-left: 30px;
+      }@media (max-width:768px){
+        padding-left: 0;
+      }
+    }
   }
   &__icon {
   }
@@ -1708,6 +1748,9 @@
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid #E7E7E7;
+  @media (max-width:1180px){
+    flex-direction: column;
+  }
 }
 .customer {
 }
@@ -1717,6 +1760,9 @@
 .line2-contacts {
   width: 47%;
   padding: 12px 0;
+  @media (max-width:1180px){
+    width: 100%;
+  }
 }
 .customer-delegate {
   &__title {
@@ -1783,6 +1829,9 @@
 .line3 {
   display: flex;
   align-items: center;
+  @media (max-width:1180px){
+    flex-direction: column;
+  }
   &__none {
   }
   &__on {
@@ -1800,6 +1849,9 @@
   }
   &__funds {
     padding-left: 47px;
+    @media (max-width:1180px){
+      padding-left: 0;
+    }
   }
 }
 .cargo-block {
@@ -1818,6 +1870,9 @@
 }
 .line3-terms {
   max-width: 100%;
+  @media (max-width:1180px){
+    max-width: 62%;
+  }
 }
 .line4 {
 }
