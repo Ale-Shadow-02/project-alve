@@ -2327,11 +2327,11 @@ span {
   border-radius: 0 4px 4px 0;
 }
 
-.active {
+.page-item__active {
   background: #80B5A2;
 }
 
-.active > a {
+.page-item__active > a {
   color: #fff;
 }
 

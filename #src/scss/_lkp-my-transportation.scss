@@ -1987,13 +1987,14 @@
     border-right: 1px solid #80B5A2;
     border-radius: 0 4px 4px 0;
   }
-}
-.active {
-  background: #80B5A2;
-  & > a {
-    color: #fff;
+  &__active {
+    background: #80B5A2;
+    & > a {
+      color: #fff;
+    }
   }
 }
+
 
 .page-link {
   font-size: 14px;
