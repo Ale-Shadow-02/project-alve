@@ -1699,6 +1699,7 @@ span {
 
 .result-full__data {
   padding: 10px;
+  display: none;
 }
 
 .request {
@@ -2251,6 +2252,10 @@ span {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 45%;
           flex: 0 1 45%;
+}
+
+.active-full__data {
+  display: block;
 }
 
 .other {

@@ -1349,6 +1349,7 @@
   border-radius: 6px;
   &__data {
     padding: 10px;
+    display: none;
   }
 }
 .request {
@@ -1921,6 +1922,10 @@
   &__block {
     flex: 0 1 45%;
   }
+}
+
+.active-full__data {
+  display: block;
 }
 //!=====================================================
 .other {

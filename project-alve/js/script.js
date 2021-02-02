@@ -49,4 +49,16 @@ arrowLink.addEventListener("click", (e) => {
     data.classList.toggle("active-data");
   }
 });
+
+//Раскрытие таба result-full__data
+
+let arrowFullDataLink = document.querySelector(".bid__requisition--arrow");
+let resultFullData = document.querySelector(".result-full__data");
+arrowFullDataLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  let target = e.target;
+  if (target) {
+    resultFullData.classList.toggle("active-full__data");
+  }
+});
 ;
