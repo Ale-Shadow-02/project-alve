@@ -178,11 +178,7 @@
     }
   }
 }
-.bid-info {
-}
 .bid {
-  &__filter {
-  }
   &__reqvuisition {
     width: 835px;
     background: #FCFCFC;
@@ -265,10 +261,6 @@
     margin-right: 5px;
     color: #03396B;
   }
-  &__image {
-  }
-  &__text2 {
-  }
 }
 .stage {
   display: flex;
@@ -295,46 +287,17 @@
     margin-right: 5px;
     display: block;
   }
-  &__subtitle {
-  }
 }
 .stage-block {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-.stage-advance {
-  &__image {
-  }
-  &__text {
-  }
-}
-.stage-download {
-  &__image {
-  }
-  &__text {
-  }
-}
-.stage-moves {
-  &__image {
-  }
-  &__text {
-  }
-}
 .stage-unloading {
   @media (max-width:576px){
     margin-top: 5px;
   }
-  &__image {
-  }
-  &__text {
-  }
 }
-.requests {
-}
-
-
-
 .data {
   display: none;
   align-items: flex-start;
@@ -420,8 +383,6 @@
       width: 100%;
     }
   }
-  &__loading {
-  }
   &__image {
     margin-left: 9px;
     margin-right: 9px;
@@ -435,17 +396,6 @@
       display: block;
       margin: 5px 0;
     }
-
-  }
-  &__unloading {
-  }
-}
-.arrow2 {
-  &__image {
-  }
-}
-.arrow {
-  &__image {
   }
 }
 .city-date {
@@ -478,8 +428,6 @@
   &__image {
     margin: 0 9px;
   }
-  &__unloading {
-  }
 }
 .bid-stage {
   width: 100%;
@@ -500,10 +448,6 @@
     align-items: center;
     flex-wrap: wrap;
   }
-  &__action {
-    
-    
-  }
   &__signal {
     display: flex;
     align-items: center;
@@ -519,21 +463,9 @@
       margin: 0;
     }
   }
-  &__advance {
-  }
   &__image {
     display: block;
   }
-  &__download {
-  }
-  &__moves {
-  }
-  &__unloading {
-  }
-}
-.data-common {
-}
-.customer {
 }
 .contacts {
   display: flex;
@@ -547,38 +479,13 @@
     align-items: flex-start;
   }
 }
-.customer-delegate {
-  &__title {
-  }
-  &__name {
-  }
-}
+
 .contacts-block {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
 
-  &__title {
-  }
-  &__name {
-  }
-}
-.customer-contact {
-  &__text {
-  }
-  &__tel {
-  }
-}
-.contacts-phone {
-  &__text {
-  }
-  &__tel {
-  }
-  &__border {
-  }
-  &__image {
-  }
-}
 .button {
   display: flex;
   justify-content: space-between;
@@ -660,47 +567,8 @@
   @media (max-width:576px){
     border-top: 1px solid #DEDEDE;
   }
-  &__toving {
-  }
-  &__title {
-  }
-  &__name {
-  }
-  &__number {
-  }
-  &__text {
-  }
-  &__region {
-  }
 }
-.truck {
-  &__number {
-  }
-}
-.logistician {
-}
-.logistician-surname {
-  &__title {
-  }
-  &__name {
-  }
-}
-.logistician-contact {
-  &__text {
-  }
-}
-.driver {
-}
-.driver-surname {
-  &__title {
-  }
-  &__name {
-  }
-}
-.driver-contact {
-  &__text {
-  }
-}
+
 .cargo {
   display: flex;
   justify-content: space-between;
@@ -711,8 +579,6 @@
   @media (max-width:576px){
     flex-wrap: wrap;
   }
-}
-.cargo-parameters {
 }
 .cargo-block {
   display: flex;
@@ -750,15 +616,11 @@
   &__title {
     margin-bottom: 3px;
   }
-  &__name {
-  }
   &__border2 {
     @media (max-width:576px){
       flex: 0 1 50%;
       border-bottom: none!important;
     }
-  }
-  &__line {
   }
   &__width {
     max-width: 125px;
@@ -775,18 +637,7 @@
     align-items: flex-start;
   }
 }
-.loading {
-}
-.loading-surname {
-  &__title {
-  }
-  &__name {
-  }
-}
-.loading-contact {
-  &__text {
-  }
-}
+
 .loading-cargo {
   padding: 12px;
   background: #F6F6F6;
@@ -809,21 +660,8 @@
   &__title {
     margin-bottom: 3px;
   }
-  &__text {
-  }
 }
-.unloading1 {
-}
-.unloading1-surname {
-  &__title {
-  }
-  &__name {
-  }
-}
-.unloading1-contact {
-  &__text {
-  }
-}
+
 .unloading-cargo {
   padding: 12px;
   background: #F6F6F6;
@@ -842,17 +680,8 @@
   flex-direction: column;
   align-items: start;
   padding-left: 25px;
-  &__text {
-  }
-  &__title {
-  }
 }
-.unloading1-addres {
-  &__title {
-  }
-}
-.unloading {
-}
+
 .bid-data {
   &__document {
     display: flex;
@@ -974,8 +803,6 @@
     line-height: 16px;
     color: rgba(0, 0, 0, 0.5);
   }
-  &__text2 {
-  }
 }
 .requests-block {
   border: 1px solid #EAEAEA;
@@ -1003,10 +830,6 @@
   &__image {
     margin-right: 13px;
   }
-  &__text {
-  }
-}
-.number1 {
 }
 .requests-stage {
   display: flex;
@@ -1065,20 +888,12 @@
       width: 100%;
     }
   }
-  &__loading {
-  }
-  &__unloading {
-  }
   &__payment {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 110px;
     height: 36px;
-  }
-  &__check {
-  }
-  &__result {
   }
 }
 .requests-unfurl {
@@ -1092,20 +907,8 @@
   @media (max-width:576px){
     border-left: none;
   }
-  &__arrow {
-  }
-}
-.number2 {
-}
-.number3 {
-}
-.number4 {
 }
 
-.section-history {
-}
-.container {
-}
 .history {
   display: flex;
   flex-direction: column;
@@ -1115,8 +918,6 @@
     line-height: 35px;
     margin-bottom: 28px;
   }
-}
-.history-filter {
 }
 .history-form {
   &__top {
@@ -1162,8 +963,6 @@
     width: 100%;
     margin-bottom: 15px;
   }
-  &__form {
-  }
   &__label {
     margin-right: 23px;
     font-size: 14px;
@@ -1192,10 +991,7 @@
     }
   }
 }
-.form {
-}
-.input {
-}
+
 .head {
   display: flex;
   flex-direction: column;
@@ -1248,8 +1044,6 @@
       background: #005234;
       transition: all 0.3s ease 0s;
     }
-  }
-  &__arrow3 {
   }
   &__period {
     width: 140px;
@@ -1375,8 +1169,6 @@
     border-top: 1px solid #EAEAEA;
   }
 }
-.result-block {
-}
 .result-cargo {
   display: flex;
   justify-content: space-between;
@@ -1399,8 +1191,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  &__title {
-  }
 }
 .request-block {
   display: flex;
@@ -1429,8 +1219,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  &__title {
-  }
 }
 .route-block {
   display: flex;
@@ -1455,8 +1243,6 @@
     border-radius: 4px;
     text-align: center;
   }
-  &__arrow2 {
-  }
   &__unloading {
     width: 146px;
     padding: 8px 0;
@@ -1473,8 +1259,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  &__title {
-  }
 }
 .period-block {
   display: flex;
@@ -1500,17 +1284,11 @@
     text-align: center;
     padding: 8px 0;
   }
-  &__arrow2 {
-  }
-  &__unloading {
-  }
 }
 .logistic {
   display: flex;
   flex-direction: column;
   align-items: center;
-  &__title {
-  }
 }
 .logistic-name {
   display: flex;
@@ -1530,8 +1308,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  &__title {
-  }
 }
 .car-block {
   display: flex;
@@ -1560,8 +1336,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  &__title {
-  }
 }
 .license-plate {
   display: flex;
@@ -1582,8 +1356,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  &__title {
-  }
 }
 .payoff-block {
   display: flex;
@@ -1600,8 +1372,6 @@
   width: 95px;
   height: 36px;
   border-left: 1px solid #E8E8E8;
-  &__point {
-  }
   &__text {
     margin-left: 6px;
     font-size: 14px;
@@ -1637,13 +1407,8 @@
   border-left: 1px solid #EAEAEA;
   background: #fff;
   padding: 15px 20px;
-  &__arrow {
-  }
 }
-.bid {
-  &__requisition {
-  }
-}
+
 .line1 {
   display: flex;
   align-items: start;
@@ -1663,8 +1428,6 @@
       width: 100%;
     }
   }
-}
-.city {
 }
 .line1-city {
   align-items: center;
@@ -1692,31 +1455,14 @@
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  &__loading {
-  }
   &__image {
     margin: 0 9px;
   }
-  &__unloading {
-  }
 }
-.line1-field {
-}
-.arrow2 {
-  &__image {
-  }
-}
+
 .city-date {
-  &__loading {
-  }
-  &__text {
-  }
-  &__icon {
-  }
   &__image {
     margin: 0 9px;
-  }
-  &__unloading {
   }
 }
 .line1-date {
@@ -1738,16 +1484,9 @@
       }
     }
   }
-  &__icon {
-  }
 }
-.trucking {
-}
-.line1-trucking {
-}
+
 .trucking-car {
-  &__toving {
-  }
   &__title {
     font-size: 12px;
     line-height: 14px;
@@ -1758,35 +1497,8 @@
     line-height: 16px;
     color: #2A2A2A;
   }
-  &__number {
-  }
-  &__text {
-  }
-  &__region {
-  }
 }
-.data {
-  &__transportation {
-  }
-}
-.trucking-trailer {
-  &__toving {
-  }
-  &__title {
-  }
-  &__name {
-  }
-  &__number {
-  }
-  &__text {
-  }
-  &__region {
-  }
-}
-.truck {
-  &__number {
-  }
-}
+
 .line2 {
   display: flex;
   align-items: center;
@@ -1796,11 +1508,6 @@
     flex-direction: column;
   }
 }
-.customer {
-}
-.contacts {
-  
-}
 .line2-contacts {
   width: 47%;
   padding: 12px 0;
@@ -1808,84 +1515,13 @@
     width: 100%;
   }
 }
-.customer-delegate {
-  &__title {
-  }
-  &__name {
-  }
-}
-.contacts-block {
-  &__title {
-  }
-  &__name {
-  }
-}
-.line {
-  &__text {
-  }
-  &__button {
-  }
-}
-.customer-contact {
-  &__text {
-  }
-}
-.contacts-phone {
-  &__text {
-  }
-  &__tel {
-  }
-  &__border {
-  }
-}
-.button {
-  &__text {
-  }
-  &__tel {
-  }
-  &__border {
-  }
-}
-.logistician {
-}
-.logistician-surname {
-  &__title {
-  }
-  &__name {
-  }
-}
-.logistician-contact {
-  &__text {
-  }
-}
-.driver {
-}
-.driver-surname {
-  &__title {
-  }
-  &__name {
-  }
-}
-.driver-contact {
-  &__text {
-  }
-}
+
 .line3 {
   display: flex;
   align-items: center;
   @media (max-width:1180px){
     flex-direction: column;
   }
-  &__none {
-  }
-  &__on {
-  }
-  &__no {
-  }
-}
-.cargo {
-}
-.cargo-parameters {
 }
 .line3-cargo {
   &__parameters {
@@ -1898,20 +1534,7 @@
     }
   }
 }
-.cargo-block {
-  &__border {
-  }
-  &__image {
-  }
-  &__type {
-  }
-  &__title {
-  }
-  &__name {
-  }
-}
-.funds {
-}
+
 .line3-terms {
   max-width: 100%;
   @media (max-width:1180px){
@@ -1928,32 +1551,17 @@
   }
 }
 .bid-document {
-  &__title {
-  }
   &__list {
     &--line4 {
       margin: 0;
     }
-  }
-  &__item {
-  }
-  &__image {
-  }
-  &__text {
   }
 }
 .line4-document {
   flex: 0 1 30%;
   margin-bottom: 15px;
 }
-.bid-additional {
-  &__title {
-  }
-  &__text {
-  }
-  &__text2 {
-  }
-}
+
 .line4-additional {
   flex: 0 1 65%;
   display: flex;
@@ -2074,81 +1682,6 @@
     margin-top: 4px;
   }
 }
-
-
-/* .other {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 23px;
-  margin-bottom: 44px;
-  &-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &__item {
-      display: flex;
-      align-items: center;
-    }
-    &__number {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 36px;
-      height: 36px;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 16px;
-      color: #000000
-    }
-    &__grey {
-      border: 1px solid #80B5A2;
-      border-right: none;
-      border-radius: 4px 0 0 4px;
-    }
-    &__green {
-      background: #80B5A2;
-      border: 1px solid #016B45;
-      color: #fff;
-    }
-    &__hover {
-      border: 1px solid #80B5A2;
-      border-right: none;
-    }
-    &__last {
-      border: 1px solid #80B5A2;
-      border-radius: 0 4px 4px 0;
-    }
-  }
-  &-sort {
-    display: flex;
-    align-items: center;
-    margin-right: 30px;
-    &__title {
-      margin-right: 18px;
-      font-size: 14px;
-      line-height: 16px;
-      text-align: center;
-      color: rgba(117, 117, 117, 0.5);
-    }
-    &__month {
-      font-size: 14px;
-      line-height: 16px;
-      text-align: center;
-      color: #03396B;
-    }
-    &__bg {
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 16px;
-      text-align: center;
-      color: #000000;
-    }
-    &__text {
-      margin-right: 10px;
-    }
-  }
-} */
 
 //! ====================================================
 
