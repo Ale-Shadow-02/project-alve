@@ -7,6 +7,7 @@ linkClick.addEventListener("click", function (e) {
   let target = e.target;
   if (target) {
     subMenu.classList.toggle("active");
+    linkClick.classList.toggle("arrow-top");
   }
 });
 
