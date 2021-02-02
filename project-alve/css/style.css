@@ -2267,67 +2267,6 @@ span {
   margin-bottom: 44px;
 }
 
-.other-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.other-list__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.other-list__number {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 36px;
-  height: 36px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  color: #000000;
-}
-
-.other-list__grey {
-  border: 1px solid #80B5A2;
-  border-right: none;
-  border-radius: 4px 0 0 4px;
-}
-
-.other-list__green {
-  background: #80B5A2;
-  border: 1px solid #016B45;
-  color: #fff;
-}
-
-.other-list__hover {
-  border: 1px solid #80B5A2;
-  border-right: none;
-}
-
-.other-list__last {
-  border: 1px solid #80B5A2;
-  border-radius: 0 4px 4px 0;
-}
-
 .other-sort {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2346,14 +2285,7 @@ span {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.other-sort__month {
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  color: #03396B;
-}
-
-.other-sort__bg {
+.other-sort__active {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -2364,6 +2296,159 @@ span {
 .other-sort__text {
   margin-right: 10px;
 }
+
+.other-sort__text:active {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-item {
+  width: 37px;
+  height: 36px;
+  border: 1px solid #80B5A2;
+  border-right: none;
+}
+
+.page-item__previous {
+  border-radius: 4px 0 0 4px;
+}
+
+.page-item__next {
+  border-right: 1px solid #80B5A2;
+  border-radius: 0 4px 4px 0;
+}
+
+.active {
+  background: #80B5A2;
+}
+
+.active > a {
+  color: #fff;
+}
+
+.page-link {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.page-link:hover {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background: #016B45;
+  color: #fff;
+}
+
+.page-link__previous:hover {
+  background: transparent;
+}
+
+.page-link__next:hover {
+  background: transparent;
+}
+
+.page-link__img {
+  margin-top: 4px;
+}
+
+/* .other {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 23px;
+  margin-bottom: 44px;
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__item {
+      display: flex;
+      align-items: center;
+    }
+    &__number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #000000
+    }
+    &__grey {
+      border: 1px solid #80B5A2;
+      border-right: none;
+      border-radius: 4px 0 0 4px;
+    }
+    &__green {
+      background: #80B5A2;
+      border: 1px solid #016B45;
+      color: #fff;
+    }
+    &__hover {
+      border: 1px solid #80B5A2;
+      border-right: none;
+    }
+    &__last {
+      border: 1px solid #80B5A2;
+      border-radius: 0 4px 4px 0;
+    }
+  }
+  &-sort {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    &__title {
+      margin-right: 18px;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      color: rgba(117, 117, 117, 0.5);
+    }
+    &__month {
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      color: #03396B;
+    }
+    &__bg {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      color: #000000;
+    }
+    &__text {
+      margin-right: 10px;
+    }
+  }
+} */
 
 .result-total__header {
   display: -webkit-box;
