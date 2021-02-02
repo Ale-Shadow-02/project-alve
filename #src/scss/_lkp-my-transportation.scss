@@ -149,6 +149,7 @@
   transform: rotate(-180deg);
 }
 
+
 .bid-hauling {
   display: flex;
   flex-direction: column;
@@ -183,17 +184,21 @@
   &__filter {
   }
   &__reqvuisition {
+    width: 835px;
     background: #FCFCFC;
     border: 1px solid rgba(234, 234, 234, 0.5);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
     border-radius: 6px;
+    @media (max-width:1180px){
+      width: 100%;
+    }
     &--title {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-left: 2px;
       margin-right: 2px;
-      padding: 15px;
+      padding-left: 15px;
       border: 1px solid #EAEAEA;
       border-radius: 6px 6px 0px 0px;
     }
@@ -208,6 +213,24 @@
       font-size: 18px;
       line-height: 21px;
     }
+  }
+}
+
+.wrap {
+  &__requests {
+    display: flex;
+    width: 82%;
+  }
+}
+.wrap-center {
+  display: flex;
+  width: 82%;
+  @media (max-width:1180px){
+    width: 75%;
+  }
+  @media (max-width:768px){
+    width: 70%;
+    justify-content: space-between;
   }
 }
 .choice {
@@ -999,6 +1022,9 @@
     align-items: center;
     justify-content: center;
     margin-right: 9px;
+    @media (max-width:768px){
+      width: 100%;
+    }
     @media (max-width:576px){
       display: none;
     }
@@ -1032,6 +1058,9 @@
     line-height: 15px;
     padding: 0 8px;
     height: 36px;
+    @media (max-width:1180px){
+      border-right: none;
+    }
     @media (max-width:768px){
       width: 100%;
     }
@@ -1064,7 +1093,6 @@
     border-left: none;
   }
   &__arrow {
-    // transform: rotateX(180deg);
   }
 }
 .number2 {
@@ -2196,14 +2224,14 @@
     }
   }
   &__date {
-    width: 20%;
+    width: 27%;
     padding: 0px 15px;
     @media (max-width:1180px){
       width: 162px;
       border-right: none;
     }
     @media (max-width:768px){
-      width: 30%;
+      width: 50%;
     }
     @media (max-width:576px){
       display: none;
@@ -2236,7 +2264,7 @@
       &-car {
         border-right: none;
         padding: 0px 5px;
-        width: 120px;
+        width: 140px;
         @media (max-width:1180px){
           display: none;  
         }
@@ -2246,6 +2274,9 @@
       margin: 0px 3px 0px 0px;
     }
   }
+}
+.wrap-active {
+  display: none;
 }
 
 
