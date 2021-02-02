@@ -529,6 +529,12 @@ span {
           transform: rotate(-180deg);
 }
 
+.bid__arrow--active {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
 .bid-hauling {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1410,11 +1416,6 @@ span {
   height: 50px;
   border-left: 1px solid #E8E8E8;
   cursor: pointer;
-}
-
-.requests-unfurl__arrow {
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
 }
 
 .history {

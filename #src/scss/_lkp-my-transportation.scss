@@ -145,6 +145,10 @@
   }
 }
 
+.bid__arrow--active {
+  transform: rotate(-180deg);
+}
+
 .bid-hauling {
   display: flex;
   flex-direction: column;
@@ -1060,7 +1064,7 @@
     border-left: none;
   }
   &__arrow {
-    transform: rotateX(180deg);;
+    // transform: rotateX(180deg);
   }
 }
 .number2 {

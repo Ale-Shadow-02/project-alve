@@ -48,6 +48,7 @@ arrowLink.addEventListener("click", (e) => {
   let target = e.target;
   if (target) {
     data.classList.toggle("active-data");
+    arrowLink.classList.toggle("bid__arrow--active");
   }
 });
 
@@ -60,6 +61,7 @@ arrowFullDataLink.addEventListener("click", (e) => {
   let target = e.target;
   if (target) {
     resultFullData.classList.toggle("active-full__data");
+    arrowFullDataLink.classList.toggle("bid__arrow--active");
   }
 });
 ;
