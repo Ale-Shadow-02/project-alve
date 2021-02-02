@@ -3108,6 +3108,28 @@ span {
   }
 }
 
+@media (max-width: 675px) {
+  .other {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .other-sort {
+    margin-right: 0;
+  }
+
+  .other-sort__title {
+    margin-right: 5px;
+    text-align: left;
+  }
+
+  .pagination {
+    margin-bottom: 15px;
+  }
+}
+
 @media (max-width: 576px) {
   .aside {
     margin-bottom: 30px;

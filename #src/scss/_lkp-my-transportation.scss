@@ -1929,16 +1929,26 @@
   justify-content: space-between;
   margin-top: 23px;
   margin-bottom: 44px;
+  @media (max-width:675px){
+    flex-direction: column;
+  }
   &-sort {
     display: flex;
     align-items: center;
     margin-right: 30px;
+    @media (max-width:675px){
+      margin-right: 0;
+    }
     &__title {
       margin-right: 18px;
       font-size: 14px;
       line-height: 16px;
       text-align: center;
       color: rgba(117, 117, 117, 0.5);
+      @media (max-width:675px){
+        margin-right: 5px;
+        text-align: left;
+      }
     }
     &__active {
       font-weight: 500;
@@ -1961,6 +1971,9 @@
 }
 .pagination {
   display: flex;
+  @media (max-width:675px){
+    margin-bottom: 15px;
+  }
 }
 .page-item {
   width: 37px;
