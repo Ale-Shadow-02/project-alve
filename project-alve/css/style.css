@@ -263,7 +263,7 @@ span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 80px;
+  height: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -281,6 +281,7 @@ span {
 .header__logo img {
   max-width: 100%;
   display: block;
+  height: 28px;
 }
 
 .header__burger {
@@ -2537,6 +2538,8 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2550,6 +2553,49 @@ span {
   font-size: 12px;
   line-height: 14px;
   color: #BDBDBD;
+  margin-right: 15px;
+}
+
+.footer-block__mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 233px;
+          flex: 0 0 233px;
+}
+
+.footer-block__mobile--text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #FFFFFF;
+  width: 80px;
+  margin-right: 10px;
+}
+
+.footer-block__mobile--link {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #016B45;
+  border-radius: 20px;
+  padding: 5px 20px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.footer-block__mobile--link:hover {
+  background: #005234;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .footer-list {
@@ -2824,6 +2870,10 @@ span {
 
   .result-total__item--box-car {
     display: none;
+  }
+
+  .footer-block__text {
+    margin-bottom: 15px;
   }
 }
 
@@ -3392,7 +3442,15 @@ span {
 
   .footer-block__text {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .footer-block__mobile {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin-bottom: 20px;
+    width: 100%;
   }
 
   .footer-list {

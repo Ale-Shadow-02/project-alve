@@ -132,7 +132,7 @@
       position: relative;
       display: flex;
       justify-content: space-between;
-      height: 80px;
+      height: 60px;
       align-items: center;
    }
 
@@ -145,6 +145,7 @@
       & img {
          max-width: 100%;
          display: block;
+         height: 28px;
       }
    }
 
