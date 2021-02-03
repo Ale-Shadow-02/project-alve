@@ -26,4 +26,6 @@ $(document).ready(function () {
   });
 });
 
+// форма входа по радио-кнопке
+@@include("location.js", {});
 @@include("app.js", {});
