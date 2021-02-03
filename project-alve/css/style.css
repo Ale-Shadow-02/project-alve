@@ -316,13 +316,13 @@ span {
 }
 
 .authorization {
-  padding: 157px 0px 35px 0px;
+  padding: 100px 0px 35px 0px;
 }
 
 .form {
   background: #016B45;
   border-radius: 6px;
-  width: 400px;
+  width: 540px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,7 +330,7 @@ span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 28px 40px;
+  padding: 35px 55px 45px 55px;
   margin: 0 auto;
 }
 
@@ -340,8 +340,7 @@ span {
   line-height: 36px;
   text-align: center;
   color: #FFFFFF;
-  width: 300px;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 .form__input--label {
@@ -349,10 +348,11 @@ span {
   font-size: 14px;
   line-height: 16px;
   color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 14px;
 }
 
 .form__input {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   background: #FFFFFF;
   border: 1px solid #B7BFC3;
   -webkit-box-sizing: border-box;
@@ -361,12 +361,16 @@ span {
   padding: 15px 0px 15px 15px;
 }
 
+.form__input--radio {
+  margin-right: 5px;
+}
+
 .form__role--label {
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   color: rgba(255, 255, 255, 0.75);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .form__role--label-radio {
@@ -375,11 +379,16 @@ span {
   line-height: 18px;
   color: #FFFFFF;
   margin-right: 40px;
+  vertical-align: 1px;
   display: inline-block;
 }
 
+.form__role--label-radio-first {
+  margin-right: 25%;
+}
+
 .form__role {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 .form__btn {
@@ -388,7 +397,7 @@ span {
   line-height: 23px;
   text-align: center;
   color: #FFFFFF;
-  padding: 18px 50px;
+  padding: 18px 35px;
   background: #1D1D1D;
   border-radius: 6px;
   min-width: 250px;
@@ -2877,6 +2886,12 @@ span {
   }
 }
 
+@media (max-width: 992px) {
+  .authorization {
+    padding: 80px 0 15px 0;
+  }
+}
+
 @media (max-width: 768px) {
   .header__app--title {
     font-size: 16px;
@@ -3011,10 +3026,6 @@ span {
 }
 
 @media (max-width: 680px) {
-  .authorization {
-    padding-top: 100px;
-  }
-
   .form {
     width: 100%;
     padding: 28px;
