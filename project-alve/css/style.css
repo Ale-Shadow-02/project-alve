@@ -208,7 +208,7 @@ span {
   color: #FFFFFF;
   border: 2px solid #495057;
   border-radius: 5px;
-  padding: 12px 22px;
+  padding: 8px 22px;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -431,6 +431,10 @@ span {
   margin-right: 10px;
 }
 
+.navbar-active {
+  background: #005234;
+}
+
 .navbar__logo {
   width: 124px;
   display: block;
@@ -481,9 +485,9 @@ span {
   margin-left: 10px;
   vertical-align: 1px;
   content: "";
-  border-top: 0;
+  border-top: 7px solid;
   border-right: 7px solid transparent;
-  border-bottom: 7px solid;
+  border-bottom: 0;
   border-left: 7px solid transparent;
 }
 
@@ -2634,7 +2638,7 @@ span {
   }
 
   .my-transportation {
-    padding: 80px 0px 35px 0px;
+    padding: 60px 0px 35px 0px;
   }
 
   .my-transportation__body {

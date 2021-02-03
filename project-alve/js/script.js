@@ -24,59 +24,58 @@ $(document).ready(function () {
     $(".header__burger,.header__menu").toggleClass("active");
     $("body").toggleClass("lock");
   });
+
+  //Скрипт активной ссылки
+  $(function () {
+    $(".navbar a").each(function () {
+      var location = window.location.href;
+      if (this.href == location) {
+        $(this).addClass("navbar-active");
+      }
+    });
+  });
 });
 
-// форма входа по радио-кнопке
-let radios = document.querySelectorAll('input[type="radio"]');
-let btn = document.querySelector(".form__btn");
-btn.addEventListener("click", function () {
-  for (let key of radios) {
-    if (key.checked) {
-      window.location.href = `${key.value}`;
+window.onload = function () {
+  // Выпадающее меню сайдиара
+  let linkClick = document.querySelector(".navbar__list--link-dropdown");
+  let subMenu = document.querySelector(".navbar__submenu--list");
+  linkClick.addEventListener("click", (e) => {
+    e.preventDefault();
+    let target = e.target;
+    if (target) {
+      subMenu.classList.toggle("active");
+      linkClick.classList.toggle("arrow-top");
     }
-  }
-});
-;
-// Выпадающее меню сайдиара
+  });
 
-let linkClick = document.querySelector(".navbar__list--link-dropdown");
-let subMenu = document.querySelector(".navbar__submenu--list");
-linkClick.addEventListener("click", function (e) {
-  e.preventDefault();
-  let target = e.target;
-  if (target) {
-    subMenu.classList.toggle("active");
-    linkClick.classList.toggle("arrow-top");
-  }
-});
+  //Раскрытие таба data
 
-// Раскрытие таба data
+  let arrowLink = document.querySelector(".bid__reqvuisition--arrow");
+  let data = document.querySelector(".data");
+  let wrapStage = document.querySelector(".wrap__requests-stage");
+  arrowLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    let target = e.target;
+    if (target) {
+      data.classList.toggle("active-data");
+      arrowLink.classList.toggle("bid__arrow--active");
+      wrapStage.classList.toggle("wrap-active");
+    }
+  });
 
-let arrowLink = document.querySelector(".bid__reqvuisition--arrow");
-let data = document.querySelector(".data");
-let wrapStage = document.querySelector(".wrap__requests-stage");
-arrowLink.addEventListener("click", (e) => {
-  e.preventDefault();
-  let target = e.target;
-  if (target) {
-    data.classList.toggle("active-data");
-    arrowLink.classList.toggle("bid__arrow--active");
-    wrapStage.classList.toggle("wrap-active");
-  }
-});
+  //Раскрытие таба result-full__data
 
-//Раскрытие таба result-full__data
-
-let arrowFullDataLink = document.querySelector(".bid__requisition--arrow");
-let resultFullData = document.querySelector(".result-full__data");
-let wrapCenter = document.querySelector(".wrap-center__total");
-arrowFullDataLink.addEventListener("click", (e) => {
-  e.preventDefault();
-  let target = e.target;
-  if (target) {
-    resultFullData.classList.toggle("active-full__data");
-    arrowFullDataLink.classList.toggle("bid__arrow--active");
-    wrapCenter.classList.toggle("wrap-active");
-  }
-});
-;
+  let arrowFullDataLink = document.querySelector(".bid__requisition--arrow");
+  let resultFullData = document.querySelector(".result-full__data");
+  let wrapCenter = document.querySelector(".wrap-center__total");
+  arrowFullDataLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    let target = e.target;
+    if (target) {
+      resultFullData.classList.toggle("active-full__data");
+      arrowFullDataLink.classList.toggle("bid__arrow--active");
+      wrapCenter.classList.toggle("wrap-active");
+    }
+  });
+};
