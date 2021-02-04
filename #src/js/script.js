@@ -34,6 +34,14 @@ $(document).ready(function () {
       }
     });
   });
+  $(function () {
+    $(".navbar__submenu--list a").each(function () {
+      var location = window.location.href;
+      if (this.href == location) {
+        $(this).addClass("navbar-submenu-active");
+      }
+    });
+  });
 });
 
 window.onload = function () {

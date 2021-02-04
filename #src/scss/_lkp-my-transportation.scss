@@ -39,6 +39,9 @@
   &-active {
     background: #005234;
   }
+  &-submenu-active {
+    background: #00301F;
+  }
   &__logo {
     width: 124px;
     display: block;
@@ -107,7 +110,6 @@
       list-style: none;
       border-top: 1px solid;
       border-color: #005234;
-      padding: 0px 15px;
       background: #0B4430;
       display: none;
     }
@@ -115,7 +117,12 @@
       border-top: 1px solid #00301F;
       display: flex;
       align-items: center;
-      padding-left: 28px;
+      height: 55px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        background:#0e8158;
+      }
       @media (max-width:1180px){
         justify-content: center;
         padding-left: 0;
@@ -123,20 +130,28 @@
       &:first-child {
         border-top: none;
       }
-      &-img {
-        display: block;
-      }
     }
     &--link {
+      position: relative;
       font-weight: 400;
       font-size: 14px;
       line-height: 16px;
       text-transform: inherit;
       color: #FFFFFF;
-      padding: 20px 0;
-      margin-left: 15px;
-      &:hover {
-        background: #0B4430;
+      padding-left: 50px;
+      width: 100%;
+      height: 100%;
+      display: flex; 
+      align-items: center;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 24px;
+        left: 27px;
+        width: 8px;
+        height: 7px;
+        background:#fff;
+        border-radius: 50%;
       }
     }
   }
