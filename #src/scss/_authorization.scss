@@ -42,7 +42,7 @@
     border-radius: 4px;
     padding: 15px 0px 15px 15px;
     &--radio {
-      margin-right: 5px;
+      display: none;
     }
   }
   &__role--label {
@@ -84,4 +84,33 @@
     display: block;
     margin: 0 auto;
   }
+}
+
+.new {
+  &__radio {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 5px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 7px;
+      height: 7px;
+      border-radius:50%;
+      background-color: #000000;
+      opacity: 0;
+      transition: all 0.3s ease 0s; 
+    }
+  }
+}
+.form__input--radio:checked + .new__radio::before {
+  opacity: 1;
 }
