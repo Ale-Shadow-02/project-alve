@@ -45,15 +45,31 @@ $(document).ready(function () {
 });
 
 window.onload = function () {
-  // Выпадающее меню сайдиара
-  let linkClick = document.querySelector(".navbar__list--link-dropdown");
-  let subMenu = document.querySelector(".navbar__submenu--list");
-  linkClick.addEventListener("click", (e) => {
+  // Выпадающее меню сайдbара
+
+  let linkDesktop = document.querySelector(".navbar__list--link-desktop");
+  let subMenu = document.querySelector(".navbar__submenu--list-desktop");
+  let decktopArrow = document.querySelector(".navbar__submenu--link-desktop");
+  linkDesktop.addEventListener("click", (e) => {
     e.preventDefault();
     let target = e.target;
     if (target) {
-      subMenu.classList.toggle("active");
-      linkClick.classList.toggle("arrow-top");
+      subMenu.classList.toggle("active-desktop");
+      decktopArrow.classList.toggle("decktop-arrow");
+    }
+  });
+
+  //Выпадающее меню мобильного сайдбара
+
+  let linkMobile = document.querySelector(".navbar__list--link-dropdown");
+  let subMenuMobile = document.querySelector(".navbar__submenu--list-mobile");
+  let mobileArrow = document.querySelector(".navbar__list--link-mobile");
+  linkMobile.addEventListener("click", (e) => {
+    e.preventDefault();
+    let target = e.target;
+    if (target) {
+      subMenuMobile.classList.toggle("active-desktop");
+      mobileArrow.classList.toggle("mobile-arrow");
     }
   });
 

@@ -185,7 +185,7 @@
    }
 }
 
-@media (max-width:576px) {
+@media (max-width:1180px) {
    body.lock {
       overflow: hidden;
    }
@@ -264,13 +264,17 @@
       &__menu {
          position: fixed;
          top: -100%;
-         left: 0;
-         width: 100%;
+         left: 50%;
+         transform: translate(-50%);
+         width: 768px;
          height: 100%;
          overflow: auto;
          transition: all 0.3s ease 0s;
          background-color: #016B45;
-         padding: 120px 10px 20px 10px;
+         padding: 80px 0px 20px 0px;
+         @media (max-width:768px){
+            width: 100%;
+         }
       }
 
       &__menu {
