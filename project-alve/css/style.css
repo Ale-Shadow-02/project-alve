@@ -359,6 +359,7 @@ span {
           box-sizing: border-box;
   border-radius: 4px;
   padding: 15px 0px 15px 15px;
+  width: 100%;
 }
 
 .form__input--radio {
@@ -436,6 +437,24 @@ span {
 
 .form__input--radio:checked + .new__radio::before {
   opacity: 1;
+}
+
+.form__password--wrap {
+  position: relative;
+}
+
+.password-control {
+  position: absolute;
+  top: 11px;
+  right: 6px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/main/visibility-password.svg) 0 0 no-repeat;
+}
+
+.password-control.view {
+  background: url(../img/main/hidden-password.svg) 0 0 no-repeat;
 }
 
 .my-transportation {
