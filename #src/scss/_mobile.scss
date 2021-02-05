@@ -205,7 +205,7 @@
       &__burger {
          display: block;
          position: relative;
-         width: 30px;
+         width: 28px;
          height: 20px;
          position: relative;
          z-index: 3;
@@ -216,7 +216,7 @@
             position: absolute;
             left: 0;
             width: 100%;
-            height: 2px;
+            height: 3px;
             top: 9px;
             transition: all 0.3s ease 0s;
          }
@@ -228,7 +228,7 @@
          background-color: #B6B6B6;
          position: absolute;
          width: 100%;
-         height: 2px;
+         height: 3px;
          left: 0;
          transition: all 0.3s ease 0s;
       }
@@ -254,7 +254,7 @@
          &.active {
             &:before {
                transform: rotate(45deg);
-               top: 9px;
+               top: 8px;
             }
          }
       }
