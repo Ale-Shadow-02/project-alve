@@ -102,4 +102,30 @@ window.onload = function () {
       wrapCenter.classList.toggle("wrap-active");
     }
   });
+
+  //Раскрытие блока настройки
+  let settingOpen = document.querySelector(".result-total__header--setting");
+  let blockOpen = document.querySelector(".setting-modal");
+  let settingClose = document.querySelector(".setting-modal__close");
+
+  settingOpen.addEventListener("click", (e) => {
+    if (e.target) {
+      blockOpen.classList.toggle("setting-open");
+    }
+  });
+
+  //Закрытие блока настройки
+  // settingClose.addEventListener("click", function () {
+  //   blockOpen.classList.toggle("setting-open");
+  // });
 };
+
+// $(document).ready(function () {
+//   $(".result-total__header--setting").on("click", function () {
+//     $(".setting-modal").show();
+//   });
+
+//   $(".setting-modal__close").on("click", function () {
+//     $(".setting-modal").hide();
+//   });
+// });
