@@ -1,3 +1,7 @@
+.number-test {
+  margin-bottom: 40px;
+}
+
 .bid {
   &__reqvuisition {
     &--lkz {
@@ -60,7 +64,7 @@
 .result-total {
   &__ordinal {
     &--lkz {
-      width: 120px;
+      width: 122px;
     }
   }
   &__sity {
@@ -82,3 +86,44 @@
     }
   }
 }
+.line4-additional {
+  &__block {
+    &--lkz {
+      flex: 0 1 100%;
+    }
+  }
+}
+.result-total {
+  &__header {
+    &--title {
+      &-lkz {
+        &-col1 {
+          flex: 0 1 123px;
+        }
+        &-col2 {
+          flex: 0 1 315px;
+        }
+        &-col3 {
+          flex: 0 1 173px;
+        }
+        &-col4 {
+          flex: 0 1 172px;
+        }
+        &-col5 {
+          flex: 0 1 80px;
+        }
+        &-col6 {
+          flex: 0 1 90px;
+        }
+        &-col7 {
+          flex: 0 1 90px;
+          @media (max-width:1180px){
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+

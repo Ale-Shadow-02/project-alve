@@ -54,10 +54,16 @@
     width: 124px;
     display: block;
     border-radius: 50%;
-    margin: 0px auto 26px auto;
+    background-color: #fff;
+    margin: 0px auto 5px auto;
     @media (max-width:768px){
       width: 64px;
       margin: 0 auto 8px auto;
+    }
+    &--role {
+      color: #ccc;
+      text-align: center;
+      margin: 0px 0px 20px 0px;
     }
   }
   &__title {

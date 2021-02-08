@@ -3,7 +3,8 @@
     <div class="my-transportation__body">
       <aside class="aside">
         <nav class="navbar">
-          <img src="img/main/kurt_trans_logo.svg" alt="LOGO MENU" class="navbar__logo" />
+          <img src="img/main/user-icon.svg" alt="LOGO MENU" class="navbar__logo" />
+          <span class="navbar__logo--role">Заказчик</span>
           <span class="navbar__title">Транспортная компания</span>
           <span class="navbar__title">«KURT TRANS»</span>
           <ul class="navbar__list">
@@ -279,9 +280,8 @@
                       <div class="cargo-block__last">
                         <img src="img/main/icon-calendar.svg" alt="" class="cargo-block__image">
                         <div class="cargo-block__type">
-                          <span class="cargo-block__title data__transportation--title">Условия оплаты:</span>
-                          <span class="cargo-block__name data__transportation--text cargo-block__line">В течении 5 дней
-                            после отправки документов</span>
+                          <span class="cargo-block__title data__transportation--title">Срок оплаты:</span>
+                          <span class="cargo-block__name data__transportation--text cargo-block__line">20.11.20-30.11.20</span>
                         </div>
                       </div>
                     </div>
@@ -743,12 +743,13 @@
           <div class="result-block">
             <div class="result-total">
               <div class="result-total__header">
-                <span class="result-total__header--title result-total__header--title-col1" id="block-1">Заявка</span>
-                <span class="result-total__header--title result-total__header--title-col2">Маршрут</span>
-                <span class="result-total__header--title result-total__header--title-col3">Период перевозки</span>
-                <span class="result-total__header--title result-total__header--title-col4">Логист</span>
-                <span class="result-total__header--title result-total__header--title-col5">Транспорт</span>
-                <span class="result-total__header--title result-total__header--title-col6">Госномер</span>
+                <span class="result-total__header--title result-total__header--title-col1 result-total__header--title-lkz-col1" id="block-1">Заявка</span>
+                <span class="result-total__header--title result-total__header--title-col2 result-total__header--title-lkz-col2">Маршрут</span>
+                <span class="result-total__header--title result-total__header--title-col3 result-total__header--title-lkz-col3">Период перевозки</span>
+                <span class="result-total__header--title result-total__header--title-col4 result-total__header--title-lkz-col4">Логист</span>
+                <span class="result-total__header--title result-total__header--title-col5 result-total__header--title-lkz-col5">Транспорт</span>
+                <span class="result-total__header--title result-total__header--title-col6 result-total__header--title-lkz-col6">Госномер</span>
+                <span class="result-total__header--title result-total__header--title-col7 result-total__header--title-lkz-col7">Оплата</span>
                 <div class="result-total__header--setting">
                   <img src="img/main/gear.svg" alt="setting" class="result-total__header--setting-img">
                   <div class="setting-modal">
@@ -800,7 +801,7 @@
             </div>
             <!--/.result-total-->
 
-            <div class="requests-number number1 result-total__item">
+            <div class="requests-number number-test result-total__item">
               <div class="requests-number__ordinal result-total__ordinal result-total__ordinal--lkz">
                 <span class="bid__reqvuisition--text requests-number__text">№ 1000005</span>
               </div>
@@ -994,16 +995,6 @@
                       <span class="cargo-block__name data__transportation--text">20.11.20-30.11.20</span>
                     </div>
                   </div>
-                  <!-- <div class="cargo-block line3-terms line3__no">
-                    <img src="img/main/icon-calendar.svg" alt="" class="cargo-block__image">
-                    <div class="cargo-block__type">
-                      <span class="cargo-block__title data__transportation--title">Условия
-                        оплаты:</span>
-                      <span class="cargo-block__name data__transportation--text">В течении 5 дней
-                        после отправки
-                        документов </span>
-                    </div>
-                  </div> -->
                 </div>
                 <!-- /.funds.cargo -->
               </div>
@@ -1048,7 +1039,7 @@
                         <span class="bid-document__text">ТТН, pdf</span>
                       </a>
                     </li>
-                    <li class="bid-document__item">
+                    <!-- <li class="bid-document__item">
                       <a href="#" class="bid-document__item--link">
                         <img src="img/main/pdf.svg" alt="" class="bid-document__image">
                         <span class="bid-document__text">Свидетельство транспортного средства, pdf</span>
@@ -1059,12 +1050,12 @@
                         <img src="img/main/pdf.svg" alt="" class="bid-document__image">
                         <span class="bid-document__text">Технический паспорт, pdf</span>
                       </a>
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
                 <!-- /.bid-document -->
                 <div class="bid-additional line4-additional">
-                  <div class="line4-additional__block">
+                  <div class="line4-additional__block line4-additional__block--lkz">
                     <span class="bid-additional__title">Дополнительная информация:</span>
                     <p class="bid-additional__text">Lorem ipsum dolor sit amet, consectetur adipiscing
                       elit. Mauris
@@ -1078,14 +1069,14 @@
                         euismod dolor
                         ligula a dolor. Integer dictum fermentum ligula a pretium.</p>
                   </div>
-                  <div class="line4-additional__block">
+                  <!-- <div class="line4-additional__block">
                     <span class="bid-additional__title">Дополнительные условия:</span>
                     <p class="bid-additional__text bid-additional__text2">
                       Integer dictum fermentum ligula a pretium. Phasellus a mollis justo. Donec hendrerit, metus ut
                       scelerisque blandit, elit nulla scelerisque tortor, eget euismod dolor ligula a dolor. Integer
                       dictum fermentum ligula a pretium. Morbi id egestas nisl. Quisque tristique euismod neque, in
                       facilisis enim facilisis a.</p>
-                  </div>
+                  </div> -->
                 </div>
                 <!-- /.bid-additional -->
               </div>
@@ -1094,7 +1085,7 @@
             <!--result-full__data-->
 
 
-            <div class="requests-number number1 result-total__item">
+            <div class="requests-number result-total__item">
               <div class="requests-number__ordinal result-total__ordinal result-total__ordinal--lkz">
                 <span class="bid__reqvuisition--text requests-number__text">№ 1000001</span>
               </div>
@@ -1138,7 +1129,7 @@
               </div>
             </div>
             <!-- 1 -->
-            <div class="requests-number number1 result-total__item">
+            <div class="requests-number result-total__item">
               <div class="requests-number__ordinal result-total__ordinal result-total__ordinal--lkz">
                 <span class="bid__reqvuisition--text requests-number__text">№ 1000002</span>
               </div>
@@ -1182,7 +1173,7 @@
               </div>
             </div>
             <!-- 2 -->
-            <div class="requests-number number1 result-total__item">
+            <div class="requests-number result-total__item">
               <div class="requests-number__ordinal result-total__ordinal result-total__ordinal--lkz">
                 <span class="bid__reqvuisition--text requests-number__text">№ 1000003</span>
               </div>
@@ -1226,7 +1217,7 @@
               </div>
             </div>
             <!-- 3 -->
-            <div class="requests-number number1 result-total__item">
+            <div class="requests-number result-total__item">
               <div class="requests-number__ordinal result-total__ordinal result-total__ordinal--lkz">
                 <span class="bid__reqvuisition--text requests-number__text">№ 1000004</span>
               </div>
