@@ -1,0 +1,33 @@
+.bid {
+  &__reqvuisition {
+    &--lkz {
+      width: 100%;
+    }
+    &--number {
+      &-lkz {
+        width: 130px;
+        height: 50px;
+        border-right: 1px solid #ebebeb;
+        margin-right: 9px;
+      }
+    }
+    &--title {
+      &-lkz {
+        padding-left: 8px;
+      }
+    }
+  }
+}
+
+.requests-stage {
+  &__payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 36px;
+    @media (max-width:1180px){
+      display: none;
+    }
+  }
+}

@@ -716,6 +716,9 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bid__reqvuisition--img {
@@ -1523,20 +1526,6 @@ span {
   font-size: 13px;
   line-height: 15px;
   padding: 0 8px;
-  height: 36px;
-}
-
-.requests-stage__payment {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 110px;
   height: 36px;
 }
 
@@ -2749,6 +2738,35 @@ span {
   transition: all 0.4s ease 0s;
 }
 
+.bid__reqvuisition--lkz {
+  width: 100%;
+}
+
+.bid__reqvuisition--number-lkz {
+  width: 130px;
+  height: 50px;
+  border-right: 1px solid #ebebeb;
+  margin-right: 9px;
+}
+
+.bid__reqvuisition--title-lkz {
+  padding-left: 8px;
+}
+
+.requests-stage__payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90px;
+  height: 36px;
+}
+
 .footer {
   background: #1B242D;
   padding: 15px 0px;
@@ -3207,6 +3225,10 @@ span {
   }
 
   .result-total__item--box-car {
+    display: none;
+  }
+
+  .requests-stage__payment {
     display: none;
   }
 
