@@ -31,3 +31,18 @@
     }
   }
 }
+.funds {
+  @media (max-width:576px){
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.cargo-block {
+  &__last {
+    @media (max-width:576px){
+      flex: 0 1 100%;
+      padding-top: 10px;
+      border-top: 1px solid #e7e7e7;
+    }
+  }
+}
