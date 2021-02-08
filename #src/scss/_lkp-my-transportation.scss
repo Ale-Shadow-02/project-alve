@@ -1859,11 +1859,12 @@
   width: 290px;
   padding: 18px;
   cursor: default;
-  height: 0;
+  z-index: 10;
+ /*  height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: all 0.4s ease 0s;
-  /*display: none;*/
+  transition: all 0.4s ease 0s; */
+  display: none;
   &__close {
     position: absolute;
     top: 20px;
@@ -1924,10 +1925,11 @@
 }
 
 .setting-open {
-  height: 320px;
+  /* height: 320px;
   overflow: visible;
   opacity: 1;
-  transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s; */
+  display: block;
 }
 
 

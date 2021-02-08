@@ -2649,13 +2649,12 @@ span {
   width: 290px;
   padding: 18px;
   cursor: default;
-  height: 0;
+  z-index: 10;
+  /*  height: 0;
   overflow: hidden;
   opacity: 0;
-  -webkit-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-  /*display: none;*/
+  transition: all 0.4s ease 0s; */
+  display: none;
 }
 
 .setting-modal__close {
@@ -2730,12 +2729,11 @@ span {
 }
 
 .setting-open {
-  height: 320px;
+  /* height: 320px;
   overflow: visible;
   opacity: 1;
-  -webkit-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s; */
+  display: block;
 }
 
 .bid__reqvuisition--lkz {
@@ -2765,6 +2763,25 @@ span {
           justify-content: center;
   width: 90px;
   height: 36px;
+}
+
+.cargo-block__lkz {
+  max-width: none;
+}
+
+.result-total__ordinal--lkz {
+  width: 120px;
+}
+
+.result-total__sity {
+  width: 133px;
+}
+
+.wrap-center__lkz {
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer {
@@ -3700,6 +3717,18 @@ span {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
     padding-top: 10px;
+    border-top: 1px solid #e7e7e7;
+  }
+
+  .cargo-block__lkz--cost,
+  .cargo-block__lkz--indebtedness {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    padding-bottom: 10px;
+  }
+
+  .funds__cargo-block--last {
     border-top: 1px solid #e7e7e7;
   }
 }

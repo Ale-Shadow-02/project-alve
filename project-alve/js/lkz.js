@@ -64,7 +64,7 @@ window.onload = function () {
 
   let arrowFullDataLink = document.querySelector(".bid__requisition--arrow");
   let resultFullData = document.querySelector(".result-full__data");
-  let wrapCenter = document.querySelector(".wrap-center__total");
+  let wrapCenter = document.querySelector(".wrap-center__lkz");
   arrowFullDataLink.addEventListener("click", (e) => {
     e.preventDefault();
     let target = e.target;
