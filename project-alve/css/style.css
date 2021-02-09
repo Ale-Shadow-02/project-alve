@@ -37,10 +37,24 @@ body {
 }
 
 .span-title__info {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   color: rgba(0, 0, 0, 0.5);
+}
+
+.info__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.span-title__info--text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #2A2A2A;
 }
 
 /*Обнуление*/
@@ -2999,10 +3013,6 @@ span {
   height: auto;
 }
 
-.drivers-tab__header:first-child {
-  margin: 0px 0px 20px 0px;
-}
-
 .drivers-tab__header--block {
   padding: 0px 50px 0px 12px;
 }
@@ -3107,6 +3117,73 @@ span {
 
 .drivers-tab__input:checked + .drivers-tab__new--checkbox::after {
   opacity: 0;
+}
+
+.drivers-info {
+  background: #FCFCFC;
+  border: 1px solid rgba(234, 234, 234, 0.5);
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.drivers-info__property {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 13px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.drivers-info__property--label {
+  margin: 0px 0px 10px 0px;
+}
+
+.drivers-info__ticket--data {
+  padding: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.drivers-info__ticket--title {
+  padding: 13px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.drivers-info__ticket--number {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+}
+
+.drivers-info__ticket--date {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 22%;
+          flex: 0 1 22%;
+}
+
+.drivers-info__ticket--date-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.drivers-info__ticket--date-img {
+  margin: 0px 10px 0px 0px;
+}
+
+.drivers-info__ticket--date-text {
+  margin: 0px 0px 0px 28px;
 }
 
 .footer {
@@ -3741,6 +3818,24 @@ span {
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
   }
+
+  .drivers-info__ticket--data {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .drivers-info__ticket--number {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 33%;
+            flex: 0 1 33%;
+  }
+
+  .drivers-info__ticket--date {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 33%;
+            flex: 0 1 33%;
+  }
 }
 
 @media (max-width: 685px) {
@@ -4094,6 +4189,42 @@ span {
 
   .drivers-tab__header--block-wrap {
     display: none;
+  }
+
+  .drivers-info__property {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .drivers-info__ticket--data {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .drivers-info__ticket--number {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+
+  .drivers-info__ticket--date {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+
+  .drivers-info__ticket--date:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin: 10px 0px 0px 0px;
+    border-top: 1px solid #e7e7e7;
+    padding: 10px 0px 0px 0px;
   }
 }
 

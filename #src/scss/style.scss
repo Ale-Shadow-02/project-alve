@@ -39,10 +39,22 @@ body {
 	text-transform: capitalize;
 }
 .span-title__info {
-	font-weight: normal;
+	font-weight: 400;
 	font-size: 12px;
 	line-height: 14px;
 	color: rgba(0, 0, 0, 0.5);
+}
+.info__title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #000000;
+}
+.span-title__info--text {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: #2A2A2A;
 }
 
 @import "_reset";
