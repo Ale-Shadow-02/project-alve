@@ -1,0 +1,92 @@
+.drivers {
+  padding: 90px 0px 0px 0px;
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    flex: 0 1 67%;
+    &--title {
+      margin: 0px 0px 5px 0px;
+    }
+  }
+  &__breadcrumbs {
+    margin: 0px 0px 25px 0px;
+  }
+}
+
+.surname {
+  display: flex;
+  margin: 0px 0px 10px 0px;
+  &__title {
+    margin: 0px 10px 0px 0px;
+    &--sort {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: #03396B;
+      margin: 0px 10px 0px 0px;
+    }
+  }
+}
+.property {
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 10px 0px;
+  &__title {
+    text-transform: none;
+    margin: 0px 10px 0px 0px;
+  }
+  &__input {
+    display: none;
+  }
+  &__label {
+    display: inline-block;  
+    margin: 0px 15px 0px 0px;
+    vertical-align: 5px;
+  }
+  &__new {
+    &--radio {
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: #FFFFFF;
+      border: 1px solid #DEDEDE;
+      border-radius: 50%;
+      margin: 0px 5px 0px 0px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #016B45;
+        opacity: 0; 
+        transition: all 0.3s ease 0s;
+      }
+    }
+  }
+}
+.property__input:checked + .property__new--radio::before {
+  opacity: 1;
+}
+.drivers-tab {
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 6px 6px 0px 0px;
+    &--block {
+      flex: 0 1 28%;
+    }
+  }
+}
+

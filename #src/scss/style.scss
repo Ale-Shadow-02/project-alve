@@ -11,7 +11,7 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-	 display: flex;
+	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	height: 100%; 
@@ -25,12 +25,32 @@ body {
 		max-width: 768px;
 	}
 }
+.page__title {
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 42px;
+	color: #000000;
+}
+.span-title {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: rgba(0, 0, 0, 0.5);
+	text-transform: capitalize;
+}
+.span-title__info {
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 14px;
+	color: rgba(0, 0, 0, 0.5);
+}
 
 @import "_reset";
 @import "fonts";
 @import "_mobile";
 @import "_authorization";
-@import "lkp-my-transportation";
-@import "lkz-my-transportation";
+@import "_lkp-my-transportation";
+@import "_lkz-my-transportation";
+@import "_lkp-drivers";
 @import "_footer";
 
