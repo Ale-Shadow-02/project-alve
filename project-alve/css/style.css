@@ -495,18 +495,32 @@ span {
   background: #00301F;
 }
 
-.navbar__logo {
+.navbar__wrap--logo {
   width: 124px;
-  display: block;
+  height: 124px;
   border-radius: 50%;
   background-color: #fff;
-  margin: 0px auto 5px auto;
+  margin: 0px auto 15px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__logo {
+  width: 95px;
+  opacity: 0.4;
 }
 
 .navbar__logo--role {
   color: #ccc;
   text-align: center;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 10px 0px;
 }
 
 .navbar__title {
@@ -2652,7 +2666,7 @@ span {
   position: absolute;
   top: 40px;
   right: -14px;
-  background: #e2dbdb;
+  background: #EDEDED;
   width: 290px;
   padding: 18px;
   cursor: default;
@@ -2692,7 +2706,7 @@ span {
   height: 25px;
   background-color: #ffffff;
   position: relative;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .setting-form__checkbox--new::before {
@@ -3345,9 +3359,14 @@ span {
     margin-right: 5px;
   }
 
-  .navbar__logo {
+  .navbar__wrap--logo {
     width: 64px;
+    height: 64px;
     margin: 0 auto 8px auto;
+  }
+
+  .navbar__logo {
+    width: 50px;
   }
 
   .wrap-center {

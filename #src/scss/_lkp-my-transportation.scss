@@ -50,20 +50,33 @@
   &-submenu-active {
     background: #00301F;
   }
+  &__wrap {
+    &--logo {
+      width: 124px;
+      height: 124px;
+      border-radius: 50%;
+      background-color: #fff;
+      margin: 0px auto 15px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width:768px){
+        width: 64px;
+        height: 64px;
+        margin: 0 auto 8px auto;
+      }
+    }
+  }
   &__logo {
-    width: 124px;
-    display: block;
-    border-radius: 50%;
-    background-color: #fff;
-    margin: 0px auto 5px auto;
+    width: 95px;
+    opacity: 0.4;
     @media (max-width:768px){
-      width: 64px;
-      margin: 0 auto 8px auto;
+      width: 50px;
     }
     &--role {
       color: #ccc;
       text-align: center;
-      margin: 0px 0px 20px 0px;
+      margin: 0px 0px 10px 0px;
     }
   }
   &__title {
@@ -1861,7 +1874,7 @@
   position: absolute;
   top: 40px;
   right: -14px;
-  background: #e2dbdb;
+  background: #EDEDED;
   width: 290px;
   padding: 18px;
   cursor: default;
@@ -1897,7 +1910,7 @@
       height: 25px;
       background-color: #ffffff;
       position: relative;
-      margin-right: 5px;
+      margin-right: 10px;
       &::before {
         content: "";
         position: absolute;
