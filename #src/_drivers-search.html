@@ -20,6 +20,57 @@
           </form>
         </div>
       </div>
+      <div class="filter">
+        <div class="filter__body">
+          <form action="#" class="filter__form">
+            <div class="filter__form--body">
+              <div class="filter__name filter__item">
+                <input type="text" name="filter__name" id="filter__name" class="filter__input" placeholder="ФИО водителя от А до Я">
+                <button type="submit" class="filter__btn">
+                  <img src="img/main/arrow3.svg" alt="ARROW-TOP" />
+                </button>
+              </div>
+              <div class="filter__property">
+                <span class="filter__title span-title">Автомобиль в собственности:</span>
+                <label for="filter-yes" class="filter__label">
+                  <input type="radio" name="property-filter" id="filter-yes" class="property__input" checked />
+                  <span class="property__new--radio"></span>
+                  <span class="filter__label--text span-title">Да</span>
+                </label>
+                <label for="filter-not" class="filter__label">
+                  <input type="radio" name="property-filter" id="filter-not" class="property__input" />
+                  <span class="property__new--radio"></span>
+                  <span class="filter__label--text span-title">Нет</span>
+                </label>
+              </div>
+              <div class="filter__brand filter__item">
+                <input type="text" name="filter__name" id="filter__name" class="filter__input" placeholder="Марка">
+                <button type="submit" class="filter__btn">
+                  <img src="img/main/arrow3.svg" alt="ARROW-TOP" />
+                </button>
+              </div>
+              <div class="filter__weight filter__item">
+                <input type="text" name="filter__name" id="filter__name" class="filter__input" placeholder="Грузоподъемность">
+                <button type="submit" class="filter__btn">
+                  <img src="img/main/arrow3.svg" alt="ARROW-TOP" />
+                </button>
+              </div>
+              <div class="filter__volume filter__item">
+                <input type="text" name="filter__name" id="filter__name" class="filter__input" placeholder="Объем кузова">
+                <button type="submit" class="filter__btn">
+                  <img src="img/main/arrow3.svg" alt="ARROW-TOP" />
+                </button>
+              </div>
+              <div class="filter__clean">
+                <button type="reset" class="filter__btn--reset">Очистить фильтр</button>
+              </div>
+              <div class="filter__submit">
+                <button type="submit" class="filter__submit--btn btn__link">Фильтровать заявки</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </section>

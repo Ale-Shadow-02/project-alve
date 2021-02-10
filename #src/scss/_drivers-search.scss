@@ -1,9 +1,8 @@
+//!Стили блока поиск
 .drivers-search {
   padding: 40px 0px 20px 0px;
   @media (max-width:576px){
     padding: 30px 0px 20px 0;
-  }
-  &__body {
   }
   &__title {
     margin: 0px 0px 15px 0px;
@@ -11,13 +10,6 @@
       font-size: 24px;
       line-height: 28px;
     }
-  }
-}
-.container {
-}
-.section {
-  &__title {
-   
   }
 }
 .search {
@@ -124,4 +116,97 @@
       color: rgba(0, 0, 0, 0.5);
     }
   }
+}
+// ! Стили блока фильтр ==========================================================
+.filter {
+  &__body {
+    background: rgba(27, 36, 45, 0.8);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 0px 0px 6px 6px;
+    padding: 20px;
+  }
+  &__form {
+    &--body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__input {
+    background: #F6F6F6;
+    border-radius: 4px;
+    padding: 10px 0px 10px 10px;
+    width: 100%;
+  }
+  &__item {
+    position: relative;
+  }
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 36px;
+    background: #016B45;
+    border-radius: 0px 4px 4px 0px;
+  }
+  &__label {
+    display: inline-flex;
+    align-items: center;
+    margin: 0px 15px 0px 0px;
+  }
+  &__name {
+    flex: 0 1 25%;
+  }
+  &__property {
+    flex: 0 1 20%;
+  }
+  &__brand {
+    flex: 0 1 15%;
+  }
+  &__weight {
+    flex: 0 1 17%;
+  }
+  &__volume {
+    flex: 0 1 15%;
+  }
+  &__clean {
+    position: relative;
+    flex: 0 1 50%;
+    margin: 15px 0px 0px 0px;
+    padding: 0px 0px 0px 25px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 16px;
+      height: 20px;
+      background: url(../img/main/cleaning.svg) no-repeat;
+      transform: translate(0, -50%);
+    }
+  }
+  &__btn {
+    &--reset {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: rgba(255, 255, 255, 0.75);
+      background: transparent;
+    }
+  }
+  &__submit {
+    flex: 0 1 50%;
+    margin: 15px 0px 0px 0px;
+    text-align: right;
+    &--btn {
+      display: inline-block;  
+      width: 270px;
+    }
+  }
+}
+.filter__title,
+.filter__label--text {
+  color: #fff;
 }
