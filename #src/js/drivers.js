@@ -71,4 +71,15 @@ window.onload = function () {
       mobileArrow.classList.toggle("mobile-arrow");
     }
   });
+
+  //Открытие блока информации о водителе
+  let driversInfo = document.querySelector(".drivers-info");
+  let driversTabOpen = document.querySelector(".drivers-tab__open");
+  let driversTabImgOpen = document.querySelector(".drivers-tab__open--img");
+  driversTabOpen.addEventListener("click", (e) => {
+    if (e.target) {
+      driversInfo.classList.toggle("drivers-info__active");
+      driversTabImgOpen.classList.toggle("drivers-tab__open--img-active");
+    }
+  });
 };

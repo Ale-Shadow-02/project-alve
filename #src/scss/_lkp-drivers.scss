@@ -184,6 +184,7 @@
   opacity: 0;
 }
 .drivers-info {
+  display: none;
   background: #FCFCFC;
   border: 1px solid rgba(234, 234, 234, 0.5);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
@@ -423,5 +424,11 @@
       }
     }
   }
+}
+.drivers-info__active {
+  display: block;
+}
+.drivers-tab__open--img-active {
+  transform: rotate(180deg);
 }
 
