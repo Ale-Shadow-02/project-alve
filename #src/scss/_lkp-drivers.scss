@@ -80,6 +80,7 @@
   opacity: 1;
 }
 .drivers-tab {
+  margin-bottom: 25px;
   &__header {
     display: flex;
     align-items: center;
@@ -355,6 +356,70 @@
         background: #DEDEDE;
         top: -6px;
         right: -9px;
+      }
+    }
+  }
+  &__trailer {
+    &--data {
+      &-last {
+        display: flex;
+        align-items: center;
+        padding: 13px;
+        border-bottom: 1px solid #e7e7e7;
+      }
+    }
+    &--type {
+      &-wrap {
+        flex:  0 1 40%;
+        @media (max-width:576px){
+          flex: 0 1 50%;
+        }
+      }
+    }
+    &--num {
+      flex: 0 1 38%;
+    }
+  }
+  &__comment {
+    &--text {
+      padding: 13px;
+    }
+    &--title {
+      border-bottom: none;
+      @media (max-width:576px){
+        padding-bottom: 0;
+      }
+    }
+    &--btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 13px;
+      @media (max-width:576px){
+        flex-wrap: wrap;
+      }
+    }
+  }
+  &__btn {
+    @media (max-width:768px){
+      width: 260px;
+    }
+    @media (max-width:576px){
+      margin: 0px 0px 15px 0px;
+    }
+    &--link {
+      &-wrap {
+        position: relative;
+        width: 272px;
+        @media (max-width:768px){
+          width: 260px;
+        }
+      }
+      &-img {
+        position: absolute;
+        top: 50%;
+        right: 15%;
+        transform: translate(0, -50%);
       }
     }
   }
