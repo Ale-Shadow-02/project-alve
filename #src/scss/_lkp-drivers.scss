@@ -3,6 +3,7 @@
   &__body {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
   &__content {
     flex: 0 1 67%;
@@ -289,6 +290,72 @@
     &--issued {
       padding: 13px;
       border-bottom: 1px solid #e7e7e7;
+    }
+  }
+  &__car {
+    &--title {
+      padding: 13px;
+      border-bottom: 1px solid #e7e7e7;
+    }
+    &--data {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 13px;
+      border-bottom: 1px solid #e7e7e7;
+    }
+    &--type {
+      flex: 0 1 60%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width:576px){
+        flex: 0 1 100%;
+      }
+      &-wrap {
+        @media (max-width:576px){
+          flex: 0 1 50%;
+          border-top: 1px solid #e7e7e7;
+          padding: 10px 0px 10px 0px;
+          &:last-child {
+            flex: 0 1 100%;
+            padding: 10px 0 0 0;
+          }
+        }
+      }
+    }
+    &--num {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex: 0 1 35%;
+      @media (max-width:576px){
+        flex: 0 1 100%;
+        padding: 0px 0px 10px 0px;
+      }
+    }
+    &--carnum {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #FCFCFC;
+      border: 1px solid #DEDEDE;
+      border-radius: 4px;
+      width: 110px;
+      padding: 6px 8px 4px 8px;
+    }
+    &--number {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 26px;
+        background: #DEDEDE;
+        top: -6px;
+        right: -9px;
+      }
     }
   }
 }

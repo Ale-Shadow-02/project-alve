@@ -2904,6 +2904,9 @@ span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .drivers__content {
@@ -3222,6 +3225,87 @@ span {
 .drivers-info__passport--issued {
   padding: 13px;
   border-bottom: 1px solid #e7e7e7;
+}
+
+.drivers-info__car--title {
+  padding: 13px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.drivers-info__car--data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 13px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.drivers-info__car--type {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 60%;
+          flex: 0 1 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.drivers-info__car--num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 35%;
+          flex: 0 1 35%;
+}
+
+.drivers-info__car--carnum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #FCFCFC;
+  border: 1px solid #DEDEDE;
+  border-radius: 4px;
+  width: 110px;
+  padding: 6px 8px 4px 8px;
+}
+
+.drivers-info__car--number {
+  position: relative;
+}
+
+.drivers-info__car--number::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 26px;
+  background: #DEDEDE;
+  top: -6px;
+  right: -9px;
 }
 
 .footer {
@@ -4290,6 +4374,34 @@ span {
             flex: 0 1 100%;
     border-top: 1px solid #e7e7e7;
     padding: 10px 0px 0px 0px;
+  }
+
+  .drivers-info__car--type {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .drivers-info__car--type-wrap {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    border-top: 1px solid #e7e7e7;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .drivers-info__car--type-wrap:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding: 10px 0 0 0;
+  }
+
+  .drivers-info__car--num {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding: 0px 0px 10px 0px;
   }
 }
 
