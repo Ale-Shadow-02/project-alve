@@ -3145,6 +3145,14 @@ span {
   margin: 0px 0px 10px 0px;
 }
 
+.drivers-info__ticket {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.drivers-info__ticket--numtext {
+  margin: 0px 0px 3px 0px;
+}
+
 .drivers-info__ticket--data {
   padding: 13px;
   display: -webkit-box;
@@ -3184,6 +3192,36 @@ span {
 
 .drivers-info__ticket--date-text {
   margin: 0px 0px 0px 28px;
+}
+
+.drivers-info__passport--title {
+  padding: 13px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.drivers-info__passport--data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 13px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.drivers-info__passport--item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 22%;
+          flex: 0 1 22%;
+}
+
+.drivers-info__passport--seriestext {
+  margin: 0px 0px 3px 0px;
+}
+
+.drivers-info__passport--issued {
+  padding: 13px;
+  border-bottom: 1px solid #e7e7e7;
 }
 
 .footer {
@@ -3836,6 +3874,18 @@ span {
         -ms-flex: 0 1 33%;
             flex: 0 1 33%;
   }
+
+  .drivers-info__passport--data {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .drivers-info__passport--item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 33%;
+            flex: 0 1 33%;
+  }
 }
 
 @media (max-width: 685px) {
@@ -4223,6 +4273,21 @@ span {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
     margin: 10px 0px 0px 0px;
+    border-top: 1px solid #e7e7e7;
+    padding: 10px 0px 0px 0px;
+  }
+
+  .drivers-info__passport--item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    padding: 0px 0px 10px 0px;
+  }
+
+  .drivers-info__passport--item:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
     border-top: 1px solid #e7e7e7;
     padding: 10px 0px 0px 0px;
   }

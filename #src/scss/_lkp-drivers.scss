@@ -201,6 +201,10 @@
     }
   }
   &__ticket {
+    border-bottom: 1px solid #e7e7e7;
+    &--numtext {
+      margin: 0px 0px 3px 0px;
+    }
     &--data {
       padding: 13px;
       display: flex;
@@ -248,6 +252,43 @@
       &-text {
         margin: 0px 0px 0px 28px;
       }
+    }
+  }
+  &__passport {
+    &--title {
+      padding: 13px;
+      border-bottom: 1px solid #e7e7e7;
+    }
+    &--data {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 13px;
+      border-bottom: 1px solid #e7e7e7;
+      @media (max-width:768px){
+        justify-content: space-between;
+      }
+    }
+    &--item {
+      flex: 0 1 22%;
+      @media (max-width:768px){
+        flex: 0 1 33%;
+      }
+      @media (max-width:576px){
+        flex: 0 1 50%;
+        padding: 0px 0px 10px 0px;
+        &:last-child {
+          flex: 0 1 100%;
+          border-top: 1px solid #e7e7e7;
+          padding: 10px 0px 0px 0px;
+        }
+      }
+    }
+    &--seriestext {
+      margin: 0px 0px 3px 0px;
+    }
+    &--issued {
+      padding: 13px;
+      border-bottom: 1px solid #e7e7e7;
     }
   }
 }
