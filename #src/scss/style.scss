@@ -26,9 +26,15 @@ body {
 	}
 }
 .page__title {
-	font-weight: normal;
+	font-weight: 400;
 	font-size: 36px;
 	line-height: 42px;
+	color: #000000;
+}
+.section__title {
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 35px;
 	color: #000000;
 }
 .span-title {
@@ -108,5 +114,6 @@ body {
 @import "_lkp-my-transportation";
 @import "_lkz-my-transportation";
 @import "_lkp-drivers";
+@import "_drivers-search";
 @import "_footer";
 
