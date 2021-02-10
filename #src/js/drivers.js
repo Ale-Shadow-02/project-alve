@@ -76,10 +76,14 @@ window.onload = function () {
   let driversInfo = document.querySelector(".drivers-info");
   let driversTabOpen = document.querySelector(".drivers-tab__open");
   let driversTabImgOpen = document.querySelector(".drivers-tab__open--img");
+  let driversBlockWrap = document.querySelector(
+    ".drivers-tab__header--block-wrap"
+  );
   driversTabOpen.addEventListener("click", (e) => {
     if (e.target) {
       driversInfo.classList.toggle("drivers-info__active");
       driversTabImgOpen.classList.toggle("drivers-tab__open--img-active");
+      driversBlockWrap.classList.toggle("drivers-tab__block-active");
     }
   });
 };

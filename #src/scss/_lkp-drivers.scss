@@ -83,6 +83,7 @@
   margin-bottom: 25px;
   &__header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
@@ -430,5 +431,8 @@
 }
 .drivers-tab__open--img-active {
   transform: rotate(180deg);
+}
+.drivers-tab__block-active {
+  display: none;
 }
 
