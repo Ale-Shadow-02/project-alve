@@ -141,6 +141,9 @@
   }
   &__item {
     position: relative;
+    &--center {
+      margin: 15px 0px 0px 0px;
+    }
   }
   &__btn {
     position: absolute;
@@ -158,24 +161,60 @@
   }
   &__name {
     flex: 0 1 25%;
+    @media (max-width:1180px){
+      flex: 0 1 57%;
+    }
+    @media (max-width:576px){
+      flex: 0 1 100%;
+    }
   }
   &__property {
     flex: 0 1 20%;
+    @media (max-width:1180px){
+      flex: 0 1 40%;
+      text-align: right;
+    }
+    @media (max-width:576px){
+      flex: 0 1 100%;
+      text-align-last: left;
+      margin: 15px 0px 0px 0px;
+    }
   }
   &__brand {
     flex: 0 1 15%;
+    @media (max-width:1180px){
+      flex: 0 1 32%;
+    }
+    @media (max-width:576px){
+      flex: 0 1 100%;
+    }
   }
   &__weight {
     flex: 0 1 17%;
+    @media (max-width:1180px){
+      flex: 0 1 32%;
+    }
+    @media (max-width:576px){
+      flex: 0 1 100%;
+    }
   }
   &__volume {
     flex: 0 1 15%;
+    @media (max-width:1180px){
+      flex: 0 1 32%;
+    }
+    @media (max-width:576px){
+      flex: 0 1 100%;
+    }
   }
   &__clean {
     position: relative;
-    flex: 0 1 50%;
+    flex: 0 1 45%;
     margin: 15px 0px 0px 0px;
     padding: 0px 0px 0px 25px;
+    @media (max-width:576px){
+      flex: 0 1 100%;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -197,9 +236,13 @@
     }
   }
   &__submit {
-    flex: 0 1 50%;
+    flex: 0 1 45%;
     margin: 15px 0px 0px 0px;
     text-align: right;
+    @media (max-width:576px){
+      flex: 0 1 100%;
+      text-align: left;
+    }
     &--btn {
       display: inline-block;  
       width: 270px;

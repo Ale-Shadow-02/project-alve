@@ -3632,6 +3632,10 @@ span {
   position: relative;
 }
 
+.filter__item--center {
+  margin: 15px 0px 0px 0px;
+}
+
 .filter__btn {
   position: absolute;
   top: 0;
@@ -3685,8 +3689,8 @@ span {
 .filter__clean {
   position: relative;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
   margin: 15px 0px 0px 0px;
   padding: 0px 0px 0px 25px;
 }
@@ -3714,8 +3718,8 @@ span {
 
 .filter__submit {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
   margin: 15px 0px 0px 0px;
   text-align: right;
 }
@@ -4222,6 +4226,37 @@ span {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
+  }
+
+  .filter__name {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 57%;
+            flex: 0 1 57%;
+  }
+
+  .filter__property {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40%;
+            flex: 0 1 40%;
+    text-align: right;
+  }
+
+  .filter__brand {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 32%;
+            flex: 0 1 32%;
+  }
+
+  .filter__weight {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 32%;
+            flex: 0 1 32%;
+  }
+
+  .filter__volume {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 32%;
+            flex: 0 1 32%;
   }
 
   .footer-block__text {
@@ -4902,6 +4937,52 @@ span {
             flex: 0 1 100%;
     width: 100%;
     margin: 0px 0px 15px 0px;
+  }
+
+  .filter__name {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .filter__property {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    -moz-text-align-last: left;
+         text-align-last: left;
+    margin: 15px 0px 0px 0px;
+  }
+
+  .filter__brand {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .filter__weight {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .filter__volume {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .filter__clean {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .filter__submit {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    text-align: left;
   }
 }
 
