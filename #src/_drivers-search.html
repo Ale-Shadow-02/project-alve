@@ -44,19 +44,19 @@
                 </label>
               </div>
               <div class="filter__brand filter__item filter__item--center">
-                <input type="text" name="filter__name" id="filter__name" class="filter__input" placeholder="Марка">
+                <input type="text" name="filter__brand" id="filter__brand" class="filter__input" placeholder="Марка">
                 <button type="submit" class="filter__btn">
                   <img src="img/main/arrow3.svg" alt="ARROW-TOP" />
                 </button>
               </div>
               <div class="filter__weight filter__item filter__item--center">
-                <input type="text" name="filter__name" id="filter__name" class="filter__input" placeholder="Грузоподъемность">
+                <input type="text" name="filter__weight" id="filter__weight" class="filter__input" placeholder="Грузоподъемность">
                 <button type="submit" class="filter__btn">
                   <img src="img/main/arrow3.svg" alt="ARROW-TOP" />
                 </button>
               </div>
               <div class="filter__volume filter__item filter__item--center">
-                <input type="text" name="filter__name" id="filter__name" class="filter__input" placeholder="Объем кузова">
+                <input type="text" name="filter__volume" id="filter__volume" class="filter__input" placeholder="Объем кузова">
                 <button type="submit" class="filter__btn">
                   <img src="img/main/arrow3.svg" alt="ARROW-TOP" />
                 </button>
@@ -69,6 +69,74 @@
               </div>
             </div>
           </form>
+        </div>
+      </div>
+      <div class="drivers-result">
+        <span class="drivers-result__title">Найдено 50 Водителей</span>
+        <div class="drivers-result__body">
+          <div class="drivers-result__header result-header">
+            <div class="result-header__name">
+              <span class="span-title__info--text result-header__text">ФИО водителя</span>
+            </div>
+            <div class="result-header__property">
+              <span class="span-title__info--text result-header__text">Собственный автомобиль</span>
+            </div>
+            <div class="result-header__brand">
+              <span class="span-title__info--text result-header__text">Марка</span>
+            </div>
+
+            <div class="result-header__wrap--center">
+              <div class="result-header__numcar">
+                <span class="span-title__info--text result-header__text">Госномер</span>
+              </div>
+              <div class="result-header__weight">
+                <span class="span-title__info--text result-header__text">Грузоподъемность, тонн</span>
+              </div>
+              <div class="result-header__volume">
+                <span class="span-title__info--text result-header__text">Объем кузова, куб.м</span>
+              </div>
+            </div>
+
+            <div class="result-header__setting">
+              <img src="img/main/gear.svg" alt="SETTING" class="result-header__setting--img" />
+            </div>
+          </div>
+          <div class="drivers-result__tab">
+            <div class="result-tab__body">
+              <div class="result-tab__name">
+                <span class="drivers-tab__header--surname">Мясников Петр Александрович</span>
+              </div>
+              <div class="result-tab__property">
+                <label for="tab-property__result">
+                  <span class="drivers-tab__label span-title__info">Автомобиль в собственности:</span>
+                  <input type="checkbox" name="tab-property__result" id="tab-property__result" class="drivers-tab__input">
+                  <span class="drivers-tab__new--checkbox"></span>
+                </label>
+              </div>
+              <div class="result-tab__brand">
+                <span class="span-title__info--text">Камаз</span>
+              </div>
+              <div class="result-header__wrap--center">
+                <div class="result-tab__numcar">
+                  <span class="span-title__info--text">А1233ХМ 38</span>
+                </div>
+                <div class="result-tab__weight">
+                  <span class="span-title__info--text">20</span>
+                </div>
+                <div class="result-tab__volume">
+                  <span class="span-title__info--text">300</span>
+                </div>
+              </div>
+              <div class="drivers-tab__open result-tab__open">
+                <img src="img/main/arrow-bottom.svg" alt="ARROW-BOTTOM" class="drivers-tab__open--img" />
+              </div>
+            </div>
+          </div>
+
+
+
+
+
         </div>
       </div>
     </div>

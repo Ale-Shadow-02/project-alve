@@ -253,3 +253,178 @@
 .filter__label--text {
   color: #fff;
 }
+//! Стили блока результата поиска и фильтрации
+.drivers-result {
+  padding: 35px 0px 0px 0px;
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin: 0px 0px 25px 0px;
+    @media (max-width:576px){
+      font-size: 20px;
+      line-height: 23px;
+    }
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width:576px){
+      display: none;
+    }
+  }
+}
+.result-header {
+  background: rgba(198, 198, 198, 0.1);
+  border-radius: 6px 6px 0px 0px;
+  border-bottom: 2px solid #016B45;
+  padding: 10px 0px;
+  &__text {
+    font-weight: 700;
+  }
+  &__wrap {
+    &--center {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 0 1 40%;
+      @media (max-width:1180px){
+        display: none;
+      }
+    }
+  }
+  &__name {
+    flex: 0 1 24%;
+    text-align: center;
+    @media (max-width:1180px){
+      flex: 0 1 35%;
+    }
+  }
+  &__property {
+    flex: 0 1 20%;
+    text-align: center;
+    @media (max-width:1180px){
+      flex: 0 1 35%;
+    }
+  }
+  &__brand {
+    flex: 0 1 10%;
+    text-align: center;
+    @media (max-width:1180px){
+      flex: 0 1 5%;
+    }
+  }
+  &__numcar {
+    flex: 0 1 30%;
+    text-align: center;
+  }
+  &__weight {
+    flex: 0 1 30%;
+    text-align: center;
+  }
+  &__volume {
+    flex: 0 1 27%;
+    text-align: center;
+  }
+  &__setting {
+    flex: 0 1 50px;
+    display: flex;
+    justify-content: center;
+  }
+}
+.drivers-result {
+  &__tab {
+  }
+}
+.result-tab {
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px 6px 0px 0px;
+    padding: 0px 0px 0px 12px;
+    height: auto;
+  }
+  &__name {
+    flex: 0 1 24%;
+    @media (max-width:1180px){
+      flex: 0 1 35%;
+    }
+    @media (max-width:576px){
+      flex: 0 1 85%;
+    }
+  }
+  &__property {
+    flex: 0 1 18%;
+    padding: 0px 0px 0px 10px;
+    border-left: 1px solid  #EBEBEB;
+    @media (max-width:1180px){
+      flex: 0 1 35%;
+    }
+    @media (max-width:576px){
+      display: none;
+    }
+  }
+  &__brand {
+    flex: 0 1 10%;
+    text-align: center;
+    border-left: 1px solid  #EBEBEB;
+    padding: 10px 0px;
+    @media (max-width:1180px){
+      flex: 0 1 5%;
+    }
+    @media (max-width:768px){
+      flex: 0 1 10%;
+    }
+    @media (max-width:576px){
+      display: none;
+    }
+  }
+  &__numcar {
+    flex: 0 1 30%;
+    text-align: center;
+    border-left: 1px solid  #EBEBEB;
+    padding: 10px 0px;
+  }
+  &__weight {
+    flex: 0 1 30%;
+    text-align: center;
+    border-left: 1px solid  #EBEBEB;
+    padding: 10px 0px;
+  }
+  &__volume {
+    flex: 0 1 27%;
+    text-align: center;
+    border-left: 1px solid  #EBEBEB;
+    padding: 10px 0px;
+  }
+  &__open {
+    border-left: 1px solid  #EBEBEB;
+  }
+}
+.drivers-tab {
+  &__header--surname {
+  }
+  &__label {
+  }
+  &__input {
+  }
+  &__new--checkbox {
+  }
+  &__open {
+  }
+  &__open--img {
+  }
+}
+.span-title {
+  &__info {
+  }
+  &__info--text {
+  }
+}
+
+
