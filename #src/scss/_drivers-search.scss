@@ -333,6 +333,7 @@
     flex: 0 1 50px;
     display: flex;
     justify-content: center;
+    cursor: pointer;
   }
 }
 .drivers-result__tab--test {
@@ -427,5 +428,10 @@
 }
 .result-tab__block-active {
   display: none;
+}
+.other-drivers {
+  @media (max-width:768px){
+    margin-bottom: 0;
+  }
 }
 

@@ -3844,6 +3844,7 @@ span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 
 .drivers-result__tab--test {
@@ -4721,6 +4722,10 @@ span {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 10%;
             flex: 0 1 10%;
+  }
+
+  .other-drivers {
+    margin-bottom: 0;
   }
 }
 
