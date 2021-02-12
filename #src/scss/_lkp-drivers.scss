@@ -94,7 +94,7 @@
       justify-content: space-between;
     }
     &--block {
-      padding: 0px 50px 0px 12px;
+      padding: 0px 10px 0px 12px;
       @media (max-width:768px){
         padding: 0px 5px 0px 12px;
       }
@@ -102,24 +102,21 @@
         border-right: 1px solid #EBEBEB;
       }
       &-surname {
-        flex: 0 0 300px;
+        flex: 0 0 385px;
         padding: 13px;
         border-right: 1px solid #ebebeb;
-        @media (max-width:576px){
+        @media (max-width:768px){
+          flex: 0 1 auto;
           border-right: none;
         }
       }
       &-wrap {
         display: flex;
-        flex: 0 1 65%;
+        flex: 0 1 43%;
         align-items: center;
         height: 48px;
         background: #FCFCFC;
-        border-right: 1px solid #ebebeb;
         @media (max-width:768px){
-          flex: 1 1 auto;
-        }
-        @media (max-width:576px){
           display: none;
         }
       }
@@ -137,6 +134,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-left: 1px solid #ebebeb;
     cursor: pointer;
   }
   &__label {
