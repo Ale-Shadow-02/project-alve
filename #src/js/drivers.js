@@ -86,4 +86,32 @@ window.onload = function () {
       driversBlockWrap.classList.toggle("drivers-tab__block-active");
     }
   });
+
+  //* Открытие таба поиска водителей
+  let resultTabOpen = document.querySelector(".result-tab__open");
+  let resultTab = document.querySelector(".drivers-result-tab-open");
+  let resultTabImgOpen = document.querySelector(".result-tab__open--img");
+  let resultWrapCenter = document.querySelector(".result-tab__wrap--center");
+  let resultTabProperty = document.querySelector(".result-tab__property");
+  let resultTabBrand = document.querySelector(".result-tab__brand");
+
+  resultTabOpen.addEventListener("click", (e) => {
+    if (e.target) {
+      resultTab.classList.toggle("result-tab__active");
+      resultTabImgOpen.classList.toggle("result-tab__open--img-active");
+      resultWrapCenter.classList.toggle("result-tab__block-active");
+      resultTabProperty.classList.toggle("result-tab__block-active");
+      resultTabBrand.classList.toggle("result-tab__block-active");
+    }
+  });
+
+  //Раскрытие блока настройки
+  let settingOpen = document.querySelector(".result-header__setting");
+  let blockOpen = document.querySelector(".setting-modal");
+  let settingClose = document.querySelector(".setting-modal__close");
+  settingOpen.addEventListener("click", (e) => {
+    if (e.target) {
+      blockOpen.classList.toggle("setting-open");
+    }
+  });
 };

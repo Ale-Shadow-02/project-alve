@@ -329,14 +329,14 @@
     text-align: center;
   }
   &__setting {
+    position: relative;
     flex: 0 1 50px;
     display: flex;
     justify-content: center;
   }
 }
-.drivers-result {
-  &__tab {
-  }
+.drivers-result__tab--test {
+    margin: 0px 0px 30px 0px;
 }
 .result-tab {
   &__body {
@@ -352,7 +352,7 @@
   &__name {
     flex: 0 1 24%;
     @media (max-width:1180px){
-      flex: 0 1 35%;
+      flex: 0 1 40%;
     }
     @media (max-width:576px){
       flex: 0 1 85%;
@@ -375,7 +375,7 @@
     border-left: 1px solid  #EBEBEB;
     padding: 10px 0px;
     @media (max-width:1180px){
-      flex: 0 1 5%;
+      flex: 0 1 10%;
     }
     @media (max-width:768px){
       flex: 0 1 10%;
@@ -404,27 +404,28 @@
   }
   &__open {
     border-left: 1px solid  #EBEBEB;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
 }
-.drivers-tab {
-  &__header--surname {
-  }
-  &__label {
-  }
-  &__input {
-  }
-  &__new--checkbox {
-  }
-  &__open {
-  }
-  &__open--img {
-  }
+.drivers-result-tab-open {
+  background: #fcfcfc;
+  border: 1px solid rgba(234, 234, 234, 0.5);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  display: none;
 }
-.span-title {
-  &__info {
-  }
-  &__info--text {
-  }
+.result-tab__active {
+  display: block;
 }
-
+.result-tab__open--img-active {
+  transform: rotate(180deg);
+}
+.result-tab__block-active {
+  display: none;
+}
 
