@@ -24,13 +24,13 @@
         <div class="filter__body">
           <form action="#" class="filter__form">
             <div class="filter__form--body">
-              <div class="filter__name filter__item">
+              <!-- <div class="filter__name filter__item">
                 <input type="text" name="filter__name" id="filter__name" class="filter__input" placeholder="ФИО водителя от А до Я">
                 <button type="submit" class="filter__btn">
                   <img src="img/main/arrow3.svg" alt="ARROW-TOP" />
                 </button>
-              </div>
-              <div class="filter__property">
+              </div> -->
+              <div class="filter__property filter__property--radio">
                 <span class="filter__title span-title">Автомобиль в собственности:</span>
                 <label for="filter-yes" class="filter__label">
                   <input type="radio" name="property-filter" id="filter-yes" class="property__input" checked />
@@ -43,20 +43,39 @@
                   <span class="filter__label--text span-title">Нет</span>
                 </label>
               </div>
-              <div class="filter__brand filter__item filter__item--center">
+              <div class="filter__property filter__trailer--radio">
+                <span class="filter__title span-title">Тип загрузки:</span>
+                <label for="filter-yes__trailer" class="filter__label">
+                  <input type="radio" name="trailer-filter" id="filter-yes__trailer" class="property__input" checked />
+                  <span class="property__new--radio"></span>
+                  <span class="filter__label--text span-title">Да</span>
+                </label>
+                <label for="filter-not__trailer" class="filter__label">
+                  <input type="radio" name="trailer-filter" id="filter-not__trailer" class="property__input" />
+                  <span class="property__new--radio"></span>
+                  <span class="filter__label--text span-title">Нет</span>
+                </label>
+              </div>
+              <div class="filter__brand filter__item filter__item--center car__filter--brand">
                 <input type="text" name="filter__brand" id="filter__brand" class="filter__input" placeholder="Марка">
                 <button type="submit" class="filter__btn">
                   <img src="img/main/arrow3.svg" alt="ARROW-TOP" />
                 </button>
               </div>
-              <div class="filter__weight filter__item filter__item--center">
+              <div class="filter__weight filter__item filter__item--center car__filter--weight">
                 <input type="text" name="filter__weight" id="filter__weight" class="filter__input" placeholder="Грузоподъемность">
                 <button type="submit" class="filter__btn">
                   <img src="img/main/arrow3.svg" alt="ARROW-TOP" />
                 </button>
               </div>
-              <div class="filter__volume filter__item filter__item--center">
+              <div class="filter__volume filter__item filter__item--center car__filter--volume">
                 <input type="text" name="filter__volume" id="filter__volume" class="filter__input" placeholder="Объем кузова">
+                <button type="submit" class="filter__btn">
+                  <img src="img/main/arrow3.svg" alt="ARROW-TOP" />
+                </button>
+              </div>
+              <div class="filter__trailer filter__item filter__item--center car__filter--trailer">
+                <input type="text" name="filter__trailer" id="filter__trailer" class="filter__input" placeholder="Тип загрузки">
                 <button type="submit" class="filter__btn">
                   <img src="img/main/arrow3.svg" alt="ARROW-TOP" />
                 </button>
@@ -72,11 +91,11 @@
         </div>
       </div>
       <div class="drivers-result">
-        <span class="drivers-result__title">Найдено 50 Водителей</span>
+        <span class="drivers-result__title">Найдено 26 авто</span>
         <div class="drivers-result__body">
           <div class="drivers-result__header result-header">
             <div class="result-header__name">
-              <span class="span-title__info--text result-header__text">ФИО водителя</span>
+              <span class="span-title__info--text result-header__text">Автомобиль</span>
             </div>
             <div class="result-header__property">
               <span class="span-title__info--text result-header__text">Собственный автомобиль</span>
@@ -107,37 +126,37 @@
                       <label for="checkbox-1" class="setting-form__label">
                         <input type="checkbox" id="checkbox-1" class="setting-form__checkbox" name="checkboxname" value="block-1">
                         <span class="setting-form__checkbox--new"></span>
-                        Номер заявки</label>
+                        Автомобиль</label>
                     </div>
                     <div class="setting-form__checkbox--wrap">
                       <label for="checkbox-2" class="setting-form__label">
                         <input type="checkbox" id="checkbox-2" class="setting-form__checkbox" name="checkboxname" value="block-2">
                         <span class="setting-form__checkbox--new"></span>
-                        Маршрут</label>
+                        Собственный автомобиль</label>
                     </div>
                     <div class="setting-form__checkbox--wrap">
                       <label for="checkbox-3" class="setting-form__label">
                         <input type="checkbox" id="checkbox-3" class="setting-form__checkbox" name="checkboxname" value="block-3">
                         <span class="setting-form__checkbox--new"></span>
-                        Период перевозки</label>
+                        Марка</label>
                     </div>
                     <div class="setting-form__checkbox--wrap">
                       <label for="checkbox-4" class="setting-form__label">
                         <input type="checkbox" id="checkbox-4" class="setting-form__checkbox" name="checkboxname" value="block-4">
                         <span class="setting-form__checkbox--new"></span>
-                        Логист</label>
+                        Госномер</label>
                     </div>
                     <div class="setting-form__checkbox--wrap">
                       <label for="checkbox-5" class="setting-form__label">
                         <input type="checkbox" id="checkbox-5" class="setting-form__checkbox" name="checkboxname" value="block-5">
                         <span class="setting-form__checkbox--new"></span>
-                        Транспорт</label>
+                        Грузоподъемность, тонн</label>
                     </div>
                     <div class="setting-form__checkbox--wrap">
                       <label for="checkbox-6" class="setting-form__label">
                         <input type="checkbox" id="checkbox-6" class="setting-form__checkbox" name="checkboxname" value="block-6">
                         <span class="setting-form__checkbox--new"></span>
-                        Госномер</label>
+                        Объем кузова, куб.м</label>
                     </div>
                   </div>
                 </form>
@@ -147,7 +166,7 @@
           <div class="drivers-result__tab drivers-result__tab--test">
             <div class="result-tab__body">
               <div class="result-tab__name">
-                <span class="drivers-tab__header--surname">Мясников Петр Александрович</span>
+                <span class="drivers-tab__header--surname">Камаз 5490-S5 X744 ХК 163 ПП ВЕ187663</span>
               </div>
               <div class="result-tab__property">
                 <label for="tab-property__result">
@@ -182,15 +201,15 @@
                 <input type="checkbox" name="result-property" id="result-property" class="drivers-tab__input">
                 <span class="drivers-tab__new--checkbox"></span>
               </label>
-              <a href="" class="unloading1-contact contacts-phone button">
+              <!-- <a href="" class="unloading1-contact contacts-phone button">
                 <span class="unloading1-contact__text contacts-phone__text button__text">Связаться с водителем</span>
                 <span class="contacts-phone__tel button__tel">
                   <div class="contacts-phone__border button__border"></div>
                   <img src="img/main/vector_phone.svg" alt="phone" />
                 </span>
-              </a>
+              </a> -->
             </div>
-            <div class="drivers-info__ticket">
+            <!-- <div class="drivers-info__ticket">
               <div class="drivers-info__ticket--title">
                 <span class="drivers-info__ticket--text info__title">Водительское удостоверение</span>
               </div>
@@ -237,7 +256,7 @@
                 <span class="drivers-info__passport--seriestext span-title__info">Кем выдан:</span>
                 <span class="drivers-info__passport--issued-text span-title__info--text">ОУФМС России по Пензенской области г. Пенза</span>
               </div>
-            </div>
+            </div> -->
             <div class="drivers-info__car">
               <div class="drivers-info__car--title">
                 <span class="drivers-info__car--text info__title">Автомобиль</span>
@@ -320,7 +339,7 @@
                   dolor. Integer dictum fermentum ligula a pretium. Morbi id egestas nisl. Quisque tristique euismod neque, in facilisis enim facilisis a.</p>
               </div>
               <div class="drivers-info__comment--btn">
-                <button class="drivers__btn drivers-info__btn">Удалить из Моего парка</button>
+                <!-- <button class="drivers__btn drivers-info__btn">Удалить из Моего парка</button> -->
                 <div class="drivers-info__btn--link-wrap">
                   <a href="#" class="btn__link">Выбрать водителя</a>
                   <img src="img/main/checking.svg" alt="CHECKED" class="drivers-info__btn--link-img" />
@@ -332,7 +351,7 @@
           <div class="drivers-result__tab">
             <div class="result-tab__body">
               <div class="result-tab__name">
-                <span class="drivers-tab__header--surname">Мясников Петр Александрович</span>
+                <span class="drivers-tab__header--surname">Камаз 5490-S5 X744 ХК 163 ПП ВЕ187663</span>
               </div>
               <div class="result-tab__property">
                 <label for="tab-property__result">
@@ -364,7 +383,7 @@
           <div class="drivers-result__tab">
             <div class="result-tab__body">
               <div class="result-tab__name">
-                <span class="drivers-tab__header--surname">Мясников Петр Александрович</span>
+                <span class="drivers-tab__header--surname">Камаз 5490-S5 X744 ХК 163 ПП ВЕ187663</span>
               </div>
               <div class="result-tab__property">
                 <label for="tab-property__result">
@@ -396,7 +415,7 @@
           <div class="drivers-result__tab">
             <div class="result-tab__body">
               <div class="result-tab__name">
-                <span class="drivers-tab__header--surname">Мясников Петр Александрович</span>
+                <span class="drivers-tab__header--surname">Камаз 5490-S5 X744 ХК 163 ПП ВЕ187663</span>
               </div>
               <div class="result-tab__property">
                 <label for="tab-property__result">
@@ -428,7 +447,7 @@
           <div class="drivers-result__tab">
             <div class="result-tab__body">
               <div class="result-tab__name">
-                <span class="drivers-tab__header--surname">Мясников Петр Александрович</span>
+                <span class="drivers-tab__header--surname">Камаз 5490-S5 X744 ХК 163 ПП ВЕ187663</span>
               </div>
               <div class="result-tab__property">
                 <label for="tab-property__result">

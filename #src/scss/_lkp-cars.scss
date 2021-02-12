@@ -1,0 +1,46 @@
+.filter__property--radio {
+  @media (max-width:1180px){
+    flex: 0 1 30%;
+    text-align: left;
+  }
+  @media (max-width:768px){
+    flex: 0 1 45%;
+  }
+}
+.filter__trailer--radio {
+  flex: 0 1 13%;
+  @media (max-width:1180px){
+    flex: 0 1 30%;
+    text-align: left;
+  }
+  @media (max-width:768px){
+    flex: 0 1 45%;
+  }
+}
+.car {
+  &__filter {
+    &--brand {
+      @media (max-width:768px){
+        flex: 0 1 45%;
+      }
+    }
+    &--weight {
+      @media (max-width:768px){
+        flex: 0 1 45%;
+      }
+    }
+    &--volume {
+      @media (max-width:768px){
+        flex: 0 1 45%;
+      }
+    }
+    &--trailer {
+      @media (max-width:768px){
+        flex: 0 1 45%;
+      }
+      @media (max-width:576px){
+        flex: 0 1 100%;
+      }
+    }
+  }
+}

@@ -3671,8 +3671,8 @@ span {
 
 .filter__property {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 20%;
-          flex: 0 1 20%;
+      -ms-flex: 0 1 18%;
+          flex: 0 1 18%;
 }
 
 .filter__brand {
@@ -3848,7 +3848,7 @@ span {
 }
 
 .drivers-result__tab--test {
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 10px 0px;
 }
 
 .result-tab__body {
@@ -3940,6 +3940,7 @@ span {
   -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
           box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
+  margin: 0px 0px 25px 0px;
   display: none;
 }
 
@@ -3955,6 +3956,12 @@ span {
 
 .result-tab__block-active {
   display: none;
+}
+
+.filter__trailer--radio {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 13%;
+          flex: 0 1 13%;
 }
 
 .footer {
@@ -4522,6 +4529,20 @@ span {
             flex: 0 1 10%;
   }
 
+  .filter__property--radio {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 30%;
+            flex: 0 1 30%;
+    text-align: left;
+  }
+
+  .filter__trailer--radio {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 30%;
+            flex: 0 1 30%;
+    text-align: left;
+  }
+
   .footer-block__text {
     margin-bottom: 15px;
   }
@@ -4735,6 +4756,42 @@ span {
 
   .other-drivers {
     margin-bottom: 0;
+  }
+
+  .filter__property--radio {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
+  }
+
+  .filter__trailer--radio {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
+  }
+
+  .car__filter--brand {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
+  }
+
+  .car__filter--weight {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
+  }
+
+  .car__filter--volume {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
+  }
+
+  .car__filter--trailer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
   }
 }
 
@@ -5280,6 +5337,12 @@ span {
 
   .result-tab__brand {
     display: none;
+  }
+
+  .car__filter--trailer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
   }
 }
 
