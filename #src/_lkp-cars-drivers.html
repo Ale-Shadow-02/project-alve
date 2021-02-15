@@ -1,0 +1,120 @@
+<section class="drivers">
+  <div class="container">
+    <div class="drivers__body">
+      <aside class="aside">
+        <nav class="navbar">
+          <div class="navbar__wrap--logo">
+            <img src="img/main/lkp_avatar.svg" alt="LOGO MENU" class="navbar__logo" />
+          </div>
+          <span class="navbar__logo--role">Перевозчик</span>
+          <span class="navbar__title">Транспортная компания</span>
+          <span class="navbar__title">«KURT TRANS»</span>
+          <ul class="navbar__list">
+            <li class="navbar__list--item">
+              <a href="lkp-transportation.html" class="navbar__list--link">Мои перевозки</a>
+            </li>
+            <li class="navbar__list--item">
+              <a href="#" class="navbar__list--link navbar__list--link-desktop">Мой парк
+                <img src="img/main/arrow-aside.svg" alt="arrow" class="navbar__submenu--link-desktop">
+              </a>
+              <ul class="navbar__submenu--list navbar__submenu--list-desktop">
+                <li class="navbar__submenu--item">
+                  <a href="lkp-drivers.html" class="navbar__submenu--link">Водители</a>
+                </li>
+                <li class="navbar__submenu--item">
+                  <a href="lkp-cars.html" class="navbar__submenu--link">Автомобили и прицепы</a>
+                </li>
+                <li class="navbar__submenu--item">
+                  <a href="lkp-cars-drivers.html" class="navbar__submenu--link">Добавить авто/водителя</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__list--item">
+              <a href="#" class="navbar__list--link">Мои доходы</a>
+            </li>
+            <li class="navbar__list--item">
+              <a href="#" class="navbar__list--link">Настройки профиля</a>
+            </li>
+            <li class="navbar__list--item">
+              <a href="#" class="navbar__list--link">Найти новую заявку</a>
+            </li>
+        </nav>
+      </aside>
+      <div class="drivers__content cars-drivers__content">
+        <h1 class="drivers__content--title page__title">Добавить авто/водителя</h1>
+        <div class="bid-hauling__breadcrumbs drivers__breadcrumbs">
+          <a href="#" class="bid-hauling__breadcrumbs--link">Главная</a>
+          <span class="bid-hauling__breadcrumbs--arrow">>></span>
+          <a href="#" class="bid-hauling__breadcrumbs--link">Личный кабинет</a>
+          <span class="bid-hauling__breadcrumbs--arrow">>></span>
+          <span class="bid-hauling__breadcrumbs--last">Добавить авто/водителя</span>
+        </div>
+        <div class="cars-drivers__wrap--tab">
+          <div class="drivers__sort--property property cars-drivers__block ">
+            <label for="cars">
+              <input type="radio" name="add" id="cars" class="property__input" />
+              <span class="property__new--radio"></span>
+              <span class="property__label span-title">Добавить авто</span>
+            </label>
+            <label for="drivers">
+              <input type="radio" name="add" id="drivers" class="property__input" checked />
+              <span class="property__new--radio"></span>
+              <span class="property__label span-title">Добавить водителя</span>
+            </label>
+          </div>
+        </div>
+        <div class="cars-drivers__form--wrap">
+          <form action="#" id="drivers-add" class="cars-drivers__form">
+            <div class="cars-drivers__form--body">
+              <span class="cars-drivers__form--title section__title">Добавить водителя</span>
+              <div class="form__item--name">
+                <label for="formName" class="cars-drivers__form--label-name cars-drivers__form--label">Фио водителя*:</label>
+                <input type="text" id="formName" class="form__input form__input--cars-drivers" placeholder="Иванов Иван Иванович" required>
+                <div class="form__input--block-wrap">
+                  <label for="formPhone" class="cars-drivers__form--label-name cars-drivers__form--label">Телефон*::</label>
+                  <input type="tel" id="formPhone" class="form__input form__input--cars-drivers" placeholder="+7 (343) _ _-_ _-_ _" required>
+                </div>
+                <div class="form__input--block-wrap">
+                  <label for="formEmail" class="cars-drivers__form--label-name cars-drivers__form--label">E-mail*:</label>
+                  <input type="email" id="formEmail" class="form__input form__input--cars-drivers" placeholder="mail@yandex.ru" required>
+                </div>
+                <div class="cars-drivers__form--property  ">
+                  <span class="property__title span-title cars-drivers__form--property-title">Автомобиль в собственности:</span>
+                  <label for="property-yes">
+                    <input type="radio" name="property" id="property-yes" class="property__input" checked />
+                    <span class="property__new--radio"></span>
+                    <span class="property__label span-title">Да</span>
+                  </label>
+                  <label for="property-not">
+                    <input type="radio" name="property" id="property-not" class="property__input" />
+                    <span class="property__new--radio"></span>
+                    <span class="property__label span-title">Нет</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form__item--data">
+                <span class="form__item--data-title info__title">Водительское удостоверение</span>
+                <div class="form__item--data-num">
+                  <label for="formNum" class="cars-drivers__form--label-name cars-drivers__form--label">Номер:</label>
+                  <input type="text" id="formNum" class="form__input form__input--cars-drivers">
+                </div>
+                <div class="form__item--data-date">
+                  <label for="formOn" class="cars-drivers__form--label-name cars-drivers__form--label">Дата выдачи:</label>
+                  <input type="date" id="formOn" class="form__input form__input--date">
+                </div>
+                <div class="form__item--data-date">
+                  <label for="formOff" class="cars-drivers__form--label-name cars-drivers__form--label">Дата окончания:</label>
+                  <input type="date" id="formOff" class="form__input form__input--date">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+</section>

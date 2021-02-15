@@ -1,0 +1,81 @@
+.cars-drivers {
+  &__form {
+    &--body {
+      background: #FCFCFC;
+      border: 1px solid #EAEAEA;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+      padding: 20px;
+    }
+    &--title {
+    }
+    &--label {
+      display: inline-block;
+      margin: 0px 0px 10px 0px;
+      &-name {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: rgba(0, 0, 0, 0.75);
+        
+      }
+    }
+    &--property {
+      &-title {
+        margin: 0px 0px 10px 0px;
+      }
+    }
+  }
+}
+.form {
+  &__item {
+    &--name {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 30px 0px 20px 0px;
+      border-bottom: 1px solid #C4C4C4;
+    }
+    &--data {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      border-bottom: 1px solid #C4C4C4;
+      &-title {
+        flex: 0 1 100%;
+        margin: 0px 0px 10px 0px;
+      }
+      &-num {
+        flex: 0 1 28%;
+        @media (max-width:576px){
+          flex: 0 1 100%;
+        }
+      }
+      &-date {
+        flex: 0 1 28%;
+        @media (max-width:576px){
+          flex: 0 1 48%;
+        }
+      }
+    }
+  }
+  &__input {
+    &--block {
+      &-wrap {
+        flex: 0 1 45%;
+        @media (max-width:576px){
+          flex: 0 1 100%;
+        }
+      }
+    }
+    &--cars-drivers {
+      background: url(../img/main/editor.svg) 98% 50% no-repeat;
+    }
+    &--date {
+      background: url(../img/main/icon-calendar.svg) 2% 50% no-repeat, url(../img/main/editor.svg) 98% 50% no-repeat;
+      padding: 13px 0 13px 30px;
+    }
+  }
+}

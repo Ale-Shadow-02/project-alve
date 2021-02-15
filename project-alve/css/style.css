@@ -3964,6 +3964,94 @@ span {
           flex: 0 1 13%;
 }
 
+.cars-drivers__form--body {
+  background: #FCFCFC;
+  border: 1px solid #EAEAEA;
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.cars-drivers__form--label {
+  display: inline-block;
+  margin: 0px 0px 10px 0px;
+}
+
+.cars-drivers__form--label-name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.cars-drivers__form--property-title {
+  margin: 0px 0px 10px 0px;
+}
+
+.form__item--name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0px 20px 0px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.form__item--data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.form__item--data-title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  margin: 0px 0px 10px 0px;
+}
+
+.form__item--data-num {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 28%;
+          flex: 0 1 28%;
+}
+
+.form__item--data-date {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 28%;
+          flex: 0 1 28%;
+}
+
+.form__input--block-wrap {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
+}
+
+.form__input--cars-drivers {
+  background: url(../img/main/editor.svg) 98% 50% no-repeat;
+}
+
+.form__input--date {
+  background: url(../img/main/icon-calendar.svg) 2% 50% no-repeat, url(../img/main/editor.svg) 98% 50% no-repeat;
+  padding: 13px 0 13px 30px;
+}
+
 .footer {
   background: #1B242D;
   padding: 15px 0px;
@@ -5340,6 +5428,24 @@ span {
   }
 
   .car__filter--trailer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .form__item--data-num {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .form__item--data-date {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48%;
+            flex: 0 1 48%;
+  }
+
+  .form__input--block-wrap {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
