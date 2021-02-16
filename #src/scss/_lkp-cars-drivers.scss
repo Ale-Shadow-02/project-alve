@@ -5,9 +5,8 @@
       border: 1px solid #EAEAEA;
       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
       border-radius: 10px;
-      padding: 20px;
-    }
-    &--title {
+      padding: 20px 20px 0px;
+      margin-bottom: 40px;
     }
     &--label {
       display: inline-block;
@@ -57,6 +56,93 @@
         flex: 0 1 28%;
         @media (max-width:576px){
           flex: 0 1 48%;
+        }
+      }
+      &-issued {
+        flex: 0 1 100%;
+      }
+      &-car {
+        flex: 0 1 24%;
+        @media (max-width:576px){
+          flex: 0 1 48%;
+        }
+      }
+      &-trailer {
+        flex: 0 1 19%;
+        &:last-child {
+          flex: 0 1 21%;
+        }
+        @media (max-width:1180px){
+          flex: 0 1 24%;
+          &:last-child {
+            flex: 0 1 24%;
+          }
+        }
+        @media (max-width:576px){
+          flex: 0 1 49%;
+          &:last-child {
+            flex: 0 1 49%;
+          }
+        }
+      }
+    }
+    &--document {
+      padding: 20px 0px;
+      &-block {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 0px;
+        border-bottom: 1px solid #C4C4C4;
+      }
+      &-title {
+        margin: 0px 0px 5px 0px;
+      }
+      &-link {
+        margin: 0px 0px 10px 0px;
+      }
+      &-input {
+        margin: 0px 0px 10px 0px;
+      }
+      &-comment {
+        padding: 20px 0px 10px 0px;
+      }
+      &-textarea {
+        background: #FFFFFF;
+        border: 2px solid #DEDEDE;
+        border-radius: 4px;
+        width: 100%;
+        resize: vertical;
+        padding: 10px;
+      }
+    }
+    &--submit {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width:576px){
+        flex-direction: column;
+      }
+      &-btn {
+        display: inline-block;
+        flex: 0 0 40%;
+        padding: 10px 25px;
+        @media (max-width:576px){
+          flex: 0 1 100%;
+          margin-bottom: 10px;
+        }
+      }
+      &-text {
+        flex: 0 1 58%;
+        @media (max-width:576px){
+          flex: 0 1 100%;
+        }
+      }
+      &-link {
+        text-decoration: underline;
+        transition: all 0.3s ease 0s;
+        &:hover {
+          color: #4838d4;  
+          transition: all 0.3s ease 0s;
         }
       }
     }

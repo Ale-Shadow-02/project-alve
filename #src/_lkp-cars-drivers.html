@@ -107,6 +107,106 @@
                   <input type="date" id="formOff" class="form__input form__input--date">
                 </div>
               </div>
+              <div class="form__item--data">
+                <span class="form__item--data-title info__title">Паспорт</span>
+                <div class="form__item--data-num">
+                  <label for="formSeries" class="cars-drivers__form--label-name cars-drivers__form--label">Серия:</label>
+                  <input type="text" id="formSeries" class="form__input form__input--cars-drivers">
+                </div>
+                <div class="form__item--data-date">
+                  <label for="formNumber" class="cars-drivers__form--label-name cars-drivers__form--label">Номер:</label>
+                  <input type="text" id="formNumber" class="form__input form__input--cars-drivers">
+                </div>
+                <div class="form__item--data-date">
+                  <label for="formDate" class="cars-drivers__form--label-name cars-drivers__form--label">Дата выдачи:</label>
+                  <input type="date" id="formDate" class="form__input form__input--date">
+                </div>
+                <div class="form__item--data-issued">
+                  <label for="formIssued" class="cars-drivers__form--label-name cars-drivers__form--label">Кем выдан:</label>
+                  <input type="text" id="formIssued" class="form__input form__input--cars-drivers">
+                </div>
+              </div>
+              <div class="form__item--data">
+                <span class="form__item--data-title info__title">Автомобиль</span>
+                <div class="form__item--data-car">
+                  <label for="formBrand" class="cars-drivers__form--label-name cars-drivers__form--label">Марка:</label>
+                  <input type="text" id="formBrand" class="form__input form__input--cars-drivers">
+                </div>
+                <div class="form__item--data-car">
+                  <label for="formNumCar" class="cars-drivers__form--label-name cars-drivers__form--label">Гос номер:</label>
+                  <input type="text" id="formNumCar" class="form__input form__input--cars-drivers">
+                </div>
+                <div class="form__item--data-car">
+                  <label for="formTypeCar" class="cars-drivers__form--label-name cars-drivers__form--label">Тип кузова:</label>
+                  <input type="text" id="formTypeCar" class="form__input form__input--cars-drivers">
+                </div>
+                <div class="form__item--data-car">
+                  <label for="formColorCar" class="cars-drivers__form--label-name cars-drivers__form--label">Цвет кузова:</label>
+                  <input type="text" id="formColorCar" class="form__input form__input--cars-drivers">
+                </div>
+              </div>
+              <div class="form__item--data">
+                <span class="form__item--data-title info__title">Прицеп</span>
+                <div class="form__item--data-trailer">
+                  <label for="formTrailerNum" class="cars-drivers__form--label-name cars-drivers__form--label">Госномер:</label>
+                  <input type="text" id="formTrailerNum" class="form__input form__input--cars-drivers">
+                </div>
+                <div class="form__item--data-trailer">
+                  <label for="formTrailerColor" class="cars-drivers__form--label-name cars-drivers__form--label">Цвет:</label>
+                  <input type="text" id="formTrailerColor" class="form__input form__input--cars-drivers">
+                </div>
+                <div class="form__item--data-trailer">
+                  <label for="formTrailerLength" class="cars-drivers__form--label-name cars-drivers__form--label">Длина, м:</label>
+                  <input type="text" id="formTrailerLength" class="form__input form__input--cars-drivers">
+                </div>
+                <div class="form__item--data-trailer">
+                  <label for="formTrailerWidth" class="cars-drivers__form--label-name cars-drivers__form--label">Ширина, м:</label>
+                  <input type="text" id="formTrailerWidth" class="form__input form__input--cars-drivers">
+                </div>
+                <div class="form__item--data-trailer">
+                  <label for="formTrailerHeight" class="cars-drivers__form--label-name cars-drivers__form--label">Высота, м:</label>
+                  <input type="text" id="formTrailerHeight" class="form__input form__input--cars-drivers">
+                </div>
+                <div class="form__item--data-trailer">
+                  <label for="formTrailerVolume" class="cars-drivers__form--label-name cars-drivers__form--label">Объем кузова, куб. м:</label>
+                  <input type="text" id="formTrailerVolume" class="form__input form__input--cars-drivers">
+                </div>
+                <div class="form__item--data-trailer">
+                  <label for="formTrailerWeight" class="cars-drivers__form--label-name cars-drivers__form--label">Грузоподъемность, тонн:</label>
+                  <input type="text" id="formTrailerWeight" class="form__input form__input--cars-drivers">
+                </div>
+              </div>
+              <div class="form__item--document">
+                <span class="form__item--data-title info__title">Документы:</span>
+                <div class="form__item--document-block">
+                  <span class="span-title__info form__item--document-title">Копия: Паспорт</span>
+                  <a href="#" class="form__item--document-link">Развернуть</a>
+                  <input type="file" class="form__item--document-input">
+                  <a href="#" class="form__item--document-link">Удалить</a>
+                </div>
+                <div class="form__item--document-block">
+                  <span class="span-title__info form__item--document-title">Копия: Водительское удостоверение</span>
+                  <a href="#" class="form__item--document-link">Развернуть</a>
+                  <input type="file" class="form__item--document-input">
+                  <a href="#" class="form__item--document-link">Удалить</a>
+                </div>
+                <div class="form__item--document-block">
+                  <span class="span-title__info form__item--document-title">Копия: Техпаспорт</span>
+                  <a href="#" class="form__item--document-link">Развернуть</a>
+                  <input type="file" class="form__item--document-input">
+                  <a href="#" class="form__item--document-link">Удалить</a>
+                </div>
+                <div class="form__item--document-comment">
+                  <span class="form__item--data-title info__title">Комментарий:</span>
+                  <textarea name="comment" id="comment" class="form__item--document-textarea" rows="5"></textarea>
+                </div>
+                <div class="form__item--submit">
+                  <button type="submit" class="form__item--submit-btn btn__link">Добавить водителя</button>
+                  <span class="form__item--submit-text span-title">Нажимая кнопку Сохранить данные, вы соглашаетесь с <a href="#" class="form__item--submit-link span-title">условиями обработки
+                      персональных
+                      данных</a></span>
+                </div>
+              </div>
             </div>
           </form>
         </div>

@@ -3970,7 +3970,8 @@ span {
   -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 20px 0px;
+  margin-bottom: 40px;
 }
 
 .cars-drivers__form--label {
@@ -4035,6 +4036,111 @@ span {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 28%;
           flex: 0 1 28%;
+}
+
+.form__item--data-issued {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+}
+
+.form__item--data-car {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 24%;
+          flex: 0 1 24%;
+}
+
+.form__item--data-trailer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 19%;
+          flex: 0 1 19%;
+}
+
+.form__item--data-trailer:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 21%;
+          flex: 0 1 21%;
+}
+
+.form__item--document {
+  padding: 20px 0px;
+}
+
+.form__item--document-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px 0px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.form__item--document-title {
+  margin: 0px 0px 5px 0px;
+}
+
+.form__item--document-link {
+  margin: 0px 0px 10px 0px;
+}
+
+.form__item--document-input {
+  margin: 0px 0px 10px 0px;
+}
+
+.form__item--document-comment {
+  padding: 20px 0px 10px 0px;
+}
+
+.form__item--document-textarea {
+  background: #FFFFFF;
+  border: 2px solid #DEDEDE;
+  border-radius: 4px;
+  width: 100%;
+  resize: vertical;
+  padding: 10px;
+}
+
+.form__item--submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__item--submit-btn {
+  display: inline-block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  padding: 10px 25px;
+}
+
+.form__item--submit-text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 58%;
+          flex: 0 1 58%;
+}
+
+.form__item--submit-link {
+  text-decoration: underline;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.form__item--submit-link:hover {
+  color: #4838d4;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .form__input--block-wrap {
@@ -4629,6 +4735,18 @@ span {
         -ms-flex: 0 1 30%;
             flex: 0 1 30%;
     text-align: left;
+  }
+
+  .form__item--data-trailer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 24%;
+            flex: 0 1 24%;
+  }
+
+  .form__item--data-trailer:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 24%;
+            flex: 0 1 24%;
   }
 
   .footer-block__text {
@@ -5443,6 +5561,44 @@ span {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 48%;
             flex: 0 1 48%;
+  }
+
+  .form__item--data-car {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48%;
+            flex: 0 1 48%;
+  }
+
+  .form__item--data-trailer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 49%;
+            flex: 0 1 49%;
+  }
+
+  .form__item--data-trailer:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 49%;
+            flex: 0 1 49%;
+  }
+
+  .form__item--submit {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .form__item--submit-btn {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin-bottom: 10px;
+  }
+
+  .form__item--submit-text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
   }
 
   .form__input--block-wrap {
