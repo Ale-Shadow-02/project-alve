@@ -503,12 +503,12 @@ span {
   line-height: 23px;
   text-align: center;
   color: #FFFFFF;
-  padding: 18px 35px;
+  padding: 18px 40px;
   background: #1D1D1D;
   border-radius: 6px;
-  min-width: 250px;
+  max-width: 320px;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
 }
 
 .new__radio {
@@ -560,6 +560,135 @@ span {
 
 .password-control.view {
   background: url(../img/main/hidden-password.svg) 0 0 no-repeat;
+}
+
+.registration {
+  padding: 100px 0px 60px 0px;
+}
+
+.registration__body {
+  background: #FCFCFC;
+  border: 1px solid #EAEAEA;
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 40px 60px;
+  max-width: 540px;
+}
+
+.registration__form--title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+  margin: 0px 0px 20px 0px;
+}
+
+.registration__form--descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #767676;
+  margin: 0px 0px 20px 0px;
+}
+
+.registration__form--label {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin: 0px 0px 10px 0px;
+}
+
+.registration__form--role {
+  margin: 0px 0px 35px 0px;
+}
+
+.registration__form--label-radio {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  vertical-align: 2px;
+}
+
+.registration__form--label-radio-first {
+  margin-right: 20%;
+}
+
+.registration__form--document-title {
+  margin-bottom: 20px;
+}
+
+.registration__form--document-subtitle {
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.registration__form--document-block {
+  padding: 20px 0px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.registration__form--document-file {
+  margin-bottom: 10px;
+}
+
+.registration__form--politics {
+  margin-top: 20px;
+}
+
+.registration__form--btn {
+  max-width: 192px;
+  margin: 20px auto 0;
+}
+
+.registration__new--radio {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  border: 2px solid #B7BFC3;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 5px;
+}
+
+.registration__new--radio::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #000000;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.form__input--radio:checked + .registration__new--radio::before {
+  opacity: 1;
+}
+
+.summary {
+  color: #03396B;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.details {
+  margin-bottom: 20px;
 }
 
 .my-transportation {
@@ -5059,6 +5188,14 @@ span {
     width: 287px;
     background: #1D1D1D;
     margin: 0 auto;
+  }
+
+  .registration__body {
+    padding: 20px 10px;
+  }
+
+  .registration__form--label-radio-first {
+    margin-right: 5%;
   }
 
   .aside {

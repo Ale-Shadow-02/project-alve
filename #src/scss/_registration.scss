@@ -1,0 +1,120 @@
+.registration {
+  padding: 100px 0px 60px 0px;
+  &__body {
+    background: #FCFCFC;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 40px 60px;
+    max-width: 540px;
+    @media (max-width:576px){
+      padding: 20px 10px;
+    }
+  }
+  &__form {
+    &--title {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      color: #000000;
+      margin: 0px 0px 20px 0px;
+    }
+    &--descr {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #767676;
+      margin: 0px 0px 20px 0px;
+    }
+    &--label {
+      display: block;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+      margin: 0px 0px 10px 0px;
+    }
+    &--role {
+      margin: 0px 0px 35px 0px;
+    }
+    &--label {
+      &-radio {
+        display: inline-block;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        vertical-align: 2px;
+        &-first {
+          margin-right: 20%;
+          @media (max-width:576px){
+            margin-right: 5%;
+          }
+        }
+      }
+    }
+    &--document {
+      &-title {
+        margin-bottom: 20px;
+      }
+      &-subtitle {
+        color: #000;
+        margin-bottom: 10px;
+      }
+      &-block {
+        padding: 20px 0px;
+        border-bottom: 1px solid #C4C4C4;
+      }
+      &-file {
+        margin-bottom: 10px;
+      }
+    }
+    &--politics {
+      margin-top: 20px;
+    }
+    &--btn {
+      max-width: 192px;
+      margin: 20px auto 0;
+    }
+  }
+  &__new {
+    &--radio {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background-color: #ffffff;
+      border: 2px solid #B7BFC3;
+      border-radius: 50%;
+      position: relative;
+      margin-right: 5px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: #000000;
+        opacity: 0;
+        transition: all 0.3s ease 0s;
+      }
+    }
+  }
+}
+.form__input--radio:checked + .registration__new--radio::before {
+  opacity: 1;
+}
+.summary {
+  color: #03396B;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.details {
+  margin-bottom: 20px;
+}
