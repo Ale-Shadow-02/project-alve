@@ -427,7 +427,7 @@ span {
 .form {
   background: #016B45;
   border-radius: 6px;
-  width: 540px;
+  max-width: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,7 +442,7 @@ span {
 .form__title {
   font-weight: 500;
   font-size: 24px;
-  line-height: 36px;
+  line-height: 28px;
   text-align: center;
   color: #FFFFFF;
   margin-bottom: 20px;
@@ -499,16 +499,54 @@ span {
 
 .form__btn {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 16px;
+  line-height: 19px;
   text-align: center;
   color: #FFFFFF;
-  padding: 18px 40px;
+  padding: 10px 20px;
   background: #1D1D1D;
+  border: 1px solid #1D1D1D;
   border-radius: 6px;
-  max-width: 320px;
-  display: block;
-  margin: 0 auto 10px auto;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.form__btn:hover {
+  background: #016b45;
+  border: 1px solid #FFFFFF;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.form__btn--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__btn--link {
+  background: #016b45;
+  border: 1px solid #FFFFFF;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.form__btn--link:hover {
+  background: #1D1D1D;
+  border: 1px solid #1D1D1D;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .new__radio {
@@ -5137,11 +5175,6 @@ span {
 }
 
 @media (max-width: 680px) {
-  .form {
-    width: 100%;
-    padding: 28px;
-  }
-
   .form__title {
     width: 100%;
   }
@@ -5751,13 +5784,19 @@ span {
   }
 }
 
-@media (max-width: 400px) {
-  .header__app--link-mobile {
-    display: none;
+@media (max-width: 465px) {
+  .form {
+    padding: 28px;
   }
 
   .form__role--label-radio {
     margin-right: 7px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__app--link-mobile {
+    display: none;
   }
 
   .footer-block {

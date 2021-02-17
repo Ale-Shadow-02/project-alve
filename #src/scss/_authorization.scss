@@ -7,19 +7,18 @@
 .form {
   background: #016B45;
   border-radius: 6px;
-  width: 540px;
+  max-width: 480px;
   display: flex;
   flex-direction: column;
   padding: 35px 55px 45px 55px;
   margin: 0 auto;
-  @media (max-width:680px){
-    width: 100%;
+  @media (max-width:465px){
     padding: 28px;
   }
   &__title {
     font-weight: 500;
     font-size: 24px;
-    line-height: 36px;
+    line-height: 28px;
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 20px;
@@ -61,7 +60,7 @@
       margin-right: 40px;
       vertical-align: 1px;
       display: inline-block;
-      @media (max-width:400px){
+      @media (max-width:465px){
         margin-right: 7px;
       }
       &-first {
@@ -74,16 +73,36 @@
   }
   &__btn {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 16px;
+    line-height: 19px;
     text-align: center;
     color: #FFFFFF;
-    padding: 18px 40px;
+    padding: 10px 20px;
     background: #1D1D1D;
+    border: 1px solid #1D1D1D;
     border-radius: 6px;
-    max-width: 320px;
-    display: block;
-    margin: 0 auto 10px auto;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      background: #016b45;
+      border: 1px solid #FFFFFF;
+      transition: all 0.3s ease 0s;
+    }
+    &--wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &--link {
+      background: #016b45;
+      border: 1px solid #FFFFFF;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        background: #1D1D1D;
+        border: 1px solid #1D1D1D;
+        transition: all 0.3s ease 0s;
+      }
+    }
   }
 }
 
