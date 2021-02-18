@@ -25,6 +25,19 @@ body {
 		max-width: 768px;
 	}
 }
+.section__body {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.content__body {
+	flex: 0 1 67%;
+	@media (max-width:1180px) {
+		flex: 0 1 100%;
+	}
+}
+
 .page__title {
 	font-weight: 400;
 	font-size: 36px;
@@ -115,6 +128,8 @@ body {
 
 
 
+
+
 @import "_reset";
 @import "fonts";
 @import "_mobile";
@@ -126,5 +141,6 @@ body {
 @import "_lkp-drivers-search";
 @import "_lkp-cars";
 @import "_lkp-cars-drivers";
+@import "_lkp-my-finance";
 @import "_footer";
 
