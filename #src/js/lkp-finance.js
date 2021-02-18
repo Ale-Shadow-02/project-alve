@@ -71,4 +71,16 @@ document.addEventListener("DOMContentLoaded", function () {
       mobileArrow.classList.toggle("mobile-arrow");
     }
   });
+    //Открытие блока информации о доходох
+  let financeTabImgOpen = document.querySelector(".finance__info--block-tab-close");
+  let financeImg = document.querySelector(".finance__info--block-tab-close-img");
+  let financeInfo = document.querySelector(".finance__info--block-open");
+  let financeBlockWrap = document.querySelector(".finance__info--block-wrap");
+  financeTabImgOpen.addEventListener("click", (e) => {
+    if (e.target) {
+      financeInfo.classList.toggle("finance-info__active");
+      financeImg.classList.toggle("drivers-tab__open--img-active");
+      financeBlockWrap.classList.toggle("finance-wrap__block-active");
+    }
+  });
 });

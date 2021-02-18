@@ -70,6 +70,7 @@
     }
   }
   &__info {
+    margin-bottom: 35px;
     &--title {
       font-weight: 500;
       font-size: 24px;
@@ -85,6 +86,9 @@
       margin-bottom: 20px;
     }
     &--block {
+      &-open {
+        display: none;
+      }
       &-title {
         display: flex;
         justify-content: space-between;
@@ -158,6 +162,9 @@
         &-status {
           flex: 0 1 20%;
           border-right: 1px solid #EAEAEA;
+          &-label {
+            margin-left: 10px;
+          }
         }
         &-bid {
           flex: 0 1 20%;
@@ -323,6 +330,11 @@
       width: 215px;
       font-size: 13px;
       line-height: 15px;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        background-color: #005234;
+        transition: all 0.3s ease 0s;
+      }
       &::after {
         content: "";
         position: absolute;
@@ -340,4 +352,10 @@
       }
     }
   }
+}
+.finance-info__active {
+  display: block;
+}
+.finance-wrap__block-active {
+  display: none;
 }
