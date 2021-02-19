@@ -42,6 +42,17 @@ $(document).ready(function () {
       }
     });
   });
+  //* Глаз на input[type='password']
+  $("body").on("click", ".password-control", function () {
+    if ($("#password").attr("type") == "password") {
+      $(this).addClass("view");
+      $("#password").attr("type", "text");
+    } else {
+      $(this).removeClass("view");
+      $("#password").attr("type", "password");
+    }
+    return false;
+  });
 });
 document.addEventListener("DOMContentLoaded", function () {
   // Выпадающее меню сайдbара

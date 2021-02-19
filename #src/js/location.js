@@ -7,7 +7,7 @@ btn.addEventListener("click", function () {
     }
   }
 });
-
+//* Глаз на input[type='password']
 $(document).ready(function () {
   $("body").on("click", ".password-control", function () {
     if ($("#password").attr("type") == "password") {
