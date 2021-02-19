@@ -4816,6 +4816,22 @@ span {
   top: 38px;
 }
 
+.profile__form--item-submit {
+  margin-top: 20px;
+}
+
+.profile__form--item-link {
+  background: #016B45 url(../img/main/mail.svg) 95% 50% no-repeat;
+}
+
+.profile__form--item-link::after {
+  right: 43px;
+}
+
+.profile__form--item-text {
+  margin-left: 10px;
+}
+
 .form__input--block-password {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 30%;
@@ -6380,6 +6396,21 @@ span {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
+  }
+
+  .profile {
+    padding-bottom: 0;
+  }
+
+  .profile__form--item-submit {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .profile__form--item-text {
+    margin-top: 20px;
+    margin-left: 0;
   }
 
   .form__input--block-password:last-child {

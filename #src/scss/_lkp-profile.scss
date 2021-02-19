@@ -1,6 +1,9 @@
 .profile {
   padding-top: 90px;
   padding-bottom: 40px;
+  @media (max-width:576px){
+    padding-bottom: 0;
+  }
   &__content {
     &--title {
       margin-bottom: 5px;
@@ -15,6 +18,29 @@
   }
   &__password-control {
     top: 38px;
+  }
+  &__form {
+    &--item {
+      &-submit {
+        margin-top: 20px;
+        @media (max-width:576px){
+          align-items: flex-start;
+        }
+      }
+      &-link {
+        background: #016B45 url(../img/main/mail.svg) 95% 50% no-repeat;
+        &::after {
+          right: 43px;
+        }
+      }
+      &-text {
+        margin-left: 10px;
+        @media (max-width:576px){
+          margin-top: 20px;
+          margin-left: 0;
+        }
+      }
+    }
   }
 }
 .form {
@@ -35,3 +61,4 @@
     }
   }
 }
+
