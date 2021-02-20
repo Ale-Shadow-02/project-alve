@@ -4845,6 +4845,103 @@ span {
           flex: 0 0 35%;
 }
 
+.new-bid {
+  padding: 90px 0px 0px 0px;
+}
+
+.new-bid__checkbox {
+  display: inline-block;
+}
+
+.new-bid__checkbox--block {
+  margin-bottom: 25px;
+}
+
+.new-bid__label {
+  display: inline-block;
+  vertical-align: 3px;
+  margin-left: 10px;
+}
+
+.new-bid__header {
+  padding: 3px 0px;
+}
+
+.new-bid__header--block-number {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 120px;
+          flex: 0 0 120px;
+  padding: 13px 0 13px 13px;
+  border-right: 1px solid #EBEBEB;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.new-bid__header--block-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+  background: #FCFCFC;
+}
+
+.new-bid__header--city {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 60%;
+          flex: 0 1 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 10px;
+}
+
+.new-bid__header--city-town {
+  border: 1px solid #E8E8E8;
+  border-radius: 4px;
+  padding: 10px 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+}
+
+.new-bid__header--city-img {
+  display: block;
+  margin: 0px 5px;
+}
+
+.new-bid__header--date {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: 1px solid #E8E8E8;
+  padding: 15px 20px;
+}
+
 .footer {
   background: #1B242D;
   padding: 15px 0px;
@@ -5700,6 +5797,10 @@ span {
   .finance__info--block-wrap {
     display: none;
   }
+
+  .new-bid__header--block-wrap {
+    display: none;
+  }
 }
 
 @media (max-width: 685px) {
@@ -6042,12 +6143,6 @@ span {
 
   .funds__cargo-block--last {
     border-top: 1px solid #e7e7e7;
-  }
-
-  .drivers-tab__header {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 
   .drivers-info__property {

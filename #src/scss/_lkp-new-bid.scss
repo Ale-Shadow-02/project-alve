@@ -1,0 +1,70 @@
+.new-bid {
+  padding: 90px 0px 0px 0px;
+  &__checkbox {
+    display: inline-block;
+    &--block {
+      margin-bottom: 25px;
+    }
+  }
+  &__label {
+    display: inline-block;
+    vertical-align: 3px;
+    margin-left: 10px;  
+  }
+  &__header {
+    padding: 3px 0px;
+    &--block {
+      &-number {
+        flex: 0 0 120px;
+        padding: 13px 0 13px 13px;
+        border-right: 1px solid #EBEBEB;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+      }
+      &-wrap {
+        display: flex;
+        flex: 1 1 auto;
+        align-items: center;
+        height: 48px;
+        background: #FCFCFC;
+        @media (max-width:768px) {
+          display: none;
+        }
+      }
+    }
+    &--city {
+      flex: 0 1 60%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 10px;
+      &-town {
+        border: 1px solid #E8E8E8;
+        border-radius: 4px;
+        padding: 10px 30px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+
+        color: #000000;
+      }
+      &-img {
+        display: block;
+        margin: 0px 5px;
+      }
+    }
+    &--date {
+      flex: 0 1 40%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-left: 1px solid #E8E8E8;
+      padding: 15px 20px;
+    }
+  }
+}
+
+  

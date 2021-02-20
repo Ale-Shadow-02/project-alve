@@ -1,6 +1,6 @@
-<section class="drivers">
+<section class="new-bid">
   <div class="container">
-    <div class="drivers__body">
+    <div class="section__body">
       <aside class="aside">
         <nav class="navbar">
           <div class="navbar__wrap--logo">
@@ -43,68 +43,39 @@
         </nav>
       </aside>
       <div class="drivers__content">
-        <h1 class="drivers__content--title page__title">Водители</h1>
+        <h1 class="drivers__content--title page__title">Найти новую заявку</h1>
         <div class="bid-hauling__breadcrumbs drivers__breadcrumbs">
           <a href="#" class="bid-hauling__breadcrumbs--link">Главная</a>
           <span class="bid-hauling__breadcrumbs--arrow">>></span>
           <a href="#" class="bid-hauling__breadcrumbs--link">Личный кабинет</a>
           <span class="bid-hauling__breadcrumbs--arrow">>></span>
-          <span class="bid-hauling__breadcrumbs--last">Водители</span>
+          <span class="bid-hauling__breadcrumbs--last">Найти новую заявку</span>
         </div>
         <div class="drivers__sort">
-          <div class="drivers__sort--surname surname">
-            <span class="surname__title span-title">Сортировать:</span>
-            <span class="surname__title--sort">ФИО от А до Я</span>
-            <a href="#" class="surname__sort--link">
-              <img src="img/drivers/arrow_top.svg" alt="ARROW-TOP" class="surname__sort--img" />
-            </a>
-          </div>
-          <div class="drivers__sort--property property ">
-            <span class="property__title span-title">Автомобиль в собственности:</span>
-            <label for="property-yes">
-              <input type="radio" name="property" id="property-yes" class="property__input" checked />
-              <span class="property__new--radio"></span>
-              <span class="property__label span-title">Да</span>
-            </label>
-            <label for="property-not">
-              <input type="radio" name="property" id="property-not" class="property__input" />
-              <span class="property__new--radio"></span>
-              <span class="property__label span-title">Нет</span>
-            </label>
-          </div>
-          <div class="drivers__sort--trailer property trailer">
-            <span class="property__title span-title">С прицепом:</span>
-            <label for="trailer-yes">
-              <input type="radio" name="trailer" id="trailer-yes" class="property__input" checked />
-              <span class="property__new--radio"></span>
-              <span class="property__label span-title">Да</span>
-            </label>
-            <label for="trailer-not">
-              <input type="radio" name="trailer" id="trailer-not" class="property__input" />
-              <span class="property__new--radio"></span>
-              <span class="property__label span-title">Нет</span>
+          <div class="new-bid__checkbox--block">
+            <label for="new-bid">
+              <input type="checkbox" name="new-bid" id="new-bid" class="drivers-tab__input">
+              <span class="drivers-tab__new--checkbox new-bid__checkbox"></span>
+              <span class="new-bid__label span__title">Выбранные заявки (я откликнулся)</span>
             </label>
           </div>
         </div>
+
         <div class="drivers-tab">
-          <div class="drivers-tab__header">
-            <div class="drivers-tab__header--block-surname">
-              <span class="drivers-tab__header--surname">Мясников Петр Александрович</span>
+          <div class="drivers-tab__header new-bid__header">
+            <div class="new-bid__header--block-number">
+              № 1000001
             </div>
-            <div class="drivers-tab__header--block-wrap">
-              <div class="drivers-tab__header--block">
-                <label for="tab-property">
-                  <span class="drivers-tab__label span-title__info">Автомобиль в собственности:</span>
-                  <input type="checkbox" name="tab-property" id="tab-property" class="drivers-tab__input">
-                  <span class="drivers-tab__new--checkbox"></span>
-                </label>
+            <div class="new-bid__header--block-wrap">
+              <div class="new-bid__header--city">
+                <div class="new-bid__header--city-town">Петропавловск</div>
+                <img src="img/main/arrow2.svg" class="new-bid__header--city-img" alt="ARROW" />
+                <div class="new-bid__header--city-town">Новосибирск</div>
               </div>
-              <div class="drivers-tab__header--block">
-                <label for="tab-trailer">
-                  <span class="drivers-tab__label span-title__info">С прицепом:</span>
-                  <input type="checkbox" name="tab-trailer" id="tab-trailer" class="drivers-tab__input" checked>
-                  <span class="drivers-tab__new--checkbox"></span>
-                </label>
+              <div class="new-bid__header--date">
+                <div class="new-bid__header--date-on">22 11 20</div>
+                <img src="img/main/arrow2.svg" class="new-bid__header--date-img" alt="ARROW" />
+                <div class="new-bid__header--date-off">26 11 20</div>
               </div>
             </div>
             <div class="drivers-tab__open">
@@ -265,102 +236,7 @@
             </div>
           </div>
         </div>
-        <div class="drivers-tab__header">
-          <div class="drivers-tab__header--block-surname">
-            <span class="drivers-tab__header--surname">Иванов Петр Александрович</span>
-          </div>
-          <div class="drivers-tab__header--block-wrap">
-            <div class="drivers-tab__header--block">
-              <label for="">
-                <span class="drivers-tab__label span-title__info">Автомобиль в собственности:</span>
-                <input type="checkbox" name="" id="" class="drivers-tab__input">
-                <span class="drivers-tab__new--checkbox"></span>
-              </label>
-            </div>
-            <div class="drivers-tab__header--block">
-              <label for="">
-                <span class="drivers-tab__label span-title__info">С прицепом:</span>
-                <input type="checkbox" name="" id="" class="drivers-tab__input" checked>
-                <span class="drivers-tab__new--checkbox"></span>
-              </label>
-            </div>
-          </div>
-          <div class="drivers-tab__open">
-            <img src="img/main/arrow-bottom.svg" alt="ARROW-BOTTOM" class="drivers-tab__open--img" />
-          </div>
-        </div>
-        <div class="drivers-tab__header">
-          <div class="drivers-tab__header--block-surname">
-            <span class="drivers-tab__header--surname">Петров Петр Александрович</span>
-          </div>
-          <div class="drivers-tab__header--block-wrap">
-            <div class="drivers-tab__header--block">
-              <label for="">
-                <span class="drivers-tab__label span-title__info">Автомобиль в собственности:</span>
-                <input type="checkbox" name="" id="" class="drivers-tab__input">
-                <span class="drivers-tab__new--checkbox"></span>
-              </label>
-            </div>
-            <div class="drivers-tab__header--block">
-              <label for="">
-                <span class="drivers-tab__label span-title__info">С прицепом:</span>
-                <input type="checkbox" name="" id="" class="drivers-tab__input" checked>
-                <span class="drivers-tab__new--checkbox"></span>
-              </label>
-            </div>
-          </div>
-          <div class="drivers-tab__open">
-            <img src="img/main/arrow-bottom.svg" alt="ARROW-BOTTOM" class="drivers-tab__open--img" />
-          </div>
-        </div>
-        <div class="drivers-tab__header">
-          <div class="drivers-tab__header--block-surname">
-            <span class="drivers-tab__header--surname">Колодников Петр Александрович</span>
-          </div>
-          <div class="drivers-tab__header--block-wrap">
-            <div class="drivers-tab__header--block">
-              <label for="">
-                <span class="drivers-tab__label span-title__info">Автомобиль в собственности:</span>
-                <input type="checkbox" name="" id="" class="drivers-tab__input">
-                <span class="drivers-tab__new--checkbox"></span>
-              </label>
-            </div>
-            <div class="drivers-tab__header--block">
-              <label for="">
-                <span class="drivers-tab__label span-title__info">С прицепом:</span>
-                <input type="checkbox" name="" id="" class="drivers-tab__input" checked>
-                <span class="drivers-tab__new--checkbox"></span>
-              </label>
-            </div>
-          </div>
-          <div class="drivers-tab__open">
-            <img src="img/main/arrow-bottom.svg" alt="ARROW-BOTTOM" class="drivers-tab__open--img" />
-          </div>
-        </div>
-        <div class="drivers-tab__header">
-          <div class="drivers-tab__header--block-surname">
-            <span class="drivers-tab__header--surname">Добровольский Петр Александрович</span>
-          </div>
-          <div class="drivers-tab__header--block-wrap">
-            <div class="drivers-tab__header--block">
-              <label for="">
-                <span class="drivers-tab__label span-title__info">Автомобиль в собственности:</span>
-                <input type="checkbox" name="" id="" class="drivers-tab__input">
-                <span class="drivers-tab__new--checkbox"></span>
-              </label>
-            </div>
-            <div class="drivers-tab__header--block">
-              <label for="">
-                <span class="drivers-tab__label span-title__info">С прицепом:</span>
-                <input type="checkbox" name="" id="" class="drivers-tab__input" checked>
-                <span class="drivers-tab__new--checkbox"></span>
-              </label>
-            </div>
-          </div>
-          <div class="drivers-tab__open">
-            <img src="img/main/arrow-bottom.svg" alt="ARROW-BOTTOM" class="drivers-tab__open--img" />
-          </div>
-        </div>
+
       </div>
     </div>
   </div>
