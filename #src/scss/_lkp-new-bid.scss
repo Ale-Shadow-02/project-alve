@@ -23,11 +23,27 @@
         line-height: 21px;
         color: #000000;
       }
+      &-info {
+        &-wrap {
+          display: flex;
+          flex-wrap: wrap;
+          flex: 1 1 auto;
+          align-items: center;
+          justify-content: space-between;
+          height: auto;
+          background: #FCFCFC;
+          padding: 10px 0;
+          border-bottom: 1px solid #E8E8E8;
+          @media (max-width:1180px){
+            border-bottom: 1px solid #E8E8E8;
+          }
+        }
+      }
       &-wrap {
         display: flex;
         flex: 1 1 auto;
         align-items: center;
-        height: 48px;
+        height: auto;
         background: #FCFCFC;
         @media (max-width:768px) {
           display: none;
@@ -40,6 +56,18 @@
       justify-content: space-between;
       align-items: center;
       padding: 0px 10px;
+      &-info {
+        flex: 0 1 48%;
+        @media (max-width:1180px){
+          flex: 0 1 59%;
+        }
+        @media (max-width:768px){
+          flex: 0 1 100%;
+        }
+        @media (max-width:576px) {
+          flex-direction: column;
+        }
+      }
       &-town {
         border: 1px solid #E8E8E8;
         border-radius: 4px;
@@ -48,12 +76,18 @@
         font-size: 14px;
         line-height: 16px;
         text-align: center;
-
         color: #000000;
+        @media (max-width:576px){
+          width: 100%;
+        }
       }
       &-img {
         display: block;
         margin: 0px 5px;
+        @media (max-width:576px){
+          transform: rotate(90deg);
+          margin: 15px 0px;
+        }
       }
     }
     &--date {
@@ -63,6 +97,34 @@
       align-items: center;
       border-left: 1px solid #E8E8E8;
       padding: 15px 20px;
+      &-info {
+        flex: 0 1 24%;
+        @media (max-width:1180px){
+          flex: 0 1 39%;
+        }
+        @media (max-width:768px){
+          flex: 0 1 45%;
+          margin-top: 10px;
+        }
+        @media (max-width:576px){
+          flex: 0 1 100%;
+          border-left: none;
+          border-bottom: 1px solid #E8E8E8;
+        }
+      }
+    }
+    &--button {
+      &-wrap {
+        flex: 0 1 25%;
+        margin-right: 10px;
+        @media (max-width:1180px){
+          margin: 10px 0 0 10px;
+          flex: 0 0 200px;
+        }
+      }
+      &-info {
+        width: 100%;
+      }
     }
   }
 }
