@@ -67,29 +67,31 @@
       <div class="new-bid drivers-result">
         <span class="drivers-result__title">Найдено 54 заявки</span>
         <div class="drivers-result__body">
-          <div class="drivers-result__header result-header">
-            <div class="result-header__name">
-              <span class="span-title__info--text result-header__text">ФИО водителя</span>
+          <div class="drivers-result__header result-header filter-new-bid__header">
+            <div class="result-header__name filter-new-bid__header--name">
+              <span class="span-title__info--text result-header__text">Заявка</span>
             </div>
-            <div class="result-header__property">
-              <span class="span-title__info--text result-header__text">Собственный автомобиль</span>
+            <div class="result-header__property filter-new-bid__header--route">
+              <span class="span-title__info--text result-header__text">Маршрут</span>
             </div>
-            <div class="result-header__brand">
-              <span class="span-title__info--text result-header__text">Марка</span>
+            <div class="result-header__brand filter-new-bid__header--date">
+              <span class="span-title__info--text result-header__text">Период перевозки</span>
             </div>
-
-            <div class="result-header__wrap--center">
-              <div class="result-header__numcar">
-                <span class="span-title__info--text result-header__text">Госномер</span>
+            <div class="result-header__wrap--center filter-new-bid__header--center">
+              <div class="result-header__numcar filter-new-bid__header--center-item">
+                <span class="span-title__info--text result-header__text">Груз</span>
               </div>
-              <div class="result-header__weight">
-                <span class="span-title__info--text result-header__text">Грузоподъемность, тонн</span>
+              <div class="result-header__weight filter-new-bid__header--center-item">
+                <span class="span-title__info--text result-header__text">Вес, тонн</span>
               </div>
-              <div class="result-header__volume">
-                <span class="span-title__info--text result-header__text">Объем кузова, куб.м</span>
+              <div class="result-header__volume filter-new-bid__header--center-item">
+                <span class="span-title__info--text result-header__text">Объем, куб.м</span>
+              </div>
+              <div class="result-header__cost filter-new-bid__header--center-item">
+                <span class="span-title__info--text result-header__text">Стоимоть, руб</span>
               </div>
             </div>
-            <div class="result-header__setting">
+            <div class="result-header__setting filter-new-bid__header--setting">
               <img src="img/main/gear.svg" alt="SETTING" class="result-header__setting--img" />
               <div class="setting-modal">
                 <div class="setting-modal__close"></div>
@@ -137,30 +139,37 @@
               </div>
             </div>
           </div>
+
           <div class="drivers-result__tab drivers-result__tab--test">
             <div class="result-tab__body">
-              <div class="result-tab__name">
-                <span class="drivers-tab__header--surname">Мясников Петр Александрович</span>
+
+              <div class="new-bid__header--block-number filter-new-bid__block--numder">
+                № 1000001
               </div>
-              <div class="result-tab__property">
-                <label for="tab-property__result">
-                  <span class="drivers-tab__label span-title__info">Автомобиль в собственности:</span>
-                  <input type="checkbox" name="tab-property__result" id="tab-property__result" class="drivers-tab__input">
-                  <span class="drivers-tab__new--checkbox"></span>
-                </label>
-              </div>
-              <div class="result-tab__brand">
-                <span class="span-title__info--text">Камаз</span>
-              </div>
-              <div class="result-header__wrap--center result-tab__wrap--center">
-                <div class="result-tab__numcar">
-                  <span class="span-title__info--text">А1233ХМ 38</span>
+              <div class="new-bid__header--block-wrap filter-new-bid__result--wrap1">
+                <div class="new-bid__header--city filter-new-bid__result--city">
+                  <div class="new-bid__header--city-town">Петропавловск</div>
+                  <img src="img/main/arrow2.svg" class="new-bid__header--city-img new-bid__header--city-img-mobile" alt="ARROW" />
+                  <div class="new-bid__header--city-town">Новосибирск</div>
                 </div>
-                <div class="result-tab__weight">
+                <div class="new-bid__header--date filter-new-bid__result--date">
+                  <div class="new-bid__header--date-on">22 11 20</div>
+                  <img src="img/main/arrow2.svg" class="new-bid__header--date-img" alt="ARROW" />
+                  <div class="new-bid__header--date-off">26 11 20</div>
+                </div>
+              </div>
+              <div class="new-bid__header--block-wrap filter-new-bid__result--wrap2">
+                <div class="result-tab__brand filter-new-bid__result--wrap2-item">
+                  <span class="span-title__info--text">Запчасти</span>
+                </div>
+                <div class="result-tab__weight filter-new-bid__result--wrap2-item">
+                  <span class="span-title__info--text">38</span>
+                </div>
+                <div class="result-tab__volume filter-new-bid__result--wrap2-item">
                   <span class="span-title__info--text">20</span>
                 </div>
-                <div class="result-tab__volume">
-                  <span class="span-title__info--text">300</span>
+                <div class="filter-new-bid__result--cost filter-new-bid__result--wrap2-item">
+                  <span class="span-title__info--text">25 000</span>
                 </div>
               </div>
               <div class="result-tab__open">

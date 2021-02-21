@@ -5034,10 +5034,80 @@ span {
   margin-bottom: 20px;
 }
 
+.filter-new-bid__header--name {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 120px;
+          flex: 0 1 120px;
+}
+
+.filter-new-bid__header--route {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+}
+
+.filter-new-bid__header--date {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+}
+
+.filter-new-bid__header--center {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+}
+
+.filter-new-bid__header--center-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 24%;
+          flex: 0 1 24%;
+}
+
+.filter-new-bid__block--numder {
+  padding-left: 0;
+}
+
 .filter-new-bid__period {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 15%;
           flex: 0 1 15%;
+}
+
+.filter-new-bid__result--city {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.filter-new-bid__result--date {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+}
+
+.filter-new-bid__result--wrap1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 55%;
+          flex: 0 1 55%;
+}
+
+.filter-new-bid__result--wrap2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 36%;
+          flex: 0 1 36%;
+}
+
+.filter-new-bid__result--wrap2-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 24%;
+          flex: 0 1 24%;
+}
+
+.filter-new-bid__result--cost {
+  text-align: center;
+  border-left: 1px solid #ebebeb;
+  padding: 10px 0;
 }
 
 .footer {
@@ -5688,6 +5758,28 @@ span {
     margin-top: 10px;
   }
 
+  .filter-new-bid__header--name {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 120px;
+            flex: 0 1 120px;
+  }
+
+  .filter-new-bid__header--route {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+
+  .filter-new-bid__header--date {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 35%;
+            flex: 0 1 35%;
+  }
+
+  .filter-new-bid__header--setting {
+    display: none;
+  }
+
   .filter-new-bid__period {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 32%;
@@ -5702,6 +5794,16 @@ span {
 
   .filter-new-bid__item--center {
     margin-top: 15px;
+  }
+
+  .filter-new-bid__result--wrap1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+
+  .filter-new-bid__result--wrap2 {
+    display: none;
   }
 
   .footer-block__text {
@@ -5982,6 +6084,10 @@ span {
 
   .new-bid__header--button-wrap {
     margin-top: 10px;
+  }
+
+  .filter-new-bid__header {
+    display: none;
   }
 }
 

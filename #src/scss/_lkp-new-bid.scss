@@ -203,6 +203,46 @@
   
 }
 .filter-new-bid {
+  &__header {
+    @media (max-width:768px){
+      display: none;
+    }
+    &--name {
+      flex: 0 1 120px;
+      @media (max-width:1180px){
+        flex: 0 1 120px;
+      }
+
+    }
+    &--route {
+      flex: 0 1 30%;
+      @media (max-width:1180px){
+        flex: 0 1 50%;
+      }
+    }
+    &--date {
+      flex: 0 1 25%;
+      @media (max-width:1180px){
+        flex: 0 1 35%;
+      }
+    }
+    &--center {
+      flex: 0 1 40%;
+      &-item {
+        flex:  0 1 24%;
+      }
+    }
+    &--setting {
+      @media (max-width:1180px){
+        display: none;
+      }
+    }
+  }
+  &__block {
+    &--numder {
+      padding-left: 0;
+    }
+  }
   &__period {
     flex: 0 1 15%;
     @media (max-width:1180px){
@@ -225,6 +265,34 @@
       @media (max-width:1180px){
         margin-top: 15px;
       }
+    }
+  }
+  &__result {
+    &--city {
+      flex: 0 1 50%;
+    }
+    &--date {
+      flex: 0 1 40%;
+    }
+    &--wrap1 {
+      flex: 0 1 55%;
+      @media (max-width:1180px){
+        flex: 1 1 auto;
+      }
+    }
+    &--wrap2 {
+      flex: 0 1 36%;
+      @media (max-width:1180px){
+        display: none;
+      }
+      &-item {
+        flex: 0 1 24%;
+      }
+    }
+    &--cost  {
+      text-align: center;
+      border-left: 1px solid #ebebeb;
+      padding: 10px 0;
     }
   }
 }
