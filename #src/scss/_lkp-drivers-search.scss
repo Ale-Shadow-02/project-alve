@@ -142,7 +142,9 @@
   &__item {
     position: relative;
     &--center {
-      margin: 15px 0px 0px 0px;
+      @media (max-width:1180px){
+        margin: 15px 0px 0px 0px;
+      }
     }
   }
   &__btn {

@@ -3824,10 +3824,6 @@ span {
   position: relative;
 }
 
-.filter__item--center {
-  margin: 15px 0px 0px 0px;
-}
-
 .filter__btn {
   position: absolute;
   top: 0;
@@ -4867,6 +4863,10 @@ span {
   padding: 3px 0px;
 }
 
+.new-bid__header:nth-child(n+2):nth-child(-n+3) {
+  margin-top: 20px;
+}
+
 .new-bid__header--block-number {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 120px;
@@ -4877,6 +4877,7 @@ span {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+  margin-right: 10px;
 }
 
 .new-bid__header--block-info-wrap {
@@ -5019,6 +5020,24 @@ span {
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
   background: url(../img/main/icon-calendar.svg) no-repeat;
+}
+
+.new-bid__comment {
+  padding: 20px 13px;
+}
+
+.new-bid__comment--title {
+  margin-bottom: 10px;
+}
+
+.new-bid__comment--text {
+  margin-bottom: 20px;
+}
+
+.filter-new-bid__period {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 15%;
+          flex: 0 1 15%;
 }
 
 .footer {
@@ -5521,6 +5540,10 @@ span {
             flex: 0 1 100%;
   }
 
+  .filter__item--center {
+    margin: 15px 0px 0px 0px;
+  }
+
   .filter__name {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 57%;
@@ -5663,6 +5686,22 @@ span {
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
     margin-top: 10px;
+  }
+
+  .filter-new-bid__period {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 32%;
+            flex: 0 1 32%;
+  }
+
+  .filter-new-bid__town {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 66%;
+            flex: 0 1 66%;
+  }
+
+  .filter-new-bid__item--center {
+    margin-top: 15px;
   }
 
   .footer-block__text {
@@ -6716,6 +6755,16 @@ span {
             flex: 0 1 100%;
     padding-bottom: 0;
     border-bottom: none;
+  }
+
+  .filter-new-bid__period {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .filter-new-bid__town {
+    margin-top: 15px;
   }
 }
 
