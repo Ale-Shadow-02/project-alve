@@ -4896,7 +4896,7 @@ span {
           justify-content: space-between;
   height: auto;
   background: #FCFCFC;
-  padding: 10px 0;
+  padding: 10px 13px;
   border-bottom: 1px solid #E8E8E8;
 }
 
@@ -4927,7 +4927,7 @@ span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 10px;
+  padding-right: 10px;
 }
 
 .new-bid__header--city-info {
@@ -4979,11 +4979,46 @@ span {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
-  margin-right: 10px;
 }
 
 .new-bid__header--button-info {
   width: 100%;
+}
+
+.new-bid__header--items-wrap {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.new-bid__header--item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 15%;
+          flex: 0 1 15%;
+  padding-left: 25px;
+}
+
+.new-bid__header--cargo {
+  background: url(../img/main/icon-box.svg) no-repeat;
+}
+
+.new-bid__header--weight {
+  background: url(../img/main/icon-weight.svg) no-repeat;
+}
+
+.new-bid__header--volume {
+  background: url(../img/main/icon-volume.svg) no-repeat;
+}
+
+.new-bid__header--cost {
+  background: url(../img/main/icon-cost.svg) no-repeat;
+}
+
+.new-bid__header--payment {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  background: url(../img/main/icon-calendar.svg) no-repeat;
 }
 
 .footer {
@@ -5591,6 +5626,7 @@ span {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 59%;
             flex: 0 1 59%;
+    padding-right: 0;
   }
 
   .new-bid__header--date-info {
@@ -5600,10 +5636,33 @@ span {
   }
 
   .new-bid__header--button-wrap {
-    margin: 10px 0 0 10px;
+    margin-top: 10px;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 200px;
             flex: 0 0 200px;
+  }
+
+  .new-bid__header--items-wrap {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .new-bid__header--item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 33%;
+            flex: 0 1 33%;
+  }
+
+  .new-bid__header--cost {
+    margin-top: 10px;
+  }
+
+  .new-bid__header--payment {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    margin-top: 10px;
   }
 
   .footer-block__text {
@@ -5879,6 +5938,10 @@ span {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 45%;
             flex: 0 1 45%;
+    margin-top: 10px;
+  }
+
+  .new-bid__header--button-wrap {
     margin-top: 10px;
   }
 }
@@ -6625,6 +6688,34 @@ span {
             flex: 0 1 100%;
     border-left: none;
     border-bottom: 1px solid #E8E8E8;
+  }
+
+  .new-bid__header--button-wrap {
+    margin-top: 10px;
+  }
+
+  .new-bid__header--button-info {
+    width: 200px;
+  }
+
+  .new-bid__header--item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 49%;
+            flex: 0 1 49%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E8E8E8;
+  }
+
+  .new-bid__header--volume {
+    margin-top: 10px;
+  }
+
+  .new-bid__header--payment {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding-bottom: 0;
+    border-bottom: none;
   }
 }
 

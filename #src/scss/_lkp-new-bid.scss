@@ -32,7 +32,7 @@
           justify-content: space-between;
           height: auto;
           background: #FCFCFC;
-          padding: 10px 0;
+          padding: 10px 13px;
           border-bottom: 1px solid #E8E8E8;
           @media (max-width:1180px){
             border-bottom: 1px solid #E8E8E8;
@@ -55,11 +55,12 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0px 10px;
+      padding-right: 10px;
       &-info {
         flex: 0 1 48%;
         @media (max-width:1180px){
           flex: 0 1 59%;
+          padding-right: 0;
         }
         @media (max-width:768px){
           flex: 0 1 100%;
@@ -116,14 +117,73 @@
     &--button {
       &-wrap {
         flex: 0 1 25%;
-        margin-right: 10px;
         @media (max-width:1180px){
-          margin: 10px 0 0 10px;
+          margin-top: 10px;
           flex: 0 0 200px;
+        }
+        @media (max-width:768px){
+          margin-top: 10px;
+        }
+        @media (max-width:576px){
+          margin-top: 10px;
         }
       }
       &-info {
         width: 100%;
+        @media (max-width:576px){
+          width: 200px;
+        }
+      }
+    }
+    &--items {
+      &-wrap {
+        align-items: flex-start;
+        @media (max-width:1180px){
+          justify-content: flex-start;
+        }
+      }
+    }
+    &--item {
+      flex: 0 1 15%;
+      padding-left: 25px;
+      @media (max-width:1180px){
+        flex: 0 1 33%;
+      }
+      @media (max-width:576px){
+        flex: 0 1 49%;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #E8E8E8;
+      }
+    }
+    &--cargo {
+      background: url(../img/main/icon-box.svg) no-repeat;
+    }
+    &--weight {
+      background: url(../img/main/icon-weight.svg) no-repeat;
+    }
+    &--volume {
+      background: url(../img/main/icon-volume.svg) no-repeat;
+      @media (max-width:576px){
+        margin-top: 10px;
+      }
+    }
+    &--cost {
+      background: url(../img/main/icon-cost.svg) no-repeat;
+      @media (max-width:1180px){
+        margin-top: 10px;
+      }
+    }
+    &--payment {
+      flex: 0 1 25%;
+      background: url(../img/main/icon-calendar.svg) no-repeat;
+      @media (max-width:1180px){
+        flex: 0 1 50%;
+        margin-top: 10px;
+      }
+      @media (max-width:576px){
+        flex: 0 1 100%;
+        padding-bottom: 0;
+        border-bottom: none;
       }
     }
   }
