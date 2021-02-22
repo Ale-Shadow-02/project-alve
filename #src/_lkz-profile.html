@@ -1,0 +1,121 @@
+<section class="profile">
+  <div class="container">
+    <div class="section__body profile__section--body">
+      @@include('_lkz-aside.html')
+      <div class="content__body profile__content--body">
+        <h1 class="profile__content--title page__title">Настройки профиля</h1>
+        <div class="bid-hauling__breadcrumbs drivers__breadcrumbs">
+          <a href="#" class="bid-hauling__breadcrumbs--link">Главная</a>
+          <span class="bid-hauling__breadcrumbs--arrow">>></span>
+          <a href="#" class="bid-hauling__breadcrumbs--link">Личный кабинет</a>
+          <span class="bid-hauling__breadcrumbs--arrow">>></span>
+          <span class="bid-hauling__breadcrumbs--last">Настройки профиля</span>
+        </div>
+        <span class="profile__content--subtitle">* обозначены поля, обязательные для заполнения</span>
+
+        <div class="cars-drivers__form--wrap">
+          <form action="#" id="profile" class="cars-drivers__form">
+            <div class="cars-drivers__form--body">
+              <span class="cars-drivers__form--title section__title">Контактная информация</span>
+              <div class="form__item--name">
+                <label for="nameCompany" class="cars-drivers__form--label-name cars-drivers__form--label">Наименование организации/ИП*:</label>
+                <input type="text" id="nameCompany" class="form__input form__input--cars-drivers" placeholder="ООО «Наименование организации»" required>
+                <div class="form__input--block-wrap">
+                  <label for="formStatus" class="cars-drivers__form--label-name cars-drivers__form--label">Роль в перевозке:</label>
+                  <input type="text" id="formStatus" class="form__input form__input--cars-drivers" placeholder="Заказчик">
+                </div>
+                <div class="form__input--block-wrap">
+                  <label for="userName" class="cars-drivers__form--label-name cars-drivers__form--label">ФИО представителя*:</label>
+                  <input type="text" id="userName" class="form__input form__input--cars-drivers" placeholder="Иванов Иван Иванович" required>
+                </div>
+                <div class="form__input--block-wrap">
+                  <label for="formPhone" class="cars-drivers__form--label-name cars-drivers__form--label">Телефон*::</label>
+                  <input type="tel" id="formPhone" class="form__input form__input--cars-drivers" placeholder="+7 (343) _ _-_ _-_ _" required>
+                </div>
+                <div class="form__input--block-wrap">
+                  <label for="formEmail" class="cars-drivers__form--label-name cars-drivers__form--label">E-mail*:</label>
+                  <input type="email" id="formEmail" class="form__input form__input--cars-drivers" placeholder="mail@yandex.ru" required>
+                </div>
+
+                <div class="form__input--block-password form__password--wrap">
+                  <label for="password" class="cars-drivers__form--label-name cars-drivers__form--label">Текущий пароль*:</label>
+                  <input type="password" id="password" class="form__input" required>
+                  <a href="#" class="password-control profile__password-control"></a>
+                </div>
+                <div class="form__input--block-password">
+                  <label for="profileNewPassword" class="cars-drivers__form--label-name cars-drivers__form--label">Новый пароль*:</label>
+                  <input type="password" id="profileNewPassword" class="form__input form__input--cars-drivers" required>
+                </div>
+                <div class="form__input--block-password">
+                  <label for="repeatNewPassword" class="cars-drivers__form--label-name cars-drivers__form--label">Повторить новый пароль*:</label>
+                  <input type="password" id="repeatNewPassword" class="form__input form__input--cars-drivers" required>
+                </div>
+              </div>
+              <div class="form__item--document">
+                <div class="registration__form--document">
+                  <span class="registration__form--document-title drivers-tab__header--surname">Документы:</span>
+                  <span class="registration__form--document-subtitle span-title__info">Копия: Документ о назначении руководителя (решение единственного учредителя или протокол собрания и т.д.</span>
+                </div>
+                <details class="details" open="open">
+                  <summary class="summary">Примечание</summary>
+                  <span class="span-title__info">В случае, если от имени этого руководителя действует иное лицо, также представляется копия доверенности (иного документа) на осуществление
+                    соответствующих
+                    действий, заверенная его
+                    печатью
+                    (при наличии печати) и подписанная руководителем или уполномоченным им лицом. В случае, если указанная доверенность подписана лицом, уполномоченным руководителем, также
+                    представляется
+                    копия документа, подтверждающего полномочия этого лица</span>
+                </details>
+                <div class="registration__form--document-block">
+                  <input type="file" class="registration__form--document-file">
+                  <input type="file" class="registration__form--document-file">
+                </div>
+                <div class="registration__form--document-block">
+                  <span class="registration__form--document-subtitle span-title__info">Копия: Устав в последней редакции с учетом всех изменений и дополнений, все страницы (страница-прошивка с
+                    отметкой
+                    налогового органа обязательна)</span>
+                  <input type="file" class="registration__form--document-file">
+                </div>
+                <div class="registration__form--document-block">
+                  <span class="registration__form--document-subtitle span-title__info">Копия: Свидетельство о государственной регистрации юридического лица (ОГРН)</span>
+                  <details class="details" open="open">
+                    <summary class="summary">Примечание</summary>
+                    <span class="span-title__info">Если организация зарегистрирована до 01.07.2002, то необходимо представить свидетельство о внесении записи в ЕГРЮЛ об организации, созданной до
+                      01.07.2002.</span>
+                  </details>
+                  <input type="file" class="registration__form--document-file">
+                </div>
+                <div class="registration__form--document-block">
+                  <span class="registration__form--document-subtitle span-title__info">Копия: Свидетельство о постановке на учет в налоговом органе (ИНН).</span>
+                  <input type="file" class="registration__form--document-file">
+                </div>
+                <div class="registration__form--document-block">
+                  <span class="registration__form--document-subtitle span-title__info">Копия: Выписка из Единого государственного реестра юридических лиц (ЕГРЮЛ)</span>
+                  <details class="details" open="open">
+                    <summary class="summary">Примечание</summary>
+                    <span class="span-title__info">В макете нет текста</span>
+                  </details>
+                  <input type="file" class="registration__form--document-file">
+                </div>
+                <div class="registration__form--document-block">
+                  <span class="registration__form--document-subtitle span-title__info">Копия: Уведомление Территориального органа Федеральной службы государственной статистики</span>
+                  <input type="file" class="registration__form--document-file">
+                </div>
+                <div class="form__item--submit profile__form--item-submit">
+                  <div class="block-open__document--btn">
+                    <button type="submit" class="block-open__document--link profile__form--item-link">Сохранить данные</button>
+                  </div>
+                  <span class="form__item--submit-text profile__form--item-text span-title">Нажимая кнопку Сохранить данные, вы соглашаетесь с <a href="#"
+                      class="form__item--submit-link span-title">условиями обработки
+                      персональных
+                      данных</a></span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
