@@ -1,0 +1,460 @@
+<section class="finance">
+  <div class="container">
+    <div class="section__body finance__section--body">
+      <aside class="aside">
+        <nav class="navbar">
+          <div class="navbar__wrap--logo">
+            <img src="img/main/lkz_avatar.svg" alt="LOGO MENU" class="navbar__logo" />
+          </div>
+          <span class="navbar__logo--role">Заказчик</span>
+          <span class="navbar__title">Транспортная компания</span>
+          <span class="navbar__title">«KURT TRANS»</span>
+          <ul class="navbar__list">
+            <li class="navbar__list--item">
+              <a href="lkz-transportation.html" class="navbar__list--link">Мои перевозки</a>
+            </li>
+            <li class="navbar__list--item">
+              <a href="lkz-statistics.html" class="navbar__list--link">Статистика</a>
+            </li>
+            <li class="navbar__list--item">
+              <a href="lkz-profile.html" class="navbar__list--link">Настройки профиля</a>
+            </li>
+            <li class="navbar__list--item">
+              <a href="lkz-new-bid.html" class="navbar__list--link">Создать новую заявку</a>
+            </li>
+        </nav>
+      </aside>
+      <div class="content__body finance__content--body">
+        <h1 class="drivers__content--title page__title">Статистика</h1>
+        <div class="bid-hauling__breadcrumbs drivers__breadcrumbs">
+          <a href="#" class="bid-hauling__breadcrumbs--link">Главная</a>
+          <span class="bid-hauling__breadcrumbs--arrow">>></span>
+          <a href="#" class="bid-hauling__breadcrumbs--link">Личный кабинет</a>
+          <span class="bid-hauling__breadcrumbs--arrow">>></span>
+          <span class="bid-hauling__breadcrumbs--last">Статистика</span>
+        </div>
+        <div class="finance__filter">
+          <div class="finance__filter--item">
+            <span class="finance__filter--item-title span-title">Статус платежа:</span>
+            <label for="finance-unpaid" class="finance__filter--label">
+              <input type="radio" name="finance-paid" id="finance-unpaid" class="drivers-tab__input">
+              <span class="drivers-tab__new--checkbox finance__filter--checkbox finance__filter--checkbox-first"></span>
+              <span class="span-title__info--text">Неоплачено</span>
+            </label>
+            <label for="finance-paid" class="finance__filter--label">
+              <input type="radio" name="finance-paid" id="finance-paid" class="drivers-tab__input" checked>
+              <span class="drivers-tab__new--checkbox finance__filter--checkbox"></span>
+              <span class="span-title__info--text">Оплачено</span>
+            </label>
+          </div>
+          <div class="finance__filter--item">
+            <span class="finance__filter--item-title span-title">Отчетный период:</span>
+            <a href="#" class="finance__filter--item-link finance__filter--item-link-active">Весь период</a>
+            <a href="#" class="finance__filter--item-link">За неделю</a>
+            <a href="#" class="finance__filter--item-link">Месяц</a>
+          </div>
+          <div class="finance__filter--item">
+            <span class="finance__filter--item-title-date span-title">Выбрать период:</span>
+            <input type="date" class="finance__filter--item-input">
+            <div class="finance__filter--item-input-dash"></div>
+            <input type="date" class="finance__filter--item-input">
+          </div>
+        </div>
+        <div class="finance__info">
+          <span class="finance__info--title">Декабрь </span>
+          <span class="finance__info--subtitle">Сумма за период: 50 000 руб</span>
+          <div class="finance__info--block">
+            <div class="finance__info--block-title">
+              <div class="finance__info--block-title-item finance__info--block-title-date">
+                <span class="finance__info--block-title-text">Дата</span>
+              </div>
+              <div class="finance__info--block-title-item finance__info--block-title-summ">
+                <span class="finance__info--block-title-text">Сумма, руб</span>
+              </div>
+              <div class="finance__info--block-title-item finance__info--block-title-status">
+                <span class="finance__info--block-title-text">Статус оплаты</span>
+              </div>
+              <div class="finance__info--block-title-item finance__info--block-title-bid">
+                <span class="finance__info--block-title-text">Заявка</span>
+              </div>
+              <div class="finance__info--block-title-item finance__info--block-title-route">
+                <span class="finance__info--block-title-text">Маршрут</span>
+              </div>
+              <div class="finance__info--block-tab-last"></div>
+            </div>
+            <div class="finance__info--block-tab">
+              <div class="finance__info--block-title-item finance__info--block-tab-date">
+                <span class="finance__info--block-tab-col1">24.12.20</span>
+              </div>
+              <div class="finance__info--block-wrap">
+                <div class="finance__info--block-title-item finance__info--block-tab-summ">
+                  <div class="finance__info--block-tab-col2">50 000</div>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-status">
+                  <label for="status" class="finance__filter--label">
+                    <input type="checkbox" name="status" id="status" class="drivers-tab__input" checked>
+                    <span class="drivers-tab__new--checkbox finance__filter--checkbox-first"></span>
+                    <span class="finance__info--block-tab-status-label span-title__info--text">Оплачено</span>
+                  </label>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-bid">
+                  <span class="finance__info--block-tab-col4">№ 1000002</span>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-route">
+                  <div class="finance__info--block-tab-city">Москва</div>
+                  <img src="img/main/arrow2.svg" class="finance__info--block-tab-route-img" alt="ARROW" />
+                  <div class="finance__info--block-tab-city">Сочи</div>
+                </div>
+              </div>
+              <div class="finance__info--block-title-item finance__info--block-tab-close">
+                <img src="img/main/arrow-bottom.svg" class="finance__info--block-tab-close-img" alt="ARROW" />
+              </div>
+            </div>
+            <div class="finance__info--block-open">
+              <div class="block-open__body">
+                <div class="block-open__summ">
+                  <span class="block-open__summ--title span-title__info">Сумма, руб</span>
+                  <span class="block-open__summ--text span-title">50 000</span>
+                </div>
+                <div class="block-open__status">
+                  <label for="status-mobile" class="finance__filter--label">
+                    <input type="checkbox" name="status" id="status-mobile" class="drivers-tab__input" checked>
+                    <span class="drivers-tab__new--checkbox finance__filter--checkbox-first"></span>
+                    <span class="block-open__status--label span-title__info--text">Оплачено</span>
+                  </label>
+                </div>
+                <div class="block-open__bid">
+                  <span class="block-open__summ--title span-title__info">Заявка:</span>
+                  <span class="block-open__summ--text span-title">№ 1000001</span>
+                </div>
+                <div class="block-open__city">
+                  <div class="block-open__city--box finance__info--block-tab-city">Москва</div>
+                  <img src="img/main/arrow2.svg" class="block-open__city--img finance__info--block-tab-route-img" alt="ARROW" />
+                  <img src="img/main/arrow4.svg" class="block-open__city--img-mobile" alt="ARROW" />
+                  <div class="block-open__city--box finance__info--block-tab-city">Сочи</div>
+                </div>
+                <div class="block-open__document">
+                  <span class="block-open__document--title info__title">Документы:</span>
+                  <div class="block-open__document--box-file">
+                    <a href="#" class=""><span class="block-open__document--file span-title__info">Квитанция об оплате, pdf</span></a>
+                    <a href="#" class=""><span class="block-open__document--file span-title__info">GPS отчëт</span></a>
+                  </div>
+                  <div class="block-open__document--btn">
+                    <a href="#" class="block-open__document--link">Скачать все документы</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="finance__info test2">
+          <span class="finance__info--title">Ноябрь</span>
+          <span class="finance__info--subtitle">Сумма за период: 200 000 руб</span>
+          <div class="finance__info--block">
+            <div class="finance__info--block-title">
+              <div class="finance__info--block-title-item finance__info--block-title-date">
+                <span class="finance__info--block-title-text">Дата</span>
+              </div>
+              <div class="finance__info--block-title-item finance__info--block-title-summ">
+                <span class="finance__info--block-title-text">Сумма, руб</span>
+              </div>
+              <div class="finance__info--block-title-item finance__info--block-title-status">
+                <span class="finance__info--block-title-text">Статус оплаты</span>
+              </div>
+              <div class="finance__info--block-title-item finance__info--block-title-bid">
+                <span class="finance__info--block-title-text">Заявка</span>
+              </div>
+              <div class="finance__info--block-title-item finance__info--block-title-route">
+                <span class="finance__info--block-title-text">Маршрут</span>
+              </div>
+              <div class="finance__info--block-tab-last"></div>
+            </div>
+            <div class="finance__info--block-tab">
+              <div class="finance__info--block-title-item finance__info--block-tab-date">
+                <span class="finance__info--block-tab-col1">24.12.20</span>
+              </div>
+              <div class="finance__info--block-wrap">
+                <div class="finance__info--block-title-item finance__info--block-tab-summ">
+                  <div class="finance__info--block-tab-col2">50 000</div>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-status">
+                  <label for="status" class="finance__filter--label">
+                    <input type="checkbox" name="status" id="status" class="drivers-tab__input" checked>
+                    <span class="drivers-tab__new--checkbox finance__filter--checkbox-first"></span>
+                    <span class="finance__info--block-tab-status-label span-title__info--text">Оплачено</span>
+                  </label>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-bid">
+                  <span class="finance__info--block-tab-col4">№ 1000002</span>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-route">
+                  <div class="finance__info--block-tab-city">Москва</div>
+                  <img src="img/main/arrow2.svg" class="finance__info--block-tab-route-img" alt="ARROW" />
+                  <div class="finance__info--block-tab-city">Сочи</div>
+                </div>
+              </div>
+              <div class="finance__info--block-title-item finance__info--block-tab-close">
+                <img src="img/main/arrow-bottom.svg" class="finance__info--block-tab-close-img" alt="ARROW" />
+              </div>
+            </div>
+
+            <div class="finance__info--block-tab">
+              <div class="finance__info--block-title-item finance__info--block-tab-date">
+                <span class="finance__info--block-tab-col1">18.12.20</span>
+              </div>
+              <div class="finance__info--block-wrap">
+                <div class="finance__info--block-title-item finance__info--block-tab-summ">
+                  <div class="finance__info--block-tab-col2">50 000</div>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-status">
+                  <label for="status" class="finance__filter--label">
+                    <input type="checkbox" name="status" id="status" class="drivers-tab__input" checked>
+                    <span class="drivers-tab__new--checkbox finance__filter--checkbox-first"></span>
+                    <span class="finance__info--block-tab-status-label span-title__info--text">Оплачено</span>
+                  </label>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-bid">
+                  <span class="finance__info--block-tab-col4">№ 1000002</span>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-route">
+                  <div class="finance__info--block-tab-city">Москва</div>
+                  <img src="img/main/arrow2.svg" class="finance__info--block-tab-route-img" alt="ARROW" />
+                  <div class="finance__info--block-tab-city">Сочи</div>
+                </div>
+              </div>
+              <div class="finance__info--block-title-item finance__info--block-tab-close">
+                <img src="img/main/arrow-bottom.svg" class="finance__info--block-tab-close-img" alt="ARROW" />
+              </div>
+            </div>
+            <div class="finance__info--block-tab">
+              <div class="finance__info--block-title-item finance__info--block-tab-date">
+                <span class="finance__info--block-tab-col1">24.06.20</span>
+              </div>
+              <div class="finance__info--block-wrap">
+                <div class="finance__info--block-title-item finance__info--block-tab-summ">
+                  <div class="finance__info--block-tab-col2">50 000</div>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-status">
+                  <label for="status" class="finance__filter--label">
+                    <input type="checkbox" name="status" id="status" class="drivers-tab__input" checked>
+                    <span class="drivers-tab__new--checkbox finance__filter--checkbox-first"></span>
+                    <span class="finance__info--block-tab-status-label span-title__info--text">Оплачено</span>
+                  </label>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-bid">
+                  <span class="finance__info--block-tab-col4">№ 1000002</span>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-route">
+                  <div class="finance__info--block-tab-city">Москва</div>
+                  <img src="img/main/arrow2.svg" class="finance__info--block-tab-route-img" alt="ARROW" />
+                  <div class="finance__info--block-tab-city">Сочи</div>
+                </div>
+              </div>
+              <div class="finance__info--block-title-item finance__info--block-tab-close">
+                <img src="img/main/arrow-bottom.svg" class="finance__info--block-tab-close-img" alt="ARROW" />
+              </div>
+            </div>
+            <div class="finance__info--block-tab">
+              <div class="finance__info--block-title-item finance__info--block-tab-date">
+                <span class="finance__info--block-tab-col1">04.11.20</span>
+              </div>
+              <div class="finance__info--block-wrap">
+                <div class="finance__info--block-title-item finance__info--block-tab-summ">
+                  <div class="finance__info--block-tab-col2">50 000</div>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-status">
+                  <label for="status" class="finance__filter--label">
+                    <input type="checkbox" name="status" id="status" class="drivers-tab__input" checked>
+                    <span class="drivers-tab__new--checkbox finance__filter--checkbox-first"></span>
+                    <span class="finance__info--block-tab-status-label span-title__info--text">Оплачено</span>
+                  </label>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-bid">
+                  <span class="finance__info--block-tab-col4">№ 1000002</span>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-route">
+                  <div class="finance__info--block-tab-city">Москва</div>
+                  <img src="img/main/arrow2.svg" class="finance__info--block-tab-route-img" alt="ARROW" />
+                  <div class="finance__info--block-tab-city">Сочи</div>
+                </div>
+              </div>
+              <div class="finance__info--block-title-item finance__info--block-tab-close">
+                <img src="img/main/arrow-bottom.svg" class="finance__info--block-tab-close-img" alt="ARROW" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="finance__info test3">
+          <span class="finance__info--title">Октябрь</span>
+          <span class="finance__info--subtitle">Сумма за период: 200 000 руб</span>
+          <div class="finance__info--block">
+            <div class="finance__info--block-title">
+              <div class="finance__info--block-title-item finance__info--block-title-date">
+                <span class="finance__info--block-title-text">Дата</span>
+              </div>
+              <div class="finance__info--block-title-item finance__info--block-title-summ">
+                <span class="finance__info--block-title-text">Сумма, руб</span>
+              </div>
+              <div class="finance__info--block-title-item finance__info--block-title-status">
+                <span class="finance__info--block-title-text">Статус оплаты</span>
+              </div>
+              <div class="finance__info--block-title-item finance__info--block-title-bid">
+                <span class="finance__info--block-title-text">Заявка</span>
+              </div>
+              <div class="finance__info--block-title-item finance__info--block-title-route">
+                <span class="finance__info--block-title-text">Маршрут</span>
+              </div>
+              <div class="finance__info--block-tab-last"></div>
+            </div>
+            <div class="finance__info--block-tab">
+              <div class="finance__info--block-title-item finance__info--block-tab-date">
+                <span class="finance__info--block-tab-col1">24.12.20</span>
+              </div>
+              <div class="finance__info--block-wrap">
+                <div class="finance__info--block-title-item finance__info--block-tab-summ">
+                  <div class="finance__info--block-tab-col2">50 000</div>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-status">
+                  <label for="status" class="finance__filter--label">
+                    <input type="checkbox" name="status" id="status" class="drivers-tab__input" checked>
+                    <span class="drivers-tab__new--checkbox finance__filter--checkbox-first"></span>
+                    <span class="finance__info--block-tab-status-label span-title__info--text">Оплачено</span>
+                  </label>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-bid">
+                  <span class="finance__info--block-tab-col4">№ 1000002</span>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-route">
+                  <div class="finance__info--block-tab-city">Москва</div>
+                  <img src="img/main/arrow2.svg" class="finance__info--block-tab-route-img" alt="ARROW" />
+                  <div class="finance__info--block-tab-city">Сочи</div>
+                </div>
+              </div>
+              <div class="finance__info--block-title-item finance__info--block-tab-close">
+                <img src="img/main/arrow-bottom.svg" class="finance__info--block-tab-close-img" alt="ARROW" />
+              </div>
+            </div>
+
+            <div class="finance__info--block-tab">
+              <div class="finance__info--block-title-item finance__info--block-tab-date">
+                <span class="finance__info--block-tab-col1">18.10.20</span>
+              </div>
+              <div class="finance__info--block-wrap">
+                <div class="finance__info--block-title-item finance__info--block-tab-summ">
+                  <div class="finance__info--block-tab-col2">50 000</div>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-status">
+                  <label for="status" class="finance__filter--label">
+                    <input type="checkbox" name="status" id="status" class="drivers-tab__input" checked>
+                    <span class="drivers-tab__new--checkbox finance__filter--checkbox-first"></span>
+                    <span class="finance__info--block-tab-status-label span-title__info--text">Оплачено</span>
+                  </label>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-bid">
+                  <span class="finance__info--block-tab-col4">№ 1000002</span>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-route">
+                  <div class="finance__info--block-tab-city">Москва</div>
+                  <img src="img/main/arrow2.svg" class="finance__info--block-tab-route-img" alt="ARROW" />
+                  <div class="finance__info--block-tab-city">Сочи</div>
+                </div>
+              </div>
+              <div class="finance__info--block-title-item finance__info--block-tab-close">
+                <img src="img/main/arrow-bottom.svg" class="finance__info--block-tab-close-img" alt="ARROW" />
+              </div>
+            </div>
+            <div class="finance__info--block-tab">
+              <div class="finance__info--block-title-item finance__info--block-tab-date">
+                <span class="finance__info--block-tab-col1">11.06.20</span>
+              </div>
+              <div class="finance__info--block-wrap">
+                <div class="finance__info--block-title-item finance__info--block-tab-summ">
+                  <div class="finance__info--block-tab-col2">50 000</div>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-status">
+                  <label for="status" class="finance__filter--label">
+                    <input type="checkbox" name="status" id="status" class="drivers-tab__input" checked>
+                    <span class="drivers-tab__new--checkbox finance__filter--checkbox-first"></span>
+                    <span class="finance__info--block-tab-status-label span-title__info--text">Оплачено</span>
+                  </label>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-bid">
+                  <span class="finance__info--block-tab-col4">№ 1000002</span>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-route">
+                  <div class="finance__info--block-tab-city">Москва</div>
+                  <img src="img/main/arrow2.svg" class="finance__info--block-tab-route-img" alt="ARROW" />
+                  <div class="finance__info--block-tab-city">Сочи</div>
+                </div>
+              </div>
+              <div class="finance__info--block-title-item finance__info--block-tab-close">
+                <img src="img/main/arrow-bottom.svg" class="finance__info--block-tab-close-img" alt="ARROW" />
+              </div>
+            </div>
+            <div class="finance__info--block-tab">
+              <div class="finance__info--block-title-item finance__info--block-tab-date">
+                <span class="finance__info--block-tab-col1">04.05.20</span>
+              </div>
+              <div class="finance__info--block-wrap">
+                <div class="finance__info--block-title-item finance__info--block-tab-summ">
+                  <div class="finance__info--block-tab-col2">50 000</div>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-status">
+                  <label for="status" class="finance__filter--label">
+                    <input type="checkbox" name="status" id="status" class="drivers-tab__input" checked>
+                    <span class="drivers-tab__new--checkbox finance__filter--checkbox-first"></span>
+                    <span class="finance__info--block-tab-status-label span-title__info--text">Оплачено</span>
+                  </label>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-bid">
+                  <span class="finance__info--block-tab-col4">№ 1000002</span>
+                </div>
+                <div class="finance__info--block-title-item finance__info--block-tab-route">
+                  <div class="finance__info--block-tab-city">Москва</div>
+                  <img src="img/main/arrow2.svg" class="finance__info--block-tab-route-img" alt="ARROW" />
+                  <div class="finance__info--block-tab-city">Сочи</div>
+                </div>
+              </div>
+              <div class="finance__info--block-title-item finance__info--block-tab-close">
+                <img src="img/main/arrow-bottom.svg" class="finance__info--block-tab-close-img" alt="ARROW" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="other other-drivers">
+          <ul class="pagination">
+            <li class="page-item page-item__previous disabled">
+              <a class="page-link page-link__previous" href="#">
+                <img src="img/main/left-grey.svg" alt="" class="page-link__previous--img page-link__img">
+              </a>
+            </li>
+            <li class="page-item page-item__active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item page-item__next">
+              <a class="page-link page-link__next" href="#">
+                <img src="img/main/right-green.svg" alt="" class="page-link__next--img page-link__img">
+              </a>
+            </li>
+          </ul>
+          <!-- <div class="other-sort">
+        <p class="other-sort__title">Сортировка по месяцам:</p>
+        <div class="other-sort__month">
+          <a href="#" class="other-sort__text other-sort__active">Март</a>
+          <a href="#" class="other-sort__text">Февраль</a>
+          <a href="#" class="other-sort__text">Январь</a>
+        </div>
+      </div> -->
+        </div>
+        <!-- /.other -->
+      </div>
+    </div>
+  </div>
+</section>
