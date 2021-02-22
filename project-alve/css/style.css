@@ -5110,6 +5110,12 @@ span {
   padding: 10px 0;
 }
 
+.filter-new-bid__button--wrap {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+}
+
 .footer {
   background: #1B242D;
   padding: 15px 0px;

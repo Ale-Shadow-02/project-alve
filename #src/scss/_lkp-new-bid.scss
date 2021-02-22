@@ -295,6 +295,11 @@
       padding: 10px 0;
     }
   }
+  &__button {
+    &--wrap {
+      flex: 0 1 200px;
+    }
+  }
 }
 
   
