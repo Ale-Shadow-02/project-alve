@@ -300,6 +300,23 @@
       flex: 0 1 200px;
     }
   }
+  &__comment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &--wrap {
+      flex: 0 1 48%;
+      @media (max-width:576px){
+        flex: 0 1 100%;
+      }
+      &:first-child {
+        margin-right: 15px;
+        @media (max-width:576px){
+          margin-right: 0;
+        }
+      }
+    }
+  }
 }
 
   

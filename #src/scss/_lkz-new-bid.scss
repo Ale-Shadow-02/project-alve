@@ -1,0 +1,110 @@
+.lkz-new-bid {
+  padding-top: 90px;
+  padding-bottom: 40px;
+  @media (max-width:576px) {
+    padding-bottom: 0;
+  }
+  &__form {
+    &--title {
+      margin-bottom: 10px;
+      &-input {
+        flex: 0 1 100%;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000;
+
+        margin-bottom: 15px;
+      }
+    }
+    &--subtitle {
+      margin-bottom: 5px;
+      &-star {
+        margin-bottom: 10px;
+      }
+    }
+    &--item {
+      &-name {
+        padding: 0 0 20px 0;
+      }
+    }
+    &--input {
+      &-gps {
+        display: none;
+        &-label {
+          vertical-align: 4px;
+        }
+      }
+    }
+  }
+  &__input {
+    &--wrap {
+      &-address {
+        flex: 0 1 55%;
+        @media (max-width:768px){
+          flex: 0 1 100%;
+        }
+      } 
+      &-date {
+        flex: 0 1 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width:768px){
+          flex: 0 1 100%;
+        }
+        &-box {
+          flex: 0 1 45%;
+        }
+      }
+      &-transport {
+        flex: 0 1 24%;
+        @media (max-width:1180px){
+          flex: 0 1 49%;
+        }
+        @media (max-width:576px){
+          flex: 0 1 100%;
+        }
+      }
+    }
+    &--textarea {
+      background: #FFFFFF;
+      border: 1px solid #DEDEDE;
+      border-radius: 4px;
+      padding: 10px;
+      width: 100%;
+      resize: vertical;
+      &-title {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &__new {
+    &--checkbox {
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: #FFFFFF;
+      border: 1px solid #DEDEDE;
+      border-radius: 2px;
+      margin: 0px 5px 0px 0px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        width: 14px;
+        height: 12px;
+       background: url(../img/main/checked.svg) no-repeat;
+        opacity: 0;
+        transition: all 0.3s ease 0s;
+      }
+    }
+  }
+}
+.lkz-new-bid__form--input-gps:checked+.lkz-new-bid__new--checkbox::before {
+  opacity: 1;
+}

@@ -1,0 +1,127 @@
+<section class="lkz-new-bid">
+  <div class="container">
+    <div class="section__body profile__section--body">
+      @@include('_lkz-aside.html')
+      <div class="content__body profile__content--body">
+        <h1 class="profile__content--title page__title">Создать новую заявку</h1>
+        <div class="bid-hauling__breadcrumbs drivers__breadcrumbs">
+          <a href="#" class="bid-hauling__breadcrumbs--link">Главная</a>
+          <span class="bid-hauling__breadcrumbs--arrow">>></span>
+          <a href="#" class="bid-hauling__breadcrumbs--link">Личный кабинет</a>
+          <span class="bid-hauling__breadcrumbs--arrow">>></span>
+          <span class="bid-hauling__breadcrumbs--last">Создать новую заявку</span>
+        </div>
+
+        <div class="cars-drivers__form--wrap">
+          <form action="#" id="lkzNewBid" class="cars-drivers__form">
+            <div class="cars-drivers__form--body">
+              <span class="lkz-new-bid__form--title section__title">Заявка № 1020304</span>
+              <span class="profile__content--subtitle lkz-new-bid__form--subtitle">Заполните форму по перевозке груза и наш менеджер свяжется с вами в ближайшее время для уточнения заказа</span>
+              <span class="profile__content--subtitle lkz-new-bid__form--subtitle-star">* обозначены поля, обязательные для заполнения</span>
+              <span class="lkz-new-bid__form--title-input">Маршрут</span>
+
+              <div class="form__item--name lkz-new-bid__form--item-name">
+                <label for="lkzNewBidRout" class="cars-drivers__form--label-name cars-drivers__form--label">Адрес отправления*:</label>
+                <input type="text" id="lkzNewBidRout" class="form__input" placeholder="Например, Россия, г. Екатеринбург, ул. Стрелочников, д. 9А" required>
+
+
+                <div class="lkz-new-bid__input--wrap-address">
+                  <label for="lkzNewBidAddress" class="cars-drivers__form--label-name cars-drivers__form--label">Адрес назначения*</label>
+                  <input type="text" id="lkzNewBidAddress" class="form__input" placeholder="Например, Россия, г.Ставрополь, ул. Комсомольская, д.3" required>
+                </div>
+                <div class="lkz-new-bid__input--wrap-date">
+                  <div class="lkz-new-bid__input--wrap-date-box">
+                    <label for="lkzNewBidOn" class="cars-drivers__form--label-name cars-drivers__form--label">Период отправки*:</label>
+                    <input type="text" id="lkzNewBidOn" class="form__input" placeholder="10.12.20" required>
+                  </div>
+                  <div class="lkz-new-bid__form--date-dash">&ndash;</div>
+                  <div class="lkz-new-bid__input--wrap-date-box">
+                    <label for="lkzNewBidOff" class="cars-drivers__form--label-name cars-drivers__form--label">До:</label>
+                    <input type="text" id="lkzNewBidOff" class="form__input" placeholder="16.12.20" required>
+                  </div>
+                </div>
+
+                <span class="lkz-new-bid__form--title-input">Информация о грузе</span>
+                <div class="lkz-new-bid__input--wrap-address">
+                  <label for="lkzNewBidСargo" class="cars-drivers__form--label-name cars-drivers__form--label">Наименование:</label>
+                  <input type="text" id="lkzNewBidСargo" class="form__input" placeholder="Запчасти">
+                </div>
+                <div class="lkz-new-bid__input--wrap-date">
+                  <div class="lkz-new-bid__input--wrap-date-box">
+                    <label for="lkzNewWeight" class="cars-drivers__form--label-name cars-drivers__form--label">Масса, тонн*:</label>
+                    <input type="text" id="lkzNewWeight" class="form__input" placeholder="28" required>
+                  </div>
+                  <div class="lkz-new-bid__form--date-dash">&ndash;</div>
+                  <div class="lkz-new-bid__input--wrap-date-box">
+                    <label for="lkzNewVolume" class="cars-drivers__form--label-name cars-drivers__form--label">Объем, куб. м*:</label>
+                    <input type="text" id="lkzNewVolume" class="form__input" placeholder="255" required>
+                  </div>
+                </div>
+
+                <span class="lkz-new-bid__form--title-input">Информация о грузе</span>
+                <div class="lkz-new-bid__input--wrap-transport">
+                  <label for="lkzNewBidLoading" class="cars-drivers__form--label-name cars-drivers__form--label">Тип загрузки*:</label>
+                  <input type="text" id="lkzNewBidLoading" class="form__input" placeholder="Боковая" required>
+                </div>
+                <div class="lkz-new-bid__input--wrap-transport">
+                  <label for="lkzNewBidUnloading" class="cars-drivers__form--label-name cars-drivers__form--label">Тип разгрузки*:</label>
+                  <input type="text" id="lkzNewBidUnloading" class="form__input" placeholder="Боковая" required>
+                </div>
+                <div class="lkz-new-bid__input--wrap-transport">
+                  <label for="lkzNewBidWeight" class="cars-drivers__form--label-name cars-drivers__form--label">Грузоподъемность, тонн*:</label>
+                  <input type="text" id="lkzNewBidWeight" class="form__input" placeholder="27" required>
+                </div>
+                <div class="lkz-new-bid__input--wrap-transport">
+                  <label for="lkzNewBidVolume" class="cars-drivers__form--label-name cars-drivers__form--label">Объем кузова, куб. м*:</label>
+                  <input type="text" id="lkzNewBidVolume" class="form__input" placeholder="300" required>
+                </div>
+                <div class="lkz-new-bid__input--wrap-checkbox">
+                  <input type="checkbox" id="lkzNewBidGps" class="lkz-new-bid__form--input-gps" value="Да" checked>
+                  <span class="lkz-new-bid__new--checkbox"></span>
+                  <label for="lkzNewBidGps" class="cars-drivers__form--label-name cars-drivers__form--label lkz-new-bid__form--input-gps-label">GPS отчет</label>
+                </div>
+
+              </div>
+              <div class="form__item--document">
+                <span class="registration__form--document-title drivers-tab__header--surname">Документы:</span>
+
+                <div class="registration__form--document-block">
+                  <input type="file" class="registration__form--document-file">
+                </div>
+                <div class="registration__form--document-block">
+                  <input type="file" class="registration__form--document-file">
+                </div>
+                <div class="registration__form--document-block">
+                  <input type="file" class="registration__form--document-file">
+                </div>
+                <div class="registration__form--document-block">
+                  <input type="file" class="registration__form--document-file">
+                </div>
+                <div class="registration__form--document-block">
+                  <input type="file" class="registration__form--document-file">
+                </div>
+                <div class="registration__form--document-block">
+                  <input type="file" class="registration__form--document-file">
+                </div>
+                <div class="registration__form--document-block">
+                  <span class="span-title lkz-new-bid__input--textarea-title">Дополнительная информация:</span>
+                  <textarea name="lkzNewBidComments" id="lkzNewBidComments" rows="5" class="lkz-new-bid__input--textarea"></textarea>
+                </div>
+                <div class="form__item--submit profile__form--item-submit">
+                  <div class="block-open__document--btn">
+                    <button type="submit" class="block-open__document--link profile__form--item-link">Сохранить данные</button>
+                  </div>
+                  <span class="form__item--submit-text profile__form--item-text span-title">Нажимая кнопку Сохранить данные, вы соглашаетесь с <a href="#"
+                      class="form__item--submit-link span-title">условиями обработки
+                      персональных
+                      данных</a></span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
