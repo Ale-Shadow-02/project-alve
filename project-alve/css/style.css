@@ -628,6 +628,8 @@ span {
 
 /*! КОНЕЦ! Стили Главной страницы авторизайии */
 
+/*! Стили страницы Регистрании */
+
 .registration {
   padding: 100px 0px 60px 0px;
 }
@@ -756,6 +758,10 @@ span {
 .details {
   margin-bottom: 20px;
 }
+
+/*! Конец! Стили страницы Регистрании */
+
+/*! Стили страницы Мои Перевозки */
 
 .my-transportation {
   padding: 157px 0px 35px 0px;
@@ -3057,6 +3063,10 @@ span {
   display: block;
 }
 
+/*! Конец! Стили страницы Мои Перевозки Перевозчик*/
+
+/*! Стили страницы Мои перевозки Заказчик */
+
 .number-test {
   margin-bottom: 40px;
 }
@@ -3156,6 +3166,10 @@ span {
       -ms-flex: 0 1 90px;
           flex: 0 1 90px;
 }
+
+/*! Конец! Стили страницы Мои перевозки Заказчик */
+
+/*! Стили страницы Перевозчика Водители */
 
 .drivers {
   padding: 90px 0px 0px 0px;
@@ -3651,6 +3665,10 @@ span {
 .drivers-tab__block-active {
   display: none;
 }
+
+/*! Конец! Стили страницы Перевозчика Водители */
+
+/*! Стили блока поиск Перевозчик Водители */
 
 .drivers-search {
   padding: 40px 0px 20px 0px;
@@ -4149,11 +4167,19 @@ span {
   display: none;
 }
 
+/*! Конец! Стили блока поиск Перевозчик Водители */
+
+/*! Стили Страницы Авто и прицепы Перевозчик */
+
 .filter__trailer--radio {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 13%;
           flex: 0 1 13%;
 }
+
+/*! Конец! Стили Страницы Авто и прицепы Перевозчик */
+
+/*! Стили страницы Добавить авто/водителя Перевозчик */
 
 .cars-drivers__form--body {
   background: #FCFCFC;
@@ -4348,6 +4374,10 @@ span {
   background: url(../img/main/icon-calendar.svg) 2% 50% no-repeat, url(../img/main/editor.svg) 98% 50% no-repeat;
   padding: 13px 0 13px 30px;
 }
+
+/*! Конец! Стили страницы Добавить авто/водителя Перевозчик */
+
+/*! Стили страницы Мои финансы Перевозчик */
 
 .finance {
   padding-top: 90px;
@@ -4801,6 +4831,10 @@ span {
   display: none;
 }
 
+/*! Конец! Стили страницы Мои финансы Перевозчик */
+
+/*! Стили страницы Настройки профиля Перевозчик */
+
 .profile {
   padding-top: 90px;
   padding-bottom: 40px;
@@ -4850,6 +4884,10 @@ span {
       -ms-flex: 0 0 35%;
           flex: 0 0 35%;
 }
+
+/*! Конец! Стили страницы Настройки профиля Перевозчик */
+
+/*! Стили страницы Найти новую заявку */
 
 .new-bid {
   padding: 90px 0px 0px 0px;
@@ -5147,6 +5185,10 @@ span {
   margin-right: 15px;
 }
 
+/*! Конец! Стили страницы Найти новую заявку */
+
+/*! Стили страницы Создать новую заявку заказчик */
+
 .lkz-new-bid {
   padding-top: 90px;
   padding-bottom: 40px;
@@ -5266,6 +5308,10 @@ span {
   opacity: 1;
 }
 
+/*! Конец! Стили страницы Создать новую заявку заказчик */
+
+/*! Стили  Footer */
+
 .footer {
   background: #1B242D;
   padding: 15px 0px;
@@ -5355,6 +5401,8 @@ span {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+
+/*! Конец! Стили  Footer */
 
 @media (max-width: 1366px) {
   .my-transportation {
