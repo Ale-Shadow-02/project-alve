@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/*! Общие стили для всего проекта */
+
 body {
   font-family: 'Roboto', sans-serif;
   display: -webkit-box;
@@ -144,7 +146,9 @@ body {
   transition: all 0.3s ease 0s;
 }
 
-/*Обнуление*/
+/*! Конец общих стилей */
+
+/**Обнуление*/
 
 * {
   padding: 0;
@@ -238,9 +242,9 @@ span {
   display: block;
 }
 
-/*Обнуление стилей*/
+/**Обнуление стилей*/
 
-/* Стили мобильного меню */
+/*! Стили мобильного меню */
 
 .header {
   position: fixed;
@@ -438,6 +442,10 @@ span {
   display: none;
 }
 
+/*! Конец Стили мобильного меню */
+
+/*! Стили Главной страницы авторизайии */
+
 .authorization {
   padding: 100px 0px 35px 0px;
 }
@@ -617,6 +625,8 @@ span {
 .password-control.view {
   background: url(../img/main/hidden-password.svg) 0 0 no-repeat;
 }
+
+/*! КОНЕЦ! Стили Главной страницы авторизайии */
 
 .registration {
   padding: 100px 0px 60px 0px;

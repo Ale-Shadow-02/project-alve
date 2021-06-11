@@ -8,7 +8,7 @@
 		font-style: #{$style};
 	}
 }
-
+/*! Общие стили для всего проекта */
 body {
 	font-family: 'Roboto', sans-serif;
 	display: flex;
@@ -125,6 +125,8 @@ body {
 		transition: all 0.3s ease 0s;
 	}
 }
+
+/*! Конец общих стилей */
 
 @import "_reset";
 @import "fonts";
